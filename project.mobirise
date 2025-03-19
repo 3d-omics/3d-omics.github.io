@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "www.3domics.eu",
-    "currentPage": "TrainingEvent_MicrobiomeAtlas.html",
+    "currentPage": "publications.html",
     "theme": {
       "name": "medicalm4",
       "title": "MedicalM4",
@@ -42,7 +42,7 @@
     "siteFonts": [],
     "imageResize": true,
     "publishChangesOnly": true,
-    "uniqCompNum": 470,
+    "uniqCompNum": 471,
     "versionPublish": "5.8.9",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/favicon-128x199.png",
@@ -7231,7 +7231,70 @@
           },
           "_name": "content3",
           "_sourceTheme": "medicalm4",
-          "_customHTML": "<section class=\"content3 medicalm4_content3\" group=\"Content\" plugins=\"ViewportChecker\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <header>Show / Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTabTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showTabText\" checked>\n        <input type=\"checkbox\" title=\"List\" name=\"showList\">\n        <input type=\"checkbox\" title=\"List Icon\" name=\"showCounter\" condition=\"showList\" checked>\n        <input type=\"color\" title=\"List Icon Color\" name=\"counterColor\" value=\"#4f87fb\" condition=\"showCounter&&showList\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay&&bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-md-6\">\n                <h2 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showTabTitle\" data-app-selector=\".mbr-section-title\">microbetag: simplifying microbial network interpretation through annotation, enrichment tests and metabolic complementarity analysis</h2>\n                <p class=\"mbr-text pt-4 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTabText\" data-app-selector=\".mbr-text\">Haris<b> </b>Zafeiropoulos et al. (Oct. 2024)<br><br>Microbial co-occurrence network inference is often hindered by low accuracy and tool dependency. We introduce <i><b>microbetag</b></i>, a comprehensive software ecosystem designed to enhance network annotation. Nodes (taxa) are enriched with phenotypic traits, while edges represent metabolic complementarities, highlighting potential cross-feeding relationships.<br><br><a href=\"https://www.biorxiv.org/content/10.1101/2024.10.01.616208v1.full\" class=\"text-primary\" target=\"_blank\"><b>You can read the full pre-print on biorxiv. https://doi.org/10.1101/2024.10.01.616208</b></a><br><br><i><br></i></p>\n                <div class=\"mbr-list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-list,.social-media\" data-multiline mbr-article mbr-if=\"showList\"></div>\n            </div>\n            <div class=\"col-md-6\">\n                <a href=\"https://www.biorxiv.org/content/10.1101/2024.10.01.616208v1.full\"><img src=\"@PROJECT_PATH@/assets/images/f1.large-1080x670.png\" alt=\"Fig1: Simplified overview of the microbetagDB-dependent version of microbetag.\"></a>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"content3 medicalm4_content3\" group=\"Content\" plugins=\"ViewportChecker\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <header>Show / Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTabTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showTabText\" checked>\n        <input type=\"checkbox\" title=\"List\" name=\"showList\">\n        <input type=\"checkbox\" title=\"List Icon\" name=\"showCounter\" condition=\"showList\" checked>\n        <input type=\"color\" title=\"List Icon Color\" name=\"counterColor\" value=\"#4f87fb\" condition=\"showCounter&&showList\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value>\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay&&bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-md-6\">\n                <h2 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showTabTitle\" data-app-selector=\".mbr-section-title\">Differential effects of synbiotic delivery route (Feed, water, combined) in broilers challenged with <i style=\"font-size: 1.65rem;\">Salmonella Infantis</i></h2>\n                <p class=\"mbr-text pt-4 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTabText\" data-app-selector=\".mbr-text\">Victoria Drauch et al. (2025)<br><br><i>Salmonella Infantis </i>presents a persistent and multi-drug-resistant threat to poultry production. This study evaluated the<br>impact of a <i>S. Infantis </i>infection in broiler chickens across various parameters, including organ colonization, gut microbiota, and immune function.&nbsp;Our findings&nbsp;provide valuable guidance for<br>optimizing synbiotic use in commercial poultry management, enabling enhanced pathogen control and improved gut health.<br><br><a href=\"https://www.sciencedirect.com/science/article/pii/S0032579125001270?via%3Dihub\" class=\"text-primary\" target=\"_blank\"><b>You can read the full article on ScienceDirect!&nbsp;</b>https://www.sciencedirect.com/science/article/pii/S0032579125001270?via%3Dihub</a><br><br><i><br></i></p>\n                <div class=\"mbr-list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-list,.social-media\" data-multiline mbr-article mbr-if=\"showList\"></div>\n            </div>\n            <div class=\"col-md-6\">\n                <a href=\"https://www.sciencedirect.com/science/article/pii/S0032579125001270?via%3Dihub\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-03-19-at-09.21.15-1080x592.png\" alt=\"Fig. 1. Experimental design of the animal trial administering a synbiotic sup- plement via three routes: feed and water (SynFW_SI), water only (SynW_SI), and  feed only (SynF_SI). Control groups included a positive control (SI) and a negative control (control). Broilers were infected with Salmonella Infantis on day 7. Sampling involved cloacal swabs from all birds and necropsy of 5 birds per group on each killing day.\"></a>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "content3-d2",
+          "_isUserblock": true,
+          "_cid": "uFSoAHuZ5J",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "img": {
+              "width": "100%",
+              "border-radius": "8px",
+              "box-shadow": "0 0 20px rgba(79, 110, 173, 0.1)"
+            },
+            ".mbr-section-title": {
+              "text-align": "left",
+              "color": "#a74d79",
+              "line-height": "1.2",
+              "letter-spacing": "-0.5px"
+            },
+            ".mbr-text": {
+              "color": "#a74d79",
+              "line-height": "1.5"
+            },
+            ".mbr-list": {
+              "margin-top": "35px",
+              "color": "#6d7a8c",
+              ".list": {
+                "list-style-type": "none",
+                "padding-left": "0",
+                "li": {
+                  "margin-bottom": "1rem",
+                  "&:before": {
+                    "& when (@showCounter)": {
+                      "font-weight": "900",
+                      "color": "@counterColor",
+                      "display": "inline-block",
+                      "content": "'✓'",
+                      "text-align": "center",
+                      "line-height": "1.5em",
+                      "-webkit-transition": "all 0.3s",
+                      "transition": "all 0.3s",
+                      "width": "25px",
+                      "height": "25px"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "_name": "content3",
+          "_sourceTheme": "medicalm4",
+          "_customHTML": "<section class=\"content3 medicalm4_content3\" group=\"Content\" plugins=\"ViewportChecker\" data-bg-video=\"{{bg.type == 'video'&&bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"9\" step=\"1\" value=\"4\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"9\" step=\"1\" value=\"0\">\n        <header>Show / Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTabTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showTabText\" checked>\n        <input type=\"checkbox\" title=\"List\" name=\"showList\">\n        <input type=\"checkbox\" title=\"List Icon\" name=\"showCounter\" condition=\"showList\" checked>\n        <input type=\"color\" title=\"List Icon Color\" name=\"counterColor\" value=\"#4f87fb\" condition=\"showCounter&&showList\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Background Image\" value=\"@PROJECT_PATH@/assets/images/background2.jpg\">\n            <input type=\"color\" title=\"Background Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Background Video\" value=\"http://www.youtube.com/watch?v=uNCr7NdOJgw\">\n        </fieldset>\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay&&bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay&&bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay&&bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"container\">\n        <div class=\"row\">\n            <div class=\"col-md-6\">\n                <h2 class=\"mbr-fonts-style mbr-section-title align-center mbr-bold\" mbr-theme-style=\"display-5\" mbr-if=\"showTabTitle\" data-app-selector=\".mbr-section-title\"><i>microbetag</i>: simplifying microbial network interpretation through annotation, enrichment tests and metabolic complementarity analysis</h2>\n                <p class=\"mbr-text pt-4 mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showTabText\" data-app-selector=\".mbr-text\">Haris<b> </b>Zafeiropoulos et al. (Oct. 2024)<br><br>Microbial co-occurrence network inference is often hindered by low accuracy and tool dependency. We introduce <i><b>microbetag</b></i>, a comprehensive software ecosystem designed to enhance network annotation. Nodes (taxa) are enriched with phenotypic traits, while edges represent metabolic complementarities, highlighting potential cross-feeding relationships.<br><br><a href=\"https://www.biorxiv.org/content/10.1101/2024.10.01.616208v1.full\" class=\"text-primary\" target=\"_blank\"><b>You can read the full pre-print on biorxiv. https://doi.org/10.1101/2024.10.01.616208</b></a><br><br><i><br></i></p>\n                <div class=\"mbr-list mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-list,.social-media\" data-multiline mbr-article mbr-if=\"showList\"></div>\n            </div>\n            <div class=\"col-md-6\">\n                <a href=\"https://www.biorxiv.org/content/10.1101/2024.10.01.616208v1.full\"><img src=\"@PROJECT_PATH@/assets/images/f1.large-1080x670.png\" alt=\"Fig1: Simplified overview of the microbetagDB-dependent version of microbetag.\"></a>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "content3-6y",
           "_isUserblock": true,
           "_cid": "tIt7IVqpjM",
@@ -23721,7 +23784,7 @@
               }
             }
           },
-          "_customHTML": "<section class=\"mbr-section article content9\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Text Width\" name=\"innerWidth\" min=\"50\" max=\"100\" step=\"1\" value=\"100\">\n        <input type=\"range\" inline title=\"Line Width\" name=\"lineLength\" min=\"10\" max=\"100\" step=\"1\" value=\"25\">\n        <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#741b47\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"inner-container\" mbr-style=\"{'width': innerWidth + '%'}\">\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n            <div class=\"section-text align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".section-text\" mbr-text>Please note!<br><br>Application deadline: 16th of February 2025<br><br>The course will be offered in the framework of the EU H2020 funded project \"3D'omics\" (grant no.101000309).&nbsp;Course attendance is free, but there is no funding available to cover travel or accommodation costs. Due to its interactive nature, this course is limited to 25 participants. Please be aware that we might not be able to accept all applicants.<br><br>We will contact you, after we assessed all applications, latest by the 28th of February, to let you know if we can offer you a place in the course.&nbsp;</div>\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n        </div>\n        </div>\n</section>",
+          "_customHTML": "<section class=\"mbr-section article content9\" group=\"Article\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Text Width\" name=\"innerWidth\" min=\"50\" max=\"100\" step=\"1\" value=\"100\">\n        <input type=\"range\" inline title=\"Line Width\" name=\"lineLength\" min=\"10\" max=\"100\" step=\"1\" value=\"25\">\n        <input type=\"color\" title=\"Line Color\" name=\"lineColor\" value=\"#741b47\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"inner-container\" mbr-style=\"{'width': innerWidth + '%'}\">\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n            <div class=\"section-text align-center mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".section-text\" mbr-text>Please note!<br><br>Application deadline EXTENDED: 28th of February 2025<br><br>The course will be offered in the framework of the EU H2020 funded project \"3D'omics\" (grant no.101000309).&nbsp;Course attendance is free, but there is no funding available to cover travel or accommodation costs. Due to its interactive nature, this course is limited to 25 participants. Please be aware that we might not be able to accept all applicants.<br><br>We will contact you, after we assessed all applications, latest by the 4th of March, to let you know if we can offer you a place in the course.&nbsp;</div>\n            <hr class=\"line\" mbr-style=\"{'width': lineLength + '%'}\">\n        </div>\n        </div>\n</section>",
           "_anchor": "content9-b2",
           "_isUserblock": true,
           "_cid": "uvNGQS4L2B",
