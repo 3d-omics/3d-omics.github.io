@@ -20229,7 +20229,7 @@ section.lazy-placeholder:after {
   color: #741b47;
 }
 .cid-uvN9mSvvUC .timelines-container .timeline-element .timeline-text-content .mbr-timeline-text {
-  color: #741b47;
+  color: #a74d79;
   text-align: left;
 }
 .cid-uvN9mX84Fy {
@@ -21467,42 +21467,6 @@ section.lazy-placeholder:after {
     right: 1em;
     top: 1em;
   }
-}
-.cid-uvNGQS4L2B {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  background-color: #ffffff;
-}
-.cid-uvNGQS4L2B .line {
-  background-color: #741b47;
-  color: #741b47;
-  align: center;
-  height: 2px;
-  margin: 0 auto;
-}
-.cid-uvNGQS4L2B .section-text {
-  padding: 2rem 0;
-  color: #741b47;
-}
-.cid-uvNGQS4L2B .inner-container {
-  margin: 0 auto;
-}
-@media (max-width: 768px) {
-  .cid-uvNGQS4L2B .inner-container {
-    width: 100% !important;
-  }
-}
-#custom-html-b0 {
-  /* Type valid CSS here */
-}
-#custom-html-b0 div {
-  padding: 80px 0;
-  color: #777;
-  text-align: center;
-}
-#custom-html-b0 p {
-  font-size: 60px;
-  color: #777;
 }
 .cid-uvNdeerAFB {
   padding-top: 15px;
