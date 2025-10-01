@@ -1,7 +1,7 @@
 {
   "settings": {
     "name": "www.3domics.eu",
-    "currentPage": "zoom.html",
+    "currentPage": "events.html",
     "theme": {
       "name": "medicalm4",
       "title": "MedicalM4",
@@ -42,11 +42,11 @@
     "siteFonts": [],
     "imageResize": true,
     "publishChangesOnly": true,
-    "uniqCompNum": 491,
-    "versionPublish": "5.8.9",
+    "uniqCompNum": 495,
+    "versionPublish": "6.1.4",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/favicon-128x199.png",
-    "mbrsiteDomain": "dlfoof2ceg",
+    "mbrsiteDomain": "4w1sdq8avy",
     "robotsSwitcher": false,
     "sitemapSwitcher": false,
     "sitemapSwitcherAuto": false,
@@ -990,234 +990,9 @@
           "_params": {}
         },
         {
-          "_name": "avideo2",
-          "_sourceTheme": "bootcampm5",
-          "_customHTML": "<section class=\"video2 bootcampm5\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" name=\"fullWidth\" title=\"Full Width\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"1\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\" checked>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Border\" name=\"showBorder\" checked>\n        <input type=\"color\" title=\"Card Color\" name=\"cardColor\" value=\"#741b47\" selected>\n        <header>Video</header>\n        <input type=\"text\" title=\"Link\" name=\"modalVideo\" value=\"https://www.youtube.com/watch?v=VA8PzkQa8d8\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/bootcampm5/components/_images/background2.jpg\" parallax>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/bootcampm5/components/_images/background2.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked condition=\"bg.type !== 'color'\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#212132\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12\">\n                <div class=\"content-wrapper\">\n                    <div class=\"text-wrapper\">\n                        <h4 class=\"mbr-section-title align-left mbr-fonts-style mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><br><b>Watch our explainer video for a quick overview of the 3D'omics project</b></h4>\n                        <h5 class=\"mbr-section-subtitle align-left mbr-fonts-style mb-0\" mbr-theme-style=\"display-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                            Still have questions? <a href=\"#\" class=\"link text-warning\">Ask us</a></h5>\n                    </div>\n                    <div class=\"col-video\">\n                        <div class=\"box\">\n                            <div class=\"box-bg\">\n                            </div>\n                            <div class=\"mbr-media show-modal align-center\" data-modal=\".modalWindow\">\n                                <a href=\"https://www.youtube.com/watch?v=Lo75rhOcLkk\" target=\"_blank\"><img src=\"@PROJECT_PATH@/assets/images/screenshot-2023-07-03-at-14.20.01-1213x758.png\" alt></a>\n                                <div class=\"icon-wrap\">\n                                    <a class=\"text-primary\" href=\"https://www.youtube.com/watch?v=Lo75rhOcLkk\" target=\"_blank\">\n                                        <span mbr-icon class=\"mbr-iconfont socicon mobi-mbri-play mobi-mbri\" style=\"color: rgb(116, 27, 71); font-size: 90px; fill: rgb(116, 27, 71);\"></span>\n                                    </a>\n                                </div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n        </div>\n    </div>\n    <div>\n        <div class=\"modalWindow\" style=\"display: none;\">\n            <div class=\"modalWindow-container\">\n                <div class=\"modalWindow-video-container\">\n                    <div class=\"modalWindow-video\">\n                        <iframe width=\"100%\" height=\"100%\" data-src=\"{{modalVideo}}\" frameborder=\"0\" allowfullscreen=\"1\"></iframe>\n                    </div>\n                    <a class=\"close\" role=\"button\" data-dismiss=\"modal\">\n                        <span aria-hidden=\"true\" class=\"mbr-iconfont mobi-mbri-close mobi-mbri closeModal\"></span>\n                        <span class=\"sr-only\">Close</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_styles": {
-            "padding-top": "(@paddingTop * 1rem)",
-            "padding-bottom": "(@paddingBottom * 1rem)",
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            ".mbr-fallback-image.disabled": {
-              "display": "none"
-            },
-            ".mbr-fallback-image": {
-              "display": "block",
-              "background-size": "cover",
-              "background-position": "center center",
-              "width": "100%",
-              "height": "100%",
-              "position": "absolute",
-              "top": "0",
-              "& when (@bg-type = 'video')": {
-                "background-image": "url(@fallBackImage)"
-              }
-            },
-            ".container": {
-              "max-width": "1280px"
-            },
-            ".row": {
-              "justify-content": "center"
-            },
-            ".content-wrapper": {
-              "display": "flex",
-              "align-items": "stretch",
-              "background": "@cardColor",
-              "justify-content": "flex-start",
-              "padding": "4rem",
-              "border-radius": "4.17rem",
-              "@media (max-width: 991px)": {
-                "flex-wrap": "wrap"
-              },
-              "@media (max-width: 767px)": {
-                "padding": "4rem 6vw"
-              },
-              "@media (max-width: 575px)": {
-                "padding": "4rem 6vw 1.5rem"
-              },
-              "& when (@reverseContent)": {
-                "flex-direction": "row-reverse"
-              }
-            },
-            ".text-wrapper": {
-              "width": "40%",
-              "@media (max-width: 991px)": {
-                "width": "100%"
-              }
-            },
-            ".mbr-section-title": {
-              "color": "#f3d3e2",
-              "text-align": "left"
-            },
-            ".mbr-section-subtitle": {
-              "color": "#FFFFFF",
-              "opacity": "0.8",
-              "margin-top": "50px",
-              "@media (max-width: 991px)": {
-                "margin-top": "32px"
-              },
-              "@media (max-width: 767px)": {
-                "margin-top": "24px"
-              }
-            },
-            ".link": {
-              "text-decoration": "underline !important"
-            },
-            ".col-video": {
-              "position": "relative",
-              "display": "flex",
-              "width": "60%",
-              "& when not (@reverseContent)": {
-                "right": "-8rem"
-              },
-              "& when (@reverseContent)": {
-                "left": "-8rem"
-              },
-              "@media (max-width: 1599px)": {
-                "& when not (@reverseContent)": {
-                  "right": "~\"calc(-4rem - 4vw)\""
-                },
-                "& when (@reverseContent)": {
-                  "left": "~\"calc(-4rem - 4vw)\""
-                }
-              },
-              "@media (max-width: 991px)": {
-                "left": "0",
-                "right": "0",
-                "width": "100%",
-                "margin-top": "40px",
-                "height": "350px"
-              },
-              "img": {
-                "object-fit": "cover",
-                "width": "100%",
-                "height": "100%",
-                "border-radius": "1.76rem"
-              },
-              ".box": {
-                "display": "flex",
-                "flex-direction": "column",
-                "width": "100%",
-                "border-radius": "2.08rem",
-                "position": "relative",
-                "& when (@showBorder)": {
-                  "background-image": "linear-gradient(90deg, #ffdd65 2.76%, #ffaa5c 29.66%, #ff49c0 61%, #8e59ff 99.93%)",
-                  "padding": "5px",
-                  ".box-bg": {
-                    "position": "absolute",
-                    "top": "0",
-                    "left": "0",
-                    "width": "100%",
-                    "height": "100%",
-                    "border-radius": "2.08rem",
-                    "background-image": "linear-gradient(135deg, #ffdd65 2.76%, #ffaa5c 29.66%, #ff49c0 61%, #8e59ff 99.93%)",
-                    "-webkit-filter": "blur(1rem)",
-                    "filter": "blur(1rem)"
-                  }
-                }
-              },
-              ".link-container": {
-                "display": "flex",
-                "margin-bottom": "2rem"
-              },
-              ".link": {
-                "margin-right": "1rem"
-              },
-              ".mbr-media": {
-                "display": "flex",
-                "height": "100%",
-                "width": "100%",
-                "border-radius": "1.76rem",
-                "overflow": "hidden",
-                "a:hover": {
-                  "background-image": "none !important"
-                }
-              }
-            },
-            ".mbr-media": {
-              "position": "relative",
-              "img": {
-                "width": "100%",
-                "object-fit": "cover"
-              }
-            },
-            ".icon-wrap": {
-              "left": "50%",
-              "top": "50%",
-              "transform": "translate(-50%, -50%)",
-              "position": "absolute",
-              "transition": "all .3s",
-              "&:hover": {
-                "transform": "translate(-50%, -50%)"
-              }
-            },
-            ".mbr-media span": {
-              "font-size": "4rem",
-              "transition": "all 0.2s"
-            },
-            ".modalWindow": {
-              "position": "fixed",
-              "z-index": "5000",
-              "left": "0",
-              "top": "0",
-              "background-color": "rgba(61, 61, 61, 0.65)",
-              "width": "100%",
-              "height": "100%",
-              ".modalWindow-container": {
-                "display": "table-cell",
-                "vertical-align": "middle"
-              },
-              ".modalWindow-video": {
-                "height": "calc(80vw / 1.778)",
-                "width": "80vw",
-                "margin": "0 auto"
-              }
-            },
-            ".close": {
-              "position": "fixed",
-              "opacity": "0.5",
-              "font-size": "22px",
-              "font-weight": "300",
-              "width": "60px",
-              "height": "60px",
-              "border-radius": "50%",
-              "color": "#fff",
-              "top": "2.5rem",
-              "right": "2.5rem",
-              "border": "2px solid #fff",
-              "text-shadow": "none",
-              "z-index": "5",
-              "transition": "opacity 0.3s ease",
-              "align-items": "center",
-              "justify-content": "center",
-              "display": "flex",
-              "&:hover": {
-                "opacity": "1",
-                "background": "#000",
-                "color": "#fff"
-              }
-            },
-            "a": {
-              "&:hover": {
-                "text-decoration-line": "none !important"
-              }
-            }
-          },
-          "_cid": "tTuJqHOQl9",
-          "_anchor": "avideo2-9z",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
           "_name": "afeatures8",
           "_sourceTheme": "expertm5",
-          "_customHTML": "<section class=\"features8 expertm5\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value=\"justify-content-start\">Left</option>\n            <option value=\"justify-content-center\" selected>Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showMainSubtitle\" checked>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n        <header>Card</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Icons\" name=\"showIcon\" checked>\n        <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#ffffff\" condition=\"showIcon\">\n        <select title=\"Icons Align\" name=\"iconsAlign\" condition=\"showIcon\">\n            <option value=\"justify-content-start\">Left</option>\n            <option value=\"justify-content-center\" selected>Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <input type=\"checkbox\" title=\"Hover Icons\" name=\"showHoverIcon\" checked>\n        <input type=\"color\" title=\"Hover Icon Color\" name=\"iconHoverColor\" value=\"#ffffff\" condition=\"showHoverIcon\">\n        <select title=\"Hover Icons Align\" name=\"iconsHoverAlign\" condition=\"showHoverIcon\">\n            <option value=\"justify-content-start\">Left</option>\n            <option value=\"justify-content-center\" selected>Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Card Style</header>\n        <input type=\"color\" title=\"Card BG 1\" name=\"cardBg1\" value=\"#741b47\">\n        <input type=\"color\" title=\"Card BG 2\" name=\"cardBg2\" value=\"#a74d79\">\n        <input type=\"checkbox\" name=\"cardShadow\" title=\"Card Shadow\" checked>\n        <input type=\"color\" title=\"Shadow Color 1\" name=\"shadowColor1\" value=\"#6d7a8c\" condition=\"cardShadow\">\n        <input type=\"color\" title=\"Shadow Color 2\" name=\"shadowColor2\" value=\"#ffffff\" condition=\"cardShadow\">\n        <header>Card Hover</header>\n        <input type=\"color\" title=\"Card Text Color\" name=\"cardHoverText\" value=\"#FFFFFF\">\n        <input type=\"color\" title=\"Card BG 1\" name=\"cardHoverBg1\" value=\"#741b47\">\n        <input type=\"color\" title=\"Card BG 2\" name=\"cardHoverBg2\" value=\"#16181c\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/expertm5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/expertm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#212428\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\" mbr-if=\"showMainTitle || showMainSubtitle\">\n                <div class=\"mbr-section-head\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showMainTitle\" data-app-selector=\".mbr-section-title\"><b>\n                        Learn more about the project</b></h3>\n                    <h5 class=\"mbr-section-subtitle mbr-fonts-style mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showMainSubtitle\" data-app-selector=\".mbr-section-subtitle\">Understanding the interplay between animals and microorganisms associated with them has been recognised as an essential topic by the European Commission for improving and optimising animal health, welfare, and production worldwide.<div><br></div><div>We are developing a framework to generate and analyse 3D’omic data that will unveil microbe-microbe and animal-microbe interactions that have so far remained undetected. Using poultry and swine production systems, the project analyses the effects of different factors, including animal development, diet, exposure to pathogens, and management practices on the 3D omics landscapes. This innovative research paves the way to improved animal breeding practices, development of microbiota- and host-tailored feeds, and animal health treatments, increasing production efficiency and animal welfare.</div></h5>\n                </div>\n            </div>\n        </div>\n        <div class=\"row card-row {{contentAlign}}\" mbr-if=\"showIcon || showTitle || showText || showHoverIcon\">\n            <div class=\"card col-12 col-md-6 col-xl-4\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-bg\"></div>\n                    <div class=\"card-box\">\n                        <div class=\"iconfont-wrapper {{iconsAlign}}\" mbr-if=\"showIcon\">\n                            <a href=\"concept.html\"><span mbr-icon class=\"mbr-iconfont mbrib-idea\"></span></a>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                           <b>Concept</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n                            Eleifend mi in nulla posuere sollicitudin aliquam ultrices. Ipsum consequat nisl vel pretium\n                            lectus quam id leo.\n                        </p>\n                        <div class=\"iconfont-wrapper-hover {{iconsHoverAlign}}\" mbr-if=\"showHoverIcon\">\n                            <a href=\"concept.html\"><span mbr-icon class=\"mbr-iconfont mobi-mbri-right mobi-mbri\"></span></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card col-12 col-md-6 col-xl-4\" mbr-if=\"cardsAmount>1\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-bg\"></div>\n                    <div class=\"card-box\">\n                        <div class=\"iconfont-wrapper {{iconsAlign}}\" mbr-if=\"showIcon\">\n                            <a href=\"consortium.html\"><span mbr-icon class=\"mbr-iconfont mobi-mbri-users mobi-mbri\"></span></a>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>Consortium</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n                            Libero id faucibus nisl tincidunt eget nullam non nisi. Nunc aliquet bibendum enim facilisis gravida neque.\n                        </p>\n                        <div class=\"iconfont-wrapper-hover {{iconsHoverAlign}}\" mbr-if=\"showHoverIcon\">\n                            <a href=\"consortium.html\"><span mbr-icon class=\"mbr-iconfont mobi-mbri-right mobi-mbri\"></span></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-md-6 col-xl-4\" mbr-if=\"cardsAmount>2\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-bg\"></div>\n                    <div class=\"card-box\">\n                        <div class=\"iconfont-wrapper {{iconsAlign}}\" mbr-if=\"showIcon\">\n                            <a href=\"sneak_peek.html\"><span mbr-icon class=\"mbr-iconfont mbrib-preview\"></span></a>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>Sneak-peek</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n                            Ac tortor vitae purus faucibus ornare suspendisse. Felis eget velit aliquet sagittis id consectetur purus ut.\n                        </p>\n                        <div class=\"iconfont-wrapper-hover {{iconsHoverAlign}}\" mbr-if=\"showHoverIcon\">\n                            <a href=\"sneak_peek.html\"><span mbr-icon class=\"mbr-iconfont mobi-mbri-right mobi-mbri\"></span></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-md-6 col-xl-4\" mbr-if=\"cardsAmount>3\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-bg\"></div>\n                    <div class=\"card-box\">\n                        <div class=\"iconfont-wrapper {{iconsAlign}}\" mbr-if=\"showIcon\">\n                            <a href=\"events.html\"><span mbr-icon class=\"mbr-iconfont mbrib-contact-form\"></span></a>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>Events</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n                            Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Velit aliquet sagittis id consectetur purus ut.\n                        </p>\n                        <div class=\"iconfont-wrapper-hover {{iconsHoverAlign}}\" mbr-if=\"showHoverIcon\">\n                            <a href=\"events.html\"><span mbr-icon class=\"mbr-iconfont mobi-mbri-right mobi-mbri\"></span></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-md-6 col-xl-4\" mbr-if=\"cardsAmount>4\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-bg\"></div>\n                    <div class=\"card-box\">\n                        <div class=\"iconfont-wrapper {{iconsAlign}}\" mbr-if=\"showIcon\">\n                            <a href=\"outreach.html\"><span mbr-icon class=\"mbr-iconfont mbrib-cust-feedback\"></span></a>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>Outreach</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n                            Tincidunt dui ut ornare lectus. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu.\n                        </p>\n                        <div class=\"iconfont-wrapper-hover {{iconsHoverAlign}}\" mbr-if=\"showHoverIcon\">\n                            <a href=\"outreach.html\"><span mbr-icon class=\"mbr-iconfont mobi-mbri-right mobi-mbri\"></span></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-md-6 col-xl-4\" mbr-if=\"cardsAmount>5\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-bg\"></div>\n                    <div class=\"card-box\">\n                        <div class=\"iconfont-wrapper {{iconsAlign}}\" mbr-if=\"showIcon\">\n                            <a href=\"cooperations.html\"><span mbr-icon class=\"mbr-iconfont mbrib-link\"></span></a>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>Cooperations</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n                            Nunc sed augue lacus viverra. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae.\n                        </p>\n                        <div class=\"iconfont-wrapper-hover {{iconsHoverAlign}}\" mbr-if=\"showHoverIcon\">\n                            <a href=\"cooperations.html\"><span mbr-icon class=\"mbr-iconfont mobi-mbri-right mobi-mbri\"></span></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section class=\"features8 expertm5\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value=\"justify-content-start\">Left</option>\n            <option value=\"justify-content-center\" selected>Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showMainSubtitle\" checked>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\" selected>6</option>\n        </select>\n        <header>Card</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Icons\" name=\"showIcon\" checked>\n        <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#ffffff\" condition=\"showIcon\">\n        <select title=\"Icons Align\" name=\"iconsAlign\" condition=\"showIcon\">\n            <option value=\"justify-content-start\">Left</option>\n            <option value=\"justify-content-center\" selected>Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <input type=\"checkbox\" title=\"Hover Icons\" name=\"showHoverIcon\" checked>\n        <input type=\"color\" title=\"Hover Icon Color\" name=\"iconHoverColor\" value=\"#ffffff\" condition=\"showHoverIcon\">\n        <select title=\"Hover Icons Align\" name=\"iconsHoverAlign\" condition=\"showHoverIcon\">\n            <option value=\"justify-content-start\">Left</option>\n            <option value=\"justify-content-center\" selected>Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Card Style</header>\n        <input type=\"color\" title=\"Card BG 1\" name=\"cardBg1\" value=\"#741b47\">\n        <input type=\"color\" title=\"Card BG 2\" name=\"cardBg2\" value=\"#a74d79\">\n        <input type=\"checkbox\" name=\"cardShadow\" title=\"Card Shadow\" checked>\n        <input type=\"color\" title=\"Shadow Color 1\" name=\"shadowColor1\" value=\"#6d7a8c\" condition=\"cardShadow\">\n        <input type=\"color\" title=\"Shadow Color 2\" name=\"shadowColor2\" value=\"#ffffff\" condition=\"cardShadow\">\n        <header>Card Hover</header>\n        <input type=\"color\" title=\"Card Text Color\" name=\"cardHoverText\" value=\"#FFFFFF\">\n        <input type=\"color\" title=\"Card BG 1\" name=\"cardHoverBg1\" value=\"#741b47\">\n        <input type=\"color\" title=\"Card BG 2\" name=\"cardHoverBg2\" value=\"#16181c\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/expertm5/components/_images/background1.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/expertm5/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#212428\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12\" mbr-if=\"showMainTitle || showMainSubtitle\">\n                <div class=\"mbr-section-head\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-2\" mbr-if=\"showMainTitle\" data-app-selector=\".mbr-section-title\"><b>\n                        Learn more about the project</b></h3>\n                    <h5 class=\"mbr-section-subtitle mbr-fonts-style mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showMainSubtitle\" data-app-selector=\".mbr-section-subtitle\">Understanding the interplay between animals and microorganisms associated with them has been recognised as an essential topic by the European Commission for improving and optimising animal health, welfare, and production worldwide.<div><br></div><div>In 3D'omics, we developed a framework to generate and analyse 3D’omic data that helps to unveil microbe-microbe and animal-microbe interactions that have so far remained undetected. Using poultry and swine production systems, the project analyses the effects of different factors, including animal development, diet, exposure to pathogens, and management practices on the 3D omics landscapes. This innovative research paves the way to improved animal breeding practices, development of microbiota- and host-tailored feeds, and animal health treatments, increasing production efficiency and animal welfare.</div></h5>\n                </div>\n            </div>\n        </div>\n        <div class=\"row card-row {{contentAlign}}\" mbr-if=\"showIcon || showTitle || showText || showHoverIcon\">\n            <div class=\"card col-12 col-md-6 col-xl-4\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-bg\"></div>\n                    <div class=\"card-box\">\n                        <div class=\"iconfont-wrapper {{iconsAlign}}\" mbr-if=\"showIcon\">\n                            <a href=\"concept.html\"><span mbr-icon class=\"mbr-iconfont mbrib-idea\"></span></a>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                           <b>Concept</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n                            Eleifend mi in nulla posuere sollicitudin aliquam ultrices. Ipsum consequat nisl vel pretium\n                            lectus quam id leo.\n                        </p>\n                        <div class=\"iconfont-wrapper-hover {{iconsHoverAlign}}\" mbr-if=\"showHoverIcon\">\n                            <a href=\"concept.html\"><span mbr-icon class=\"mbr-iconfont mobi-mbri-right mobi-mbri\"></span></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n\n            <div class=\"card col-12 col-md-6 col-xl-4\" mbr-if=\"cardsAmount>1\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-bg\"></div>\n                    <div class=\"card-box\">\n                        <div class=\"iconfont-wrapper {{iconsAlign}}\" mbr-if=\"showIcon\">\n                            <a href=\"consortium.html\"><span mbr-icon class=\"mbr-iconfont mobi-mbri-users mobi-mbri\"></span></a>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>Consortium</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n                            Libero id faucibus nisl tincidunt eget nullam non nisi. Nunc aliquet bibendum enim facilisis gravida neque.\n                        </p>\n                        <div class=\"iconfont-wrapper-hover {{iconsHoverAlign}}\" mbr-if=\"showHoverIcon\">\n                            <a href=\"consortium.html\"><span mbr-icon class=\"mbr-iconfont mobi-mbri-right mobi-mbri\"></span></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-md-6 col-xl-4\" mbr-if=\"cardsAmount>2\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-bg\"></div>\n                    <div class=\"card-box\">\n                        <div class=\"iconfont-wrapper {{iconsAlign}}\" mbr-if=\"showIcon\">\n                            <a href=\"sneak_peek.html\"><span mbr-icon class=\"mbr-iconfont mbrib-preview\"></span></a>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\"><b>Sneak-peek</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n                            Ac tortor vitae purus faucibus ornare suspendisse. Felis eget velit aliquet sagittis id consectetur purus ut.\n                        </p>\n                        <div class=\"iconfont-wrapper-hover {{iconsHoverAlign}}\" mbr-if=\"showHoverIcon\">\n                            <a href=\"sneak_peek.html\"><span mbr-icon class=\"mbr-iconfont mobi-mbri-right mobi-mbri\"></span></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-md-6 col-xl-4\" mbr-if=\"cardsAmount>3\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-bg\"></div>\n                    <div class=\"card-box\">\n                        <div class=\"iconfont-wrapper {{iconsAlign}}\" mbr-if=\"showIcon\">\n                            <a href=\"events.html\"><span mbr-icon class=\"mbr-iconfont mbrib-contact-form\"></span></a>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>Events</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n                            Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa. Velit aliquet sagittis id consectetur purus ut.\n                        </p>\n                        <div class=\"iconfont-wrapper-hover {{iconsHoverAlign}}\" mbr-if=\"showHoverIcon\">\n                            <a href=\"events.html\"><span mbr-icon class=\"mbr-iconfont mobi-mbri-right mobi-mbri\"></span></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-md-6 col-xl-4\" mbr-if=\"cardsAmount>4\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-bg\"></div>\n                    <div class=\"card-box\">\n                        <div class=\"iconfont-wrapper {{iconsAlign}}\" mbr-if=\"showIcon\">\n                            <a href=\"outreach.html\"><span mbr-icon class=\"mbr-iconfont mbrib-cust-feedback\"></span></a>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>Outreach</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n                            Tincidunt dui ut ornare lectus. Eu tincidunt tortor aliquam nulla facilisi cras fermentum odio eu.\n                        </p>\n                        <div class=\"iconfont-wrapper-hover {{iconsHoverAlign}}\" mbr-if=\"showHoverIcon\">\n                            <a href=\"outreach.html\"><span mbr-icon class=\"mbr-iconfont mobi-mbri-right mobi-mbri\"></span></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"card col-12 col-md-6 col-xl-4\" mbr-if=\"cardsAmount>5\">\n                <div class=\"card-wrapper\">\n                    <div class=\"card-bg\"></div>\n                    <div class=\"card-box\">\n                        <div class=\"iconfont-wrapper {{iconsAlign}}\" mbr-if=\"showIcon\">\n                            <a href=\"cooperations.html\"><span mbr-icon class=\"mbr-iconfont mbrib-link\"></span></a>\n                        </div>\n                        <h5 class=\"card-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\" data-app-selector=\".card-title\">\n                            <b>Cooperations</b></h5>\n                        <p class=\"card-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".card-text\">\n                            Nunc sed augue lacus viverra. Sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae.\n                        </p>\n                        <div class=\"iconfont-wrapper-hover {{iconsHoverAlign}}\" mbr-if=\"showHoverIcon\">\n                            <a href=\"cooperations.html\"><span mbr-icon class=\"mbr-iconfont mobi-mbri-right mobi-mbri\"></span></a>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_styles": {
             "padding-top": "(@paddingTop * 1rem)",
             "padding-bottom": "(@paddingBottom * 1rem)",
@@ -1403,6 +1178,190 @@
           "_params": {}
         },
         {
+          "_name": "video01",
+          "_sourceTheme": "woodm4",
+          "_customHTML": "<section class=\"video1 woodm4_vedeo1\" group=\"Images & Videos\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"PlayerVimeo\" mbr-class=\"{'mbr-fullscreen': fullScreen,\n                    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        \n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showtext\" checked>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showtitle\" checked>\n        <input type=\"checkbox\" title=\"Show Links\" name=\"showlinks\">\n        <input type=\"color\" title=\"Icon Color\" name=\"iconColor\" value=\"#741b47\">\n        <input type=\"color\" title=\"Icon Border Color\" name=\"iconBGColor\" value=\"#741b47\">\n        <input type=\"color\" title=\"Overlay Color\" name=\"cardoverlayColor\" value=\"#f3d3e2\">\n        <input type=\"image\" name=\"video1\" value=\"@PROJECT_PATH@/assets/images/screenshot-2023-07-03-at-14.20.01-1213x758.png\" title=\"Background Image 1\">\n        <input type=\"image\" name=\"video2\" value=\"@PROJECT_PATH@/assets/images/ceh-3domics-results-gfx-team-thumbnail-1920x1080.jpg\" title=\"Background Image 2\">\n        <input type=\"text\" title=\"Modal Video 1\" name=\"modalVideo1\" value=\"https://www.youtube.com/watch?v=Lo75rhOcLkk&list=PL6VLMuOKWOcmPLrP-gZMHfXrWdqXTiyxr\">\n        <input type=\"text\" title=\"Modal Video 2\" name=\"modalVideo2\" value=\"https://www.youtube.com/watch?v=RWeq0SPEJAM&list=PL6VLMuOKWOcmPLrP-gZMHfXrWdqXTiyxr&index=3\">\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"@ADDONS_PATH@/woodm4/components/_images/background1.jpg\" title=\"Background Image\">\n            <input type=\"color\" value=\"#ffffff\" title=\"Background Color\" selected>\n            <input type=\"video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\" title=\"Background Video\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/woodm4/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.4\" condition=\"overlay && bg.type !== 'color'\">\n        \n    </mbr-parameters>\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container align-center\">\n        <div class=\"row justify-content-md-center\">\n            <div class=\"col-lg-7\">\n                <h3 class=\"mbr-section-subtitle align-center mbr-black mbr-light pb-5 mbr-fonts-style\" mbr-if=\"showtext\" mbr-theme-style=\"display-2\"><b>Watch our explainer videos <br>for a quick insight into 3D'omics</b></h3>\n            </div>\n            <div class=\"mbr-white col-md-12 col-12 col-lg-6 md-pb\">\n                <div class=\"box bg1\">\n                    <div class=\"mbr-media show-modal align-center py-2\" data-modal=\".modalWindow\" data-url=\"{{modalVideo1}}\">\n                        <div class=\"icon-wrap\">\n                            <a href=\"https://www.youtube.com/watch?v=Lo75rhOcLkk&list=PL6VLMuOKWOcmPLrP-gZMHfXrWdqXTiyxr&index=1\"><span mbr-icon class=\"mbr-iconfont mobi-mbri-play mobi-mbri\"></span></a>\n                        </div>\n                    </div>\n                </div>\n                <h2 class=\"mbr-section-title pt-5 align-center mbr-bold mbr-black mbr-fonts-style\" data-app-selector=\".mbr-section-title, .link-wrap\" mbr-theme-style=\"display-5\" mbr-if=\"showtitle\">What is 3D'omics?</h2>\n                <div class=\"link-wrap pt-3\" mbr-if=\"showlinks\">\n                    <h4 class=\"link align-center mbr-bold mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                        View More</h4>\n                </div>\n            </div>\n            <div class=\"mbr-white  col-md-12 col-12 col-lg-6\">\n                <div class=\"box bg2\">\n                    <div class=\"mbr-media show-modal align-center py-2\" data-modal=\".modalWindow\" data-url=\"{{modalVideo2}}\">\n                        <div class=\"icon-wrap\">\n                            <a href=\"https://www.youtube.com/watch?v=RWeq0SPEJAM&list=PL6VLMuOKWOcmPLrP-gZMHfXrWdqXTiyxr&index=3\"><span mbr-icon class=\"mbr-iconfont mobi-mbri-play mobi-mbri\"></span></a>\n                        </div>\n                    </div>\n                </div>\n                <h2 class=\"mbr-section-title pt-5 align-center mbr-bold mbr-black mbr-fonts-style\" data-app-selector=\".mbr-section-title, .link-wrap\" mbr-theme-style=\"display-5\" mbr-if=\"showtitle\">Challenges and Solutions</h2>\n                <div class=\"link-wrap pt-3\" mbr-if=\"showlinks\">\n                    <h4 class=\"link align-center mbr-bold mbr-black mbr-fonts-style\" mbr-theme-style=\"display-7\">\n                        View More</h4>\n                </div>\n            </div>\n        </div>\n    </div>\n\n    <div>\n        <div class=\"modalWindow\" style=\"display: none;\">\n            <div class=\"modalWindow-container\">\n                <div class=\"modalWindow-video-container\">\n                    <div class=\"modalWindow-video\">\n                        <iframe width=\"100%\" height=\"100%\" data-src=\"{{modalVideo1}}\" frameborder=\"0\" allowfullscreen=\"1\"></iframe>\n                    </div>\n                    <a class=\"close\" role=\"button\" data-dismiss=\"modal\">\n                        <span aria-hidden=\"true\" class=\"mbri-close mbr-iconfont closeModal\"></span>\n                        <span class=\"sr-only\">Close</span>\n                    </a>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 15px)",
+              "padding-bottom": "(@paddingBottom * 15px)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "@media (max-width: 992px)": {
+              "& when not (@fullScreen)": {
+                "padding-top": "(@paddingTop * 10px)",
+                "padding-bottom": "(@paddingBottom * 10px)"
+              },
+              ".md-pb": {
+                "margin-bottom": "2rem"
+              }
+            },
+            ".link": {
+              "position": "relative",
+              "width": "fit-content",
+              "display": "inline-block",
+              "padding-right": "2rem",
+              "cursor": "pointer",
+              "&:before": {
+                "content": "'\\e966'",
+                "font-family": "MobiriseIcons !important",
+                "position": "absolute",
+                "right": "0rem",
+                "transition": "all 0.3s",
+                "top": "50%",
+                "transform": "translateY(-50%)",
+                "font-size": "1rem",
+                "color": "currentColor"
+              },
+              "&:hover": {
+                "&:before": {
+                  "margin-right": "-0.4rem"
+                }
+              }
+            },
+            ".box": {
+              "background-size": "cover",
+              "background-position": "center",
+              "height": "500px",
+              "margin": "auto",
+              "display": "flex",
+              "align-items": "center",
+              "justify-content": "center",
+              "position": "relative",
+              "&:before": {
+                "content": "''",
+                "position": "absolute",
+                "top": "0",
+                "left": "0",
+                "background": "@cardoverlayColor",
+                "opacity": "0.6",
+                "width": "100%",
+                "height": "100%",
+                "z-index": "1"
+              }
+            },
+            ".bg1": {
+              "background-image": "url(@video1)"
+            },
+            ".bg2": {
+              "background-image": "url(@video2)"
+            },
+            ".icon-wrap": {
+              "border": "2px solid @iconBGColor",
+              "border-radius": "50%",
+              "width": "80px",
+              "height": "80px",
+              "margin": "auto",
+              "display": "flex",
+              "justify-content": "center",
+              "align-items": "center",
+              "transition": "all 0.3s",
+              "position": "relative",
+              "z-index": "2",
+              "&:hover": {
+                "transform": "scale(1.1)"
+              }
+            },
+            ".icon-wrap span": {
+              "padding-left": "8px"
+            },
+            ".mbr-media span": {
+              "font-size": "38px",
+              "cursor": "pointer",
+              "position": "relative",
+              "display": "inline-block",
+              "transition": "all 0.25s",
+              "color": "@iconColor !important",
+              "&.mbri-play:before": {
+                "position": "absolute",
+                "left": "50%",
+                "-webkit-transform": "translateX(-35%)",
+                "-moz-transform": "translateX(-35%)",
+                "-ms-transform": "translateX(-35%)",
+                "-o-transform": "translateX(-35%)",
+                "transform": "translateX(-35%)"
+              }
+            },
+            ".modalWindow": {
+              "position": "fixed",
+              "z-index": "5000",
+              "left": "0",
+              "top": "0",
+              "background-color": "rgba(61, 61, 61, 0.65)",
+              "width": "100%",
+              "height": "100%",
+              ".modalWindow-container": {
+                "display": "table-cell",
+                "vertical-align": "middle"
+              },
+              ".modalWindow-video": {
+                "height": "calc(80vw / 1.778)",
+                "width": "80vw",
+                "margin": "0 auto"
+              }
+            },
+            "a.close": {
+              "position": "absolute",
+              "right": "4vw",
+              "top": "4vh",
+              "color": "#ffffff",
+              "z-index": "5000000",
+              "font-size": "37px",
+              "background": "#000",
+              "padding": "20px",
+              "border-radius": "50%",
+              "&:hover": {
+                "color": "#ffffff"
+              }
+            },
+            "@media (max-width: 576px)": {
+              "& when not (@fullScreen)": {
+                "padding-top": "(@paddingTop * 7px)",
+                "padding-bottom": "(@paddingBottom * 7px)"
+              },
+              ".box": {
+                "height": "250px"
+              }
+            },
+            "H4": {
+              "color": "#b69b74"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".mbr-section-title, .link-wrap": {
+              "color": "#741b47",
+              "text-align": "center"
+            },
+            "H3": {
+              "color": "#741b47"
+            }
+          },
+          "_cid": "uYntfWeFJ4",
+          "_anchor": "video01-dq",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
           "alias": "eb-twitter-feed",
           "_isSecondary": true,
           "_styles": {},
@@ -1531,42 +1490,6 @@
         "order": "3"
       },
       "components": [
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            ".links": {
-              "text-align": "center",
-              "color": "#ffffff"
-            },
-            "p": {
-              "margin": "0"
-            },
-            "a": {
-              "color": "#ffffff",
-              "&:hover": {
-                "-webkit-transition": "0.3s all",
-                "transition": "0.3s all"
-              }
-            }
-          },
-          "_name": "footer2",
-          "_sourceTheme": "medicalm4",
-          "_customHTML": "<section class=\"footer2 medicalm4_footer2\" group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#741b47\" title=\"Color\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#656565\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n                <p class=\"mbr-text links mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".links\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "sPLhB0TNCL",
-          "_anchor": "footer2-1p",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
         {
           "alias": false,
           "_styles": {
@@ -2365,6 +2288,42 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".links": {
+              "text-align": "center",
+              "color": "#ffffff"
+            },
+            "p": {
+              "margin": "0"
+            },
+            "a": {
+              "color": "#ffffff",
+              "&:hover": {
+                "-webkit-transition": "0.3s all",
+                "transition": "0.3s all"
+              }
+            }
+          },
+          "_name": "footer2",
+          "_sourceTheme": "medicalm4",
+          "_customHTML": "<section class=\"footer2 medicalm4_footer2\" group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#741b47\" title=\"Color\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#656565\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n                <p class=\"mbr-text links mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".links\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "sPLhB0TNCL",
+          "_anchor": "footer2-1p",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         },
         {
@@ -7982,42 +7941,6 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            ".links": {
-              "text-align": "center",
-              "color": "#ffffff"
-            },
-            "p": {
-              "margin": "0"
-            },
-            "a": {
-              "color": "#ffffff",
-              "&:hover": {
-                "-webkit-transition": "0.3s all",
-                "transition": "0.3s all"
-              }
-            }
-          },
-          "_name": "footer2",
-          "_sourceTheme": "medicalm4",
-          "_customHTML": "<section class=\"footer2 medicalm4_footer2\" group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#741b47\" title=\"Color\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#656565\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n                <p class=\"mbr-text links mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".links\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "tIny0R5fGi",
-          "_anchor": "footer2-5u",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
             ".is-builder & .navbar": {
               "padding-top": "20px !important"
             },
@@ -8813,6 +8736,42 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".links": {
+              "text-align": "center",
+              "color": "#ffffff"
+            },
+            "p": {
+              "margin": "0"
+            },
+            "a": {
+              "color": "#ffffff",
+              "&:hover": {
+                "-webkit-transition": "0.3s all",
+                "transition": "0.3s all"
+              }
+            }
+          },
+          "_name": "footer2",
+          "_sourceTheme": "medicalm4",
+          "_customHTML": "<section class=\"footer2 medicalm4_footer2\" group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#741b47\" title=\"Color\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#656565\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n                <p class=\"mbr-text links mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".links\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tIny0R5fGi",
+          "_anchor": "footer2-5u",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         },
         {
@@ -9981,42 +9940,6 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            ".links": {
-              "text-align": "center",
-              "color": "#ffffff"
-            },
-            "p": {
-              "margin": "0"
-            },
-            "a": {
-              "color": "#ffffff",
-              "&:hover": {
-                "-webkit-transition": "0.3s all",
-                "transition": "0.3s all"
-              }
-            }
-          },
-          "_name": "footer2",
-          "_sourceTheme": "medicalm4",
-          "_customHTML": "<section class=\"footer2 medicalm4_footer2\" group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#741b47\" title=\"Color\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#656565\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n                <p class=\"mbr-text links mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".links\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "tInzpjE8Rw",
-          "_anchor": "footer2-64",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
             ".is-builder & .navbar": {
               "padding-top": "20px !important"
             },
@@ -10843,6 +10766,42 @@
           "_name": "footer2",
           "_sourceTheme": "medicalm4",
           "_customHTML": "<section class=\"footer2 medicalm4_footer2\" group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#741b47\" title=\"Color\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#656565\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n                <p class=\"mbr-text links mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".links\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tInzpjE8Rw",
+          "_anchor": "footer2-64",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".links": {
+              "text-align": "center",
+              "color": "#ffffff"
+            },
+            "p": {
+              "margin": "0"
+            },
+            "a": {
+              "color": "#ffffff",
+              "&:hover": {
+                "-webkit-transition": "0.3s all",
+                "transition": "0.3s all"
+              }
+            }
+          },
+          "_name": "footer2",
+          "_sourceTheme": "medicalm4",
+          "_customHTML": "<section class=\"footer2 medicalm4_footer2\" group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#741b47\" title=\"Color\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#656565\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n                <p class=\"mbr-text links mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".links\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
           "_cid": "tInzpkdd7A",
           "_anchor": "footer2-66",
           "_protectedParams": [],
@@ -11594,42 +11553,6 @@
         "order": "1"
       },
       "components": [
-        {
-          "alias": false,
-          "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            ".links": {
-              "text-align": "center",
-              "color": "#ffffff"
-            },
-            "p": {
-              "margin": "0"
-            },
-            "a": {
-              "color": "#ffffff",
-              "&:hover": {
-                "-webkit-transition": "0.3s all",
-                "transition": "0.3s all"
-              }
-            }
-          },
-          "_name": "footer2",
-          "_sourceTheme": "medicalm4",
-          "_customHTML": "<section class=\"footer2 medicalm4_footer2\" group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#741b47\" title=\"Color\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#656565\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n                <p class=\"mbr-text links mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".links\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "tIn0DlogFS",
-          "_anchor": "footer2-5a",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
         {
           "alias": false,
           "_styles": {
@@ -12428,6 +12351,42 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".links": {
+              "text-align": "center",
+              "color": "#ffffff"
+            },
+            "p": {
+              "margin": "0"
+            },
+            "a": {
+              "color": "#ffffff",
+              "&:hover": {
+                "-webkit-transition": "0.3s all",
+                "transition": "0.3s all"
+              }
+            }
+          },
+          "_name": "footer2",
+          "_sourceTheme": "medicalm4",
+          "_customHTML": "<section class=\"footer2 medicalm4_footer2\" group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#741b47\" title=\"Color\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#656565\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n                <p class=\"mbr-text links mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".links\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tIn0DlogFS",
+          "_anchor": "footer2-5a",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         },
         {
@@ -14092,42 +14051,6 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            ".links": {
-              "text-align": "center",
-              "color": "#ffffff"
-            },
-            "p": {
-              "margin": "0"
-            },
-            "a": {
-              "color": "#ffffff",
-              "&:hover": {
-                "-webkit-transition": "0.3s all",
-                "transition": "0.3s all"
-              }
-            }
-          },
-          "_name": "footer2",
-          "_sourceTheme": "medicalm4",
-          "_customHTML": "<section class=\"footer2 medicalm4_footer2\" group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#741b47\" title=\"Color\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#656565\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n                <p class=\"mbr-text links mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".links\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "tIyleEQdlG",
-          "_anchor": "footer2-6z",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
             ".is-builder & .navbar": {
               "padding-top": "20px !important"
             },
@@ -14923,6 +14846,42 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".links": {
+              "text-align": "center",
+              "color": "#ffffff"
+            },
+            "p": {
+              "margin": "0"
+            },
+            "a": {
+              "color": "#ffffff",
+              "&:hover": {
+                "-webkit-transition": "0.3s all",
+                "transition": "0.3s all"
+              }
+            }
+          },
+          "_name": "footer2",
+          "_sourceTheme": "medicalm4",
+          "_customHTML": "<section class=\"footer2 medicalm4_footer2\" group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#741b47\" title=\"Color\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#656565\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n                <p class=\"mbr-text links mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".links\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tIyleEQdlG",
+          "_anchor": "footer2-6z",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         },
         {
@@ -16202,42 +16161,6 @@
         {
           "alias": false,
           "_styles": {
-            "padding-top": "(@paddingTop * 15px)",
-            "padding-bottom": "(@paddingBottom * 15px)",
-            "& when (@bg-type = 'image')": {
-              "background-image": "url(@bg-value)"
-            },
-            "& when (@bg-type = 'color')": {
-              "background-color": "@bg-value"
-            },
-            ".links": {
-              "text-align": "center",
-              "color": "#ffffff"
-            },
-            "p": {
-              "margin": "0"
-            },
-            "a": {
-              "color": "#ffffff",
-              "&:hover": {
-                "-webkit-transition": "0.3s all",
-                "transition": "0.3s all"
-              }
-            }
-          },
-          "_name": "footer2",
-          "_sourceTheme": "medicalm4",
-          "_customHTML": "<section class=\"footer2 medicalm4_footer2\" group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#741b47\" title=\"Color\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#656565\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n                <p class=\"mbr-text links mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".links\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
-          "_cid": "tIF6nOW3Bl",
-          "_anchor": "footer2-7l",
-          "_protectedParams": [],
-          "_global": false,
-          "_once": false,
-          "_params": {}
-        },
-        {
-          "alias": false,
-          "_styles": {
             ".is-builder & .navbar": {
               "padding-top": "20px !important"
             },
@@ -17033,6 +16956,42 @@
           "_protectedParams": [],
           "_global": true,
           "_once": "menu",
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".links": {
+              "text-align": "center",
+              "color": "#ffffff"
+            },
+            "p": {
+              "margin": "0"
+            },
+            "a": {
+              "color": "#ffffff",
+              "&:hover": {
+                "-webkit-transition": "0.3s all",
+                "transition": "0.3s all"
+              }
+            }
+          },
+          "_name": "footer2",
+          "_sourceTheme": "medicalm4",
+          "_customHTML": "<section class=\"footer2 medicalm4_footer2\" group=\"Footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value=\"../_images/background1.jpg\" title=\"Image\">\n            <input type=\"color\" value=\"#741b47\" title=\"Color\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#656565\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class=\"container\">\n\n        <div class=\"row\">\n            <div class=\"col-sm-12\">\n                <p class=\"mbr-text links mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".links\"></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tIF6nOW3Bl",
+          "_anchor": "footer2-7l",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
           "_params": {}
         },
         {
@@ -19389,7 +19348,7 @@
           },
           "_name": "timeline1",
           "_sourceTheme": "medicalm4",
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"timeline1 medicalm4_timeline1\" group=\"Timelines\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel)-->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <select title=\"Timelines count\" name=\"timelinesAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n            <option value=\"7\">7</option>\n            <option value=\"8\">8</option>\n            <option value=\"9\">9</option>\n            <option value=\"10\">10</option>\n            <option value=\"11\">11</option>\n            <option value=\"12\" selected>12</option>\n        </select>\n        <input type=\"checkbox\" title=\"Reverse Timeline\" name=\"reverseTimeline\" checked>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Dates\" name=\"showDates\" checked>\n        <input type=\"checkbox\" title=\"Images\" name=\"showImages\" checked>\n        <input type=\"checkbox\" title=\"Timeline Titles\" name=\"showTimelineTitles\" checked>\n        <input type=\"checkbox\" title=\"Timeline Text\" name=\"showTimelineText\" checked>\n        <input type=\"checkbox\" title=\"Images\" name=\"showImages\" checked>\n        <header>Colors</header>\n        <input type=\"color\" title=\"Timelines\" name=\"timelineColor\" value=\"#bf910a\">\n        <input type=\"color\" title=\"Timeline Dot Color\" name=\"timelineDotColor\" value=\"#bf910a\">\n\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value title=\"Image\">\n            <input type=\"color\" value=\"#ffffff\" title=\"Color\" selected>\n            <input type=\"video\" value=\"https://www.youtube.com/watch?v=9morbKMwCu4\" title=\"Video\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container align-center\">\n        <h3 class=\"mbr-subtitle mbr-fonts-style mbr-bold\" data-app-selector=\".mbr-subtitle\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-4\">WHO WE ARE</h3>\n        <h1 class=\"mbr-section-title mbr-fonts-style mbr-bold\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\">The NY Central Hospital</h1>\n        <h2 class=\"mbr-section-text mbr-fonts-style mbr-light\" data-app-selector=\".mbr-section-text\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a nisi\n            faucibus,\n            blandit nisl quis, ornare mauris. Quisque facilisis gravida velit, quis tempus eros. Aenean quis nisi\n            consequat, elementum erat id, ultricies risus.</h2>\n\n        <div class=\"timelines-container\" mbri-timelines mbr-class=\"{'pt-4':!showSubtitle, 'reverseTimeline' : reverseTimeline}\">\n            <!--1-->\n            <div class=\"row timeline-element first-separline\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 1}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot1-510x157.png\" alt title>\n                        </div>\n\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">\n                        21 Jan&nbsp;</span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><a href=\"https://cassyni.com/s/mvif-35\" class=\"text-primary\" target=\"_blank\">Microbiome Virtual International Forum (digital)</a></h4>\n\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">Haris Zafeiropoulos (KUL) presented his research at the Microbiome Virtual International Forum, which is a recurring bite-sized alternative to multi-day microbiome conferences.<br></p>\n                    </div>\n                </div>\n            </div>\n            <!--2-->\n            <div class=\"row timeline-element \" mbr-if=\"timelinesAmount > 1\" mbr-class=\"{'separline':timelinesAmount>2 &amp;&amp; !reverseTimeline || !reverseTimeline &amp;&amp; timelinesAmount > 2 || reverseTimeline &amp;&amp; timelinesAmount > 1}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/ecogen-webinar-series-2025-sm-linkedin-post-4-510x510.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">\n                        6 Mar&nbsp;</span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><b>3D'omics co-organised</b><br><span style=\"font-weight: normal;\"><a href=\"https://www.youtube.com/watch?v=eqfAkQcDAO0\" class=\"text-primary\">EcoGen Cluster Webinar - Ep. 1 (digital)</a></span></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">3D'omics is part of the EcoGen Cluster together with HoloRuminant, Geronimo, RUMIGEN, and Re-Livestock. To foster collaboration across these projects and explore potential synergies for long-term impact in sustainable livestock production, we launched a webinar series - starting with&nbsp;\"Transforming Livestock Systems Through Integrated Research\". You can <a href=\"https://www.youtube.com/watch?v=eqfAkQcDAO0\" class=\"text-primary\">watch the recording here!</a><br></p>\n                    </div>\n                </div>\n            </div>\n            <!--3-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 2\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 3 || reverseTimeline &amp;&amp; timelinesAmount > 2}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot2-510x169.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">17-20&nbsp;Mar&nbsp;</span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><div><a href=\"https://aquaecomics.symposium.inrae.fr/\" class=\"text-primary\">AquaEcOmics (Evian)</a></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">Karoline Faust (KUL) presented at the AquaEcOmics meeting, discussing metabarcoding, metagenomics and other omics methods that revolutionise the study and monitoring of aquatic ecosystems. <br></p>\n                    </div>\n                </div>\n            </div>\n            <!--4-->\n            <div class=\"row timeline-element \" mbr-if=\"timelinesAmount > 3\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 4 || reverseTimeline &amp;&amp; timelinesAmount > 3}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/picture-1-510x315.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">18-19 Mar&nbsp;</span>2025<br></p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\">3D'omics organised<div><span style=\"font-weight: 400;\">6th General Assembly (digital)</span></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">The 6th General Assembly took place on the 18th and 19th of March 2025. This was already the second to last GA and manuscripts are starting to pile up. For the first two 3D'omics papers - check out our <a href=\"publications.html\" class=\"text-primary\">publication page!&nbsp;</a></p>\n                    </div>\n                </div>\n            </div>\n             <div class=\"row timeline-element \" mbr-if=\"timelinesAmount > 3\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 4 || reverseTimeline &amp;&amp; timelinesAmount > 3}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-07-07-at-10.09.16-510x163.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">19-21 Mar&nbsp;</span>2025<br></p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><a href=\"https://www.vibconferences.be/events/revolutionizing-next-generation-sequencing-6th-edition\" class=\"text-primary\" target=\"_blank\">Revolutionizing Next-Generation Sequencing Conference (Antwerp)</a></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">The 6th edition of the&nbsp;Revolutionizing Next-Generation Sequencing Conference took place in Antwerp, Belgium.&nbsp;During 2,5 days, experts from academia and industry gave a glimpse into the future of next-generation sequencing technology and show real-world applications that promise to transform healthcare, agriculture, environmental science, and beyond. Luiz Borges (MDC) presented 3D'omics at this event.</p>\n                    </div>\n                </div>\n            </div>\n            <!--5-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 4\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 5 || reverseTimeline &amp;&amp; timelinesAmount > 4}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-03-25-at-10.03.57-510x301.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">20 Mar&nbsp;</span>2025<br></p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><span style=\"font-weight: normal;\">Tecan Nordic Innovation Day (Copenhagen)</span></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">Antton Alberdi, Amalia Bogri, and Jonas Lauritsen (UCPH) went to the Tecan Innovation Day to present the 3D'omics method to an interested industry audience.&nbsp;</p>\n                    </div>\n                </div>\n            </div>\n            <!--6-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 5\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 6 || reverseTimeline &amp;&amp; timelinesAmount > 5}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-03-25-at-10.16.19-510x201.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">1-2 Apr&nbsp;</span>2025<br></p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><div><span style=\"font-weight: 400;\">KLS Kiel - Copenhagen workshop (Kiel)</span></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">Antton Alberdi (UCPH) travelled to Kiel (Germany) and participated in an internal workshop between the Kiel Life Science Center and the University of Copenhagen on the topic of Spatial Biology. 3D'omics and general spatial microbiome research were the focus of this workshop.</p>\n                    </div>\n                </div>\n            </div>\n            <!--7-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 6\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 7 || reverseTimeline &amp;&amp; timelinesAmount > 6}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/logobilde-me-ku-510x287.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">7 Apr&nbsp;</span>2025<br></p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\">3D'omics organised<br><span style=\"font-weight: 400;\"><a href=\"https://www.nmbu.no/en/research/events/food-system-innovations-and-climate-change-microbial-game-changers\" class=\"text-primary\">Training Event 1: Stakeholder meeting (Oslo)</a></span></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">The program of this one-day stakeholder seminar featured keynote lectures by prominent researchers and a panel discussion during which academic researchers presented the potential of microbiome/hologenomics to tackle major production challenges, and industry representatives present their current work, needs, and interests.&nbsp;The event was a full success with about 90 attendees and a very positive final event evaluation.<br></p>\n                    </div>\n                </div>\n            </div>\n            <!--8-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 7\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 8 || reverseTimeline &amp;&amp; timelinesAmount > 7}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-03-24-at-14.56.43-510x224.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">7-8 Apr&nbsp;</span>2025<br></p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><div><a href=\"https://www.bio.aau.dk/danish-oikos-meeting-2025-e125004\" class=\"text-primary\">OIKOS-DK Conference (Allborg)</a></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">Antton Alberdi (UCPH) joined the discussions at the biannual OIKOS-DK Conference about why and how we are defining, measuring, and considering biodiversity with respect to specific effects on species and ecosystems. <br></p>\n                    </div>\n                </div>\n            </div>\n            <!--9-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 8\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 9 || reverseTimeline &amp;&amp; timelinesAmount > 8}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2024-11-26-at-13.37.44-510x191.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">6 May&nbsp;</span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><span style=\"font-weight: normal;\"><a href=\"https://cphlan.org/\" class=\"text-primary\" target=\"_blank\">12th Copenhagen Laboratory Automation</a></span><div><span style=\"font-weight: normal;\"><a href=\"https://cphlan.org/\" class=\"text-primary\" target=\"_blank\">Network Meeting (Copenhagen)</a></span></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">Amalia Bogri and Jonas Lauritsen (UCPH) presented their exciting work for 3D'omics with a poster at the 12th CphLAN in Copenhagen and won the poster price! Congratulations!!</p>\n                    </div>\n                </div>\n            </div>\n            <!--10-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 9\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 10 || reverseTimeline &amp;&amp; timelinesAmount > 9}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/picture-2-510x230.png\" alt title>\n                        </div>\n                    </div>\n                     </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">12-16 May&nbsp;</span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\">3D'omics organised<div><a href=\"http://www.3domics.eu/TrainingEvent_MicrobiomeAtlas.html\" class=\"text-primary\" target=\"_blank\">Training Event 2: Spatial Microbiomics (Copenhagen)</a></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">The second 3D'omics training event was full-week course, during which 17 participants from all over the world learned about the 3D'omics methodology. Including hands-on lab work and intense bioinformatics, the participants were immersed in the 3D'omics workflow and learned how to adapt it for their own work.&nbsp;</p>\n                    </div>\n                </div>\n            </div>\n            <!--10-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 9\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 10 || reverseTimeline &amp;&amp; timelinesAmount > 9}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-07-07-at-10.17.23-510x350.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">20-22 May&nbsp;</span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><a href=\"https://www.slas.org/events-calendar/?regionname=eu\" class=\"text-primary\" target=\"_blank\">SLAS Europe 2025 Conference and Exhibition (Hamburg)</a>&nbsp;</h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">The Society for Laboratory Automation and Screening (SLAS) is an international professional society of academic, industry and government researchers as well as developers and providers of laboratory automation technology and tools. Jonas Lauritsen (UCPH) went to the event to share insights about 3D'omics technology.<br></p>\n                    </div>\n                </div>\n            </div>\n             <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 9\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 10 || reverseTimeline &amp;&amp; timelinesAmount > 9}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-07-07-at-10.21.51-510x312.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">10 Jun&nbsp;</span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\">3D'omics co-organised<div><a href=\"https://www.youtube.com/watch?v=Xho_8Vvno1U\" class=\"text-primary\" target=\"_blank\">EcoGen Cluster Webinar - Ep. 4 (digital)</a></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">3D'omics, as part of the EcoGen Cluster, presented in the 4th episode of the shared webinar on the topic of \"Advancing Animal Health through Microbiome Research\". Post-docs Amalia Bogri and Bryan Wang (UCPH) shared their fascinating work and you can re-watch it! <a href=\"https://www.youtube.com/watch?v=Xho_8Vvno1U\" class=\"text-primary\" target=\"_blank\">Click here!</a> <br></p>\n                    </div>\n                </div>\n            </div>\n             <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 9\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 10 || reverseTimeline &amp;&amp; timelinesAmount > 9}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-03-24-at-14.58.37-510x224.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">22-26 Jun&nbsp;</span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><a href=\"https://metabolomicssociety.org/\" class=\"text-primary\">Metabolomics2025 (Prague)</a></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\"></p><p>Topi Meuronen, Olli Kärkkäinen, and Soile Turunen (ATL) will attended the Metabolomics 2025 conference in Prague, presenting their findings within 3D'omics. <br></p><p></p>\n                    </div>\n                </div>\n            </div>\n            <!--11-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 10\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 11 || reverseTimeline &amp;&amp; timelinesAmount > 10}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-03-25-at-10.20.57-510x201.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                 <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">15-18 Sep&nbsp;</span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\">Upcoming: <a href=\"https://www.uni-kiel.de/en/research/priority-research-areas/details/news/kls-summer-school\" class=\"text-primary\">KLS Summer School “Spatial Biology in Health and Disease” (Kiel)</a></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">Further strengthening the collaboration between the Interdisciplinary Centre for Applied Life Sciences KLS  at Kiel University and 3D'omics, Antton Alberdi (UCPH) will be speaking at the first Summer School on “Spatial Biology in Health and Disease” for early career researchers interested in spatial biology. <a href=\"https://www.uni-kiel.de/en/research/priority-research-areas/details/news/kls-summer-school\" class=\"text-primary\">Registration is open until the 15th of July!</a><br></p>\n                    </div>\n                </div>\n            </div>\n            <!--11-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 10\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 11 || reverseTimeline &amp;&amp; timelinesAmount > 10}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/invite-final-ga-leuven-510x315.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">22-23 Sep</span> 2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\">Upcoming: 3D'omics organised<div><span style=\"font-weight: 400;\">Final General Assembly (Leuven)</span></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">For the final GA of 3D'omics the consortium will assemble one last time. This time in Leuven at KUL.<br></p>\n                    </div>\n                </div>\n            </div>\n            <!--12-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 11\" mbr-class=\"{'separline': reverseTimeline &amp;&amp; timelinesAmount > 11}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-01-30-at-09.04.04-510x190.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">24-25 Sep </span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\">Upcoming: 3D'omics organised<div><span style=\"font-weight: 400;\">Training Event 3: Data Integration with Microbial Networks and Community Models (Leuven)</span></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\"><a href=\"training.html\" class=\"text-primary\">For more info, check out our Training Activities page.</a><br></p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"timeline1 medicalm4_timeline1\" group=\"Timelines\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <!-- Block parameters controls (Blue \"Gear\" panel)-->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"0\">\n        <select title=\"Timelines count\" name=\"timelinesAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\">4</option>\n            <option value=\"5\">5</option>\n            <option value=\"6\">6</option>\n            <option value=\"7\">7</option>\n            <option value=\"8\">8</option>\n            <option value=\"9\">9</option>\n            <option value=\"10\">10</option>\n            <option value=\"11\">11</option>\n            <option value=\"12\" selected>12</option>\n        </select>\n        <input type=\"checkbox\" title=\"Reverse Timeline\" name=\"reverseTimeline\" checked>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Show Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Dates\" name=\"showDates\" checked>\n        <input type=\"checkbox\" title=\"Images\" name=\"showImages\" checked>\n        <input type=\"checkbox\" title=\"Timeline Titles\" name=\"showTimelineTitles\" checked>\n        <input type=\"checkbox\" title=\"Timeline Text\" name=\"showTimelineText\" checked>\n        <input type=\"checkbox\" title=\"Images\" name=\"showImages\" checked>\n        <header>Colors</header>\n        <input type=\"color\" title=\"Timelines\" name=\"timelineColor\" value=\"#bf910a\">\n        <input type=\"color\" title=\"Timeline Dot Color\" name=\"timelineDotColor\" value=\"#bf910a\">\n\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" value title=\"Image\">\n            <input type=\"color\" value=\"#ffffff\" title=\"Color\" selected>\n            <input type=\"video\" value=\"https://www.youtube.com/watch?v=9morbKMwCu4\" title=\"Video\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n        <!-- End block parameters -->\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n\n    <div class=\"container align-center\">\n        <h3 class=\"mbr-subtitle mbr-fonts-style mbr-bold\" data-app-selector=\".mbr-subtitle\" mbr-if=\"showSubtitle\" mbr-theme-style=\"display-4\">WHO WE ARE</h3>\n        <h1 class=\"mbr-section-title mbr-fonts-style mbr-bold\" data-app-selector=\".mbr-section-title\" mbr-if=\"showTitle\" mbr-theme-style=\"display-2\">The NY Central Hospital</h1>\n        <h2 class=\"mbr-section-text mbr-fonts-style mbr-light\" data-app-selector=\".mbr-section-text\" mbr-if=\"showText\" mbr-theme-style=\"display-7\">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a nisi\n            faucibus,\n            blandit nisl quis, ornare mauris. Quisque facilisis gravida velit, quis tempus eros. Aenean quis nisi\n            consequat, elementum erat id, ultricies risus.</h2>\n\n        <div class=\"timelines-container\" mbri-timelines mbr-class=\"{'pt-4':!showSubtitle, 'reverseTimeline' : reverseTimeline}\">\n            <!--1-->\n            <div class=\"row timeline-element first-separline\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 1}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot1-510x157.png\" alt title>\n                        </div>\n\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">\n                        21 Jan&nbsp;</span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><a href=\"https://cassyni.com/s/mvif-35\" class=\"text-primary\" target=\"_blank\">Microbiome Virtual International Forum (digital)</a></h4>\n\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">Haris Zafeiropoulos (KUL) presented his research at the Microbiome Virtual International Forum, which is a recurring bite-sized alternative to multi-day microbiome conferences.<br></p>\n                    </div>\n                </div>\n            </div>\n            <!--2-->\n            <div class=\"row timeline-element \" mbr-if=\"timelinesAmount > 1\" mbr-class=\"{'separline':timelinesAmount>2 &amp;&amp; !reverseTimeline || !reverseTimeline &amp;&amp; timelinesAmount > 2 || reverseTimeline &amp;&amp; timelinesAmount > 1}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/ecogen-webinar-series-2025-sm-linkedin-post-4-510x510.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">\n                        6 Mar&nbsp;</span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><b>3D'omics co-organised</b><br><span style=\"font-weight: normal;\"><a href=\"https://www.youtube.com/watch?v=eqfAkQcDAO0\" class=\"text-primary\">EcoGen Cluster Webinar - Ep. 1 (digital)</a></span></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">3D'omics is part of the EcoGen Cluster together with HoloRuminant, Geronimo, RUMIGEN, and Re-Livestock. To foster collaboration across these projects and explore potential synergies for long-term impact in sustainable livestock production, we launched a webinar series - starting with&nbsp;\"Transforming Livestock Systems Through Integrated Research\". You can <a href=\"https://www.youtube.com/watch?v=eqfAkQcDAO0\" class=\"text-primary\">watch the recording here!</a><br></p>\n                    </div>\n                </div>\n            </div>\n            <!--3-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 2\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 3 || reverseTimeline &amp;&amp; timelinesAmount > 2}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot2-510x169.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">17-20&nbsp;Mar&nbsp;</span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><div><a href=\"https://aquaecomics.symposium.inrae.fr/\" class=\"text-primary\">AquaEcOmics (Evian)</a></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">Karoline Faust (KUL) presented at the AquaEcOmics meeting, discussing metabarcoding, metagenomics and other omics methods that revolutionise the study and monitoring of aquatic ecosystems. <br></p>\n                    </div>\n                </div>\n            </div>\n            <!--4-->\n            <div class=\"row timeline-element \" mbr-if=\"timelinesAmount > 3\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 4 || reverseTimeline &amp;&amp; timelinesAmount > 3}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/picture-1-510x315.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">18-19 Mar&nbsp;</span>2025<br></p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\">3D'omics organised<div><span style=\"font-weight: 400;\">6th General Assembly (digital)</span></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">The 6th General Assembly took place on the 18th and 19th of March 2025. This was already the second to last GA and manuscripts are starting to pile up. For the first two 3D'omics papers - check out our <a href=\"publications.html\" class=\"text-primary\">publication page!&nbsp;</a></p>\n                    </div>\n                </div>\n            </div>\n             <div class=\"row timeline-element \" mbr-if=\"timelinesAmount > 3\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 4 || reverseTimeline &amp;&amp; timelinesAmount > 3}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-07-07-at-10.09.16-510x163.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">19-21 Mar&nbsp;</span>2025<br></p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><a href=\"https://www.vibconferences.be/events/revolutionizing-next-generation-sequencing-6th-edition\" class=\"text-primary\" target=\"_blank\">Revolutionizing Next-Generation Sequencing Conference (Antwerp)</a></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">The 6th edition of the&nbsp;Revolutionizing Next-Generation Sequencing Conference took place in Antwerp, Belgium.&nbsp;During 2,5 days, experts from academia and industry gave a glimpse into the future of next-generation sequencing technology and show real-world applications that promise to transform healthcare, agriculture, environmental science, and beyond. Luiz Borges (MDC) presented 3D'omics at this event.</p>\n                    </div>\n                </div>\n            </div>\n            <!--5-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 4\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 5 || reverseTimeline &amp;&amp; timelinesAmount > 4}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-03-25-at-10.03.57-510x301.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">20 Mar&nbsp;</span>2025<br></p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><span style=\"font-weight: normal;\">Tecan Nordic Innovation Day (Copenhagen)</span></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">Antton Alberdi, Amalia Bogri, and Jonas Lauritsen (UCPH) went to the Tecan Innovation Day to present the 3D'omics method to an interested industry audience.&nbsp;</p>\n                    </div>\n                </div>\n            </div>\n            <!--6-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 5\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 6 || reverseTimeline &amp;&amp; timelinesAmount > 5}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-03-25-at-10.16.19-510x201.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">1-2 Apr&nbsp;</span>2025<br></p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><div><span style=\"font-weight: 400;\">KLS Kiel - Copenhagen workshop (Kiel)</span></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">Antton Alberdi (UCPH) travelled to Kiel (Germany) and participated in an internal workshop between the Kiel Life Science Center and the University of Copenhagen on the topic of Spatial Biology. 3D'omics and general spatial microbiome research were the focus of this workshop.</p>\n                    </div>\n                </div>\n            </div>\n            <!--7-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 6\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 7 || reverseTimeline &amp;&amp; timelinesAmount > 6}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/logobilde-me-ku-510x287.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">7 Apr&nbsp;</span>2025<br></p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\">3D'omics organised<br><a href=\"https://www.nmbu.no/en/research/events/food-system-innovations-and-climate-change-microbial-game-changers\" class=\"text-primary\" style><b>Training Event 1: </b>Stakeholder meeting (Oslo)</a></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">The program of this one-day stakeholder seminar featured keynote lectures by prominent researchers and a panel discussion during which academic researchers presented the potential of microbiome/hologenomics to tackle major production challenges, and industry representatives present their current work, needs, and interests.&nbsp;The event was a full success with about 90 attendees and a very positive final event evaluation.<br></p>\n                    </div>\n                </div>\n            </div>\n            <!--8-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 7\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 8 || reverseTimeline &amp;&amp; timelinesAmount > 7}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-03-24-at-14.56.43-510x224.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">7-8 Apr&nbsp;</span>2025<br></p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><div><a href=\"https://www.bio.aau.dk/danish-oikos-meeting-2025-e125004\" class=\"text-primary\">OIKOS-DK Conference (Allborg)</a></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">Antton Alberdi (UCPH) joined the discussions at the biannual OIKOS-DK Conference about why and how we are defining, measuring, and considering biodiversity with respect to specific effects on species and ecosystems. <br></p>\n                    </div>\n                </div>\n            </div>\n            <!--9-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 8\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 9 || reverseTimeline &amp;&amp; timelinesAmount > 8}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2024-11-26-at-13.37.44-510x191.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">6 May&nbsp;</span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><span style=\"font-weight: normal;\"><a href=\"https://cphlan.org/\" class=\"text-primary\" target=\"_blank\">12th Copenhagen Laboratory Automation</a></span><div><span style=\"font-weight: normal;\"><a href=\"https://cphlan.org/\" class=\"text-primary\" target=\"_blank\">Network Meeting (Copenhagen)</a></span></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">Amalia Bogri and Jonas Lauritsen (UCPH) presented their exciting work for 3D'omics with a poster at the 12th CphLAN in Copenhagen and won the poster price! Congratulations!!</p>\n                    </div>\n                </div>\n            </div>\n            <!--10-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 9\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 10 || reverseTimeline &amp;&amp; timelinesAmount > 9}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/picture-2-510x230.png\" alt title>\n                        </div>\n                    </div>\n                     </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">12-16 May&nbsp;</span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\">3D'omics organised<div><a href=\"http://www.3domics.eu/TrainingEvent_MicrobiomeAtlas.html\" class=\"text-primary\" target=\"_blank\"><b>Training Event 2: </b>Spatial Microbiomics (Copenhagen)</a></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">The second 3D'omics training event was full-week course, during which 17 participants from all over the world learned about the 3D'omics methodology. Including hands-on lab work and intense bioinformatics, the participants were immersed in the 3D'omics workflow and learned how to adapt it for their own work.&nbsp;</p>\n                    </div>\n                </div>\n            </div>\n            <!--10-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 9\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 10 || reverseTimeline &amp;&amp; timelinesAmount > 9}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-07-07-at-10.17.23-510x350.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">20-22 May&nbsp;</span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><a href=\"https://www.slas.org/events-calendar/?regionname=eu\" class=\"text-primary\" target=\"_blank\">SLAS Europe 2025 Conference and Exhibition (Hamburg)</a>&nbsp;</h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">The Society for Laboratory Automation and Screening (SLAS) is an international professional society of academic, industry and government researchers as well as developers and providers of laboratory automation technology and tools. Jonas Lauritsen (UCPH) went to the event to share insights about 3D'omics technology.<br></p>\n                    </div>\n                </div>\n            </div>\n             <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 9\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 10 || reverseTimeline &amp;&amp; timelinesAmount > 9}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-07-07-at-10.21.51-510x312.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">10 Jun&nbsp;</span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\">3D'omics co-organised<div><a href=\"https://www.youtube.com/watch?v=Xho_8Vvno1U\" class=\"text-primary\" target=\"_blank\">EcoGen Cluster Webinar - Ep. 4 (digital)</a></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">3D'omics, as part of the EcoGen Cluster, presented in the 4th episode of the shared webinar on the topic of \"Advancing Animal Health through Microbiome Research\". Post-docs Amalia Bogri and Bryan Wang (UCPH) shared their fascinating work and you can re-watch it! <a href=\"https://www.youtube.com/watch?v=Xho_8Vvno1U\" class=\"text-primary\" target=\"_blank\">Click here!</a> <br></p>\n                    </div>\n                </div>\n            </div>\n             <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 9\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 10 || reverseTimeline &amp;&amp; timelinesAmount > 9}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-03-24-at-14.58.37-510x224.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">22-26 Jun&nbsp;</span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><a href=\"https://metabolomicssociety.org/\" class=\"text-primary\">Metabolomics2025 (Prague)</a></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\"></p><p>Topi Meuronen, Olli Kärkkäinen, and Soile Turunen (ATL) will attended the Metabolomics 2025 conference in Prague, presenting their findings within 3D'omics. <br></p><p></p>\n                    </div>\n                </div>\n            </div>\n            <!--11-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 10\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 11 || reverseTimeline &amp;&amp; timelinesAmount > 10}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-03-25-at-10.20.57-510x201.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                 <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">15-18 Sep&nbsp;</span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\"><a href=\"https://www.uni-kiel.de/en/research/priority-research-areas/details/news/kls-summer-school\" class=\"text-primary\">KLS Summer School “Spatial Biology in Health and Disease” (Kiel)</a></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">Further strengthening the collaboration between the Interdisciplinary Centre for Applied Life Sciences KLS  at Kiel University and 3D'omics, Antton Alberdi (UCPH) presented at the first Summer School on “Spatial Biology in Health and Disease” for early career researchers interested in spatial biology.<br></p>\n                    </div>\n                </div>\n            </div>\n            <!--11-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 10\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 11 || reverseTimeline &amp;&amp; timelinesAmount > 10}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/invite-final-ga-leuven-510x315.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">22-23 Sep</span> 2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\">3D'omics organised<div><span style=\"font-weight: 400;\">Final General Assembly (Leuven)</span></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">For the final GA of 3D'omics the consortium assembled one last time. This time in Leuven at KUL.<br></p>\n                    </div>\n                </div>\n            </div>\n            <!--12-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 11\" mbr-class=\"{'separline': reverseTimeline &amp;&amp; timelinesAmount > 11}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/screenshot-2025-01-30-at-09.04.04-510x190.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">24-25 Sep </span>2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\">3D'omics organised<div>Training Event 3: <span style=\"font-weight: 400;\">Data Integration with Microbial Networks and Community Models (Leuven)</span></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">Data integration is a challenging but necessary step to derive hypotheses and insights from meta-omics data of microbial communities. During this training event, we introduced black-box and white-box data integration methods, i.e. approaches that do not require a mechanistic understanding (e.g. association networks, prediction of species distributions with machine learning) and those that do (mechanistic models).&nbsp;<br></p>\n                    </div>\n                </div>\n            </div>\n             <!--11-->\n            <div class=\"row timeline-element\" mbr-if=\"timelinesAmount > 10\" mbr-class=\"{'separline': !reverseTimeline &amp;&amp; timelinesAmount > 11 || reverseTimeline &amp;&amp; timelinesAmount > 10}\">\n                <div class=\"timeline-date-panel col-xs-12 col-md-3 align-left\">\n                    <div class=\"time-line-date-content\">\n                        <div class=\"mbr-figure\" mbr-if=\"showImages\">\n                            <img src=\"@PROJECT_PATH@/assets/images/invite-final-ga-leuven-510x315.png\" alt title>\n                        </div>\n                    </div>\n                </div>\n                <div class=\"date col-xs-12 col-md-2\">\n                    <p class=\"mbr-timeline-date mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showDates\" data-app-selector=\".timelines-container .timeline-element .date .mbr-timeline-date\"><span style=\"font-weight: normal;\">13 Nov</span> 2025</p>\n                </div>\n                <span class=\"iconBackground\"></span>\n                <div class=\"col-xs-12 col-md-7\">\n                    <div class=\"timeline-text-content\">\n                        <h4 class=\"mbr-timeline-title mbr-fonts-style\" mbr-theme-style=\"display-5\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-title\" mbr-if=\"showTimelineTitles\">Upcoming: 3D'omics organised<div>Training Event 4:&nbsp; <span style=\"font-weight: normal;\">Modeling intestinal environment with Gargona </span><span style=\"font-weight: 400;\">(Barcelona)</span></div></h4>\n                        <p class=\"mbr-timeline-text mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".timelines-container .timeline-element .timeline-text-content .mbr-timeline-text\" mbr-if=\"showTimelineText\">Details will follow soon.<br></p>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_anchor": "timeline1-a7",
           "_isUserblock": true,
           "_cid": "uveR3qoAha",
