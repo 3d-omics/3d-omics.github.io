@@ -25,6 +25,154 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=mh7X9J"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=mh7X9J" type="text/css">
 
+  <style>
+    body.portal-site .workflow-content {
+      padding: 4.5rem 0 5.5rem;
+      background: var(--portal-surface, #ffffff);
+    }
+    body.portal-site .workflow-content .workflow-figure {
+      margin: 0 0 4rem;
+    }
+    body.portal-site .workflow-content .workflow-figure img,
+    body.portal-site .workflow-content .management-figure img {
+      display: block;
+      width: 100%;
+      border-radius: 0.75rem;
+    }
+    body.portal-site .workflow-content .workflow-figure figcaption,
+    body.portal-site .workflow-content .management-figure figcaption {
+      margin-top: 0.85rem;
+      color: var(--portal-muted-ink, #6b6474) !important;
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    body.portal-site .workflow-content .workflow-section {
+      max-width: 56rem;
+      margin: 0 auto;
+      padding: 2.75rem 0 !important;
+      border-top: 1px solid var(--portal-line, #e4e1ec);
+      background: transparent !important;
+    }
+    body.portal-site .workflow-content .workflow-section--overview {
+      padding-top: 0 !important;
+      border-top: 0;
+    }
+    body.portal-site .workflow-content h2 {
+      margin: 0 0 1.25rem;
+      color: var(--portal-burgundy-ink, #741b47) !important;
+      font-size: clamp(1.75rem, 3vw, 2.5rem);
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    body.portal-site .workflow-content h3 {
+      margin: 0;
+      color: var(--portal-ink, #24262b) !important;
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+    body.portal-site .workflow-content p {
+      color: var(--portal-ink, #24262b) !important;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    body.portal-site .workflow-content .workflow-section > p + p {
+      margin-top: 1rem;
+    }
+    body.portal-site .workflow-content .workflow-section__eyebrow {
+      margin: 0 0 0.5rem;
+      color: var(--portal-muted-ink, #6b6474) !important;
+      font: 700 0.78rem/1.35 'Plus Jakarta Sans', Arial, sans-serif;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+    body.portal-site .workflow-content .workflow-packages {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1rem;
+      margin-top: 1.75rem;
+    }
+    body.portal-site .workflow-content .workflow-package {
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      border: 1px solid var(--portal-line, #e4e1ec);
+      border-radius: 0.75rem;
+      background: var(--portal-surface, #ffffff);
+    }
+    body.portal-site .workflow-content .workflow-package__lead {
+      margin: 0.45rem 0 1rem;
+      color: var(--portal-burgundy-ink, #741b47) !important;
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    body.portal-site .workflow-content .workflow-package__description {
+      margin: 0;
+    }
+    body.portal-site .workflow-content .workflow-package__link {
+      display: inline-flex;
+      gap: 0.4rem;
+      align-items: center;
+      align-self: flex-start;
+      margin-top: auto;
+      padding-top: 1.25rem;
+      color: var(--portal-burgundy-ink, #741b47) !important;
+      font-size: 0.9rem;
+      font-weight: 800;
+      text-decoration: none;
+    }
+    body.portal-site .workflow-content .workflow-package__link:hover {
+      color: var(--portal-mustard, #bf910a) !important;
+    }
+    body.portal-site .workflow-content .workflow-management {
+      max-width: 56rem;
+      margin: 0 auto;
+      padding: 2.75rem 0 0 !important;
+      border-top: 1px solid var(--portal-line, #e4e1ec);
+      background: transparent !important;
+    }
+    body.portal-site .workflow-content .workflow-management__intro {
+      margin-bottom: 1.25rem;
+    }
+    body.portal-site .workflow-content .workflow-management__intro h2 {
+      margin-bottom: 0;
+      font-size: clamp(1.75rem, 3.5vw, 2.35rem);
+    }
+    body.portal-site .workflow-content .workflow-management__eyebrow {
+      margin: 0 0 0.45rem;
+      color: var(--portal-muted-ink, #6b6474) !important;
+      font: 600 0.75rem/1.3 'Plus Jakarta Sans', Arial, sans-serif;
+      letter-spacing: 0.09em;
+      text-transform: uppercase;
+    }
+    body.portal-site .workflow-content .management-figure {
+      margin: 2rem 0 0;
+    }
+    @media (max-width: 575px) {
+      body.portal-site .workflow-content {
+        padding: 3rem 0 4rem;
+      }
+      body.portal-site .workflow-content .workflow-figure {
+        margin-bottom: 2.75rem;
+      }
+      body.portal-site .workflow-content .workflow-section,
+      body.portal-site .workflow-content .workflow-management {
+        padding-top: 2.25rem !important;
+        padding-bottom: 2.25rem !important;
+      }
+      body.portal-site .workflow-content .workflow-section--overview {
+        padding-top: 0 !important;
+      }
+      body.portal-site .workflow-content .workflow-packages {
+        grid-template-columns: 1fr;
+      }
+      body.portal-site .workflow-content .workflow-package {
+        padding: 1.35rem;
+      }
+    }
+  </style>
+
   
   
   
@@ -128,7 +276,7 @@
             <div class="col-12 col-lg-8 col-content">
                 <p class="label-text mbr-fonts-style display-7"><strong>ABOUT</strong> <strong>3D'OMICS</strong></p>
                 <h1 class="mbr-section-title mbr-fonts-style mb-0 display-1"><strong>Workflow</strong></h1>
-                <h2 class="mbr-section-subtitle mbr-fonts-style mb-0 display-7">In recent years, there has been a rapid development of techniques that, separately, have enabled the generation of multiple omics data, including both microbial and host components, processing very small amounts of biological material, generating 3D reconstructions of biological elements, and analysing complex microbial communities. Hence, the technology required for 3D multi-omics were finally in place and used it to develop, implement, and assess a new methodological framework that will revolutionise animal-microbiota research in animal science and beyond.&nbsp;<br><br>The 3D’omics project was structured in 4 sections encompassing 9 work packages (WP), meticulously designed to achieve its objectives. The project consisted of two structural WPs (Section 1) that were active throughout the entire duration of the project, and seven more WPs clustered in three clearly defined sections: technology development (Section 2), technology showcasing (Section 3), and implementation and assessment (Section 4).</h2>
+                <h2 class="mbr-section-subtitle mbr-fonts-style mb-0 display-7">In recent years, there has been a rapid development of techniques that, separately, enabled the generation of multiple omics data, including both microbial and host components, processing very small amounts of biological material, generating 3D reconstructions of biological elements, and analysing complex microbial communities. The technology required for 3D multi-omics was therefore in place, enabling us to develop, implement and assess a methodological framework designed to advance animal-microbiota research in animal science and beyond.&nbsp;<br><br>The 3D’omics project was structured in 4 sections encompassing 9 work packages (WP), meticulously designed to achieve its objectives. The project consisted of two structural WPs (Section 1) that were active throughout the entire duration of the project, and seven more WPs clustered in three clearly defined sections: technology development (Section 2), technology showcasing (Section 3), and implementation and assessment (Section 4).</h2>
                 
             </div>
         </div>
@@ -149,199 +297,109 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="artistm5 image3 cid-tIsRXUvOxw" id="image03-6s">
-    
-
-    
-    
-
+<main class="workflow-content" id="workflow-overview">
     <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 col-lg-9">
-                <div class="image-wrapper">
-                    <img src="assets/images/workplow-new-2372x950.png" alt="">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+            <div class="col-12 col-lg-10">
+                <figure class="workflow-figure">
+                    <img src="assets/images/workplow-new-2372x950.png" alt="Diagram showing the four sections and nine work packages of the 3D’omics workflow">
+                    <figcaption>The project brought its work packages together across management, technology development, technology showcasing, and implementation and assessment.</figcaption>
+                </figure>
 
-<section class="accordion2 medicalm4_accordion2 cid-tIWCTLhh2z" id="accordion2-81">
-
-	
-
-	
-	<div class="container">
-		<div class="col-12 col-md-12 title-text">
-			
-
-			
-			
-		</div>
-		<div class="row justify-content-center">
-			<div class="col-md-12 content-block">
-				<div class="accordion-content">
-					<div id="bootstrap-accordion_61" class="panel-group accordionStyles accordion " role="tablist" aria-multiselectable="true">
-						<div class="card">
-							<div class="card-header" role="tab" id="headingOne">
-								<a role="button" class="collapsed panel-title" data-toggle="collapse" data-core="" href="#collapse1_61" aria-expanded="false" aria-controls="collapse1">
-									<h4 class="mbr-fonts-style header-text display-7">1. Section: Management &amp; DEC (WP1-2)<span class="toggle-icon inactive sign mbr-iconfont"></span>
-									</h4>
-								</a>
-							</div>
-							<div id="collapse1_61" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_61">
-								<div class="panel-body p-4">
-									<p class="mbr-fonts-style panel-text mbr-text display-4"><strong>WP1: Project Management</strong><br>Lead: UCPH<br><br>Management of the overall progress of the project through efficient scientific, administrative, financial, ethical, and data management. Guaranteed that internal and EU reporting was performed adequately, made certain that the project complied with ethical legislation, and ensured tasks and objectives were fulfilled efficiently within budget and on time.<br><br><strong>WP2: Dissemination, Exploitation, and Communication (DEC)</strong><br>Lead: UCPH<br><br>Communication of 3D’omics to relevant stakeholders and the general public, and promotion of new collaborative interactions with international projects to maximise the impact of 3D’omics technology.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="card">
-							<div class="card-header" role="tab" id="headingTwo">
-								<a role="button" class="collapsed panel-title" data-toggle="collapse" data-core="" href="#collapse2_61" aria-expanded="false" aria-controls="collapse2">
-									<h4 class="mbr-fonts-style header-text display-7">2. Section: Technology Development (WP3-5)<span class="toggle-icon inactive sign mbr-iconfont"></span>
-									</h4>
-								</a>
-
-							</div>
-							<div id="collapse2_61" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#bootstrap-accordion_61">
-								<div class="panel-body p-4">
-									<p class="mbr-fonts-style panel-text mbr-text display-4"><strong>WP3: Sample Preparation</strong><br>Lead: UCPH<br><br>Development of optimal procedures for sampling, fixating, slicing, and micro-dissecting intestinal sections containing epithelial tissue and microbial communities. Generation of biological samples for the in vitro work in WP6/7, and creation of preliminary evidence for improving designs of trials in WP6/7.<br><br><strong>WP4: Data Generation</strong><br>Lead: MDC<br><br>Development of laboratory protocols and workflows to generate multi-omic data from intestinal microsections from different sample types.<br><br><strong>WP5: Data Analysis and Visualisation</strong><br>Lead: CRG<br><br>Development of the analytical procedures required to generate and visualise the 3D reconstruction models from 3D’omic data, and develop mechanistic and deep learning approaches to understand omic interactions between microbes and animals and predict phenotypic/performance outcomes.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="card">
-							<div class="card-header" role="tab" id="headingThree">
-								<a role="button" class="collapsed panel-title" data-toggle="collapse" data-core="" href="#collapse3_61" aria-expanded="false" aria-controls="collapse3">
-									<h4 class="mbr-fonts-style header-text display-7">3. Section: Technology Showcasing (WP6-7)<span class="toggle-icon inactive sign mbr-iconfont"></span>
-									</h4>
-
-								</a>
-							</div>
-							<div id="collapse3_61" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#bootstrap-accordion_61">
-								<div class="panel-body p-4">
-									<p class="mbr-fonts-style panel-text mbr-text display-4"><strong>WP6: Poultry Health Challenges</strong><br>Lead: UVM<br><br>Showcasing the 3D’omics technology in addressing production challenges associated with diverse types of pathogens in poultry.<br><br><strong>WP7: Swine Nutritional Challenges</strong><br>Lead: NMBU<br><br>Showcasing the 3D’omics technology in addressing production challenges associated with nutrition in swine.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="card">
-							<div class="card-header" role="tab" id="headingFour">
-								<a role="button" class="collapsed panel-title" data-toggle="collapse" data-core="" href="#collapse4_61" aria-expanded="false" aria-controls="collapse4">
-									<h4 class="mbr-fonts-style header-text display-7">4. Section: Implementation and Assessment<span class="toggle-icon inactive sign mbr-iconfont"></span>
-									</h4>
-
-								</a>
-							</div>
-							<div id="collapse4_61" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#bootstrap-accordion_61">
-								<div class="panel-body p-4">
-									<p class="mbr-fonts-style panel-text mbr-text display-4"><strong>WP8: Incorporation into Models</strong><br>Lead: BGU<br><br>Providing guidelines and expectations to implement 3D’omics data in genetic evaluation and phenotypic assessment procedures in industrial breeding and feeding programmes.<br><br><strong>WP9: Technology Impact Assessment</strong><br>Lead: NMBU<br><br>Assessment of the technical, social, and economic impact of the 3D’omics technology.<br></p>
-								</div>
-							</div>
-						</div>
-
-						
-
-						
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="list02 authorm5 cid-uvNVXd0ZXE" id="list02-b8">
-
-    
-
-    
-    
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <div class="content-wrapper flex-row-reverse">
-                    <img src="assets/images/picture-1-1888x857.png" alt="">
-                    <div class="title-wrapper">
-                        
-                        <p class="mbr-text mbr-fonts-style display-5"><strong>
-                            Want to know more about the individual work packages and how they progressed?
-                        </strong></p>
-                        
+                <section class="workflow-section workflow-section--overview" aria-labelledby="management-dec-title">
+                    <p class="workflow-section__eyebrow">Section 1 · WP1–2</p>
+                    <h2 id="management-dec-title">Management and DEC</h2>
+                    <div class="workflow-packages">
+                        <article class="workflow-package">
+                            <h3>WP1: Project Management</h3>
+                            <p class="workflow-package__lead">Lead: UCPH</p>
+                            <p class="workflow-package__description">Management of the overall progress of the project through efficient scientific, administrative, financial, ethical, and data management. Guaranteed that internal and EU reporting was performed adequately, made certain that the project complied with ethical legislation, and ensured tasks and objectives were fulfilled efficiently within budget and on time.</p>
+                        </article>
+                        <article class="workflow-package">
+                            <h3>WP2: Dissemination, Exploitation, and Communication (DEC)</h3>
+                            <p class="workflow-package__lead">Lead: UCPH</p>
+                            <p class="workflow-package__description">Communication of 3D’omics to relevant stakeholders and the general public, and promotion of new collaborative interactions with international projects to maximise the impact of 3D’omics technology.</p>
+                        </article>
                     </div>
-                    <div class="lists-wrapper">
-                        <div class="list-wrap">
-                            <ul class="list mbr-fonts-style display-7">
-                                <li class="item-wrap"><strong><span style="font-size: 1.125rem;"><a href="wp3.html" class="text-white"><b>WP3. Sample preparation&nbsp;</b></a></span><br></strong></li>
-                                <li class="item-wrap"><a href="wp4.html" class="text-white"><strong>WP4. Data generation</strong></a></li>
-                                <li class="item-wrap"><a href="wp5.html" class="text-white"><strong>WP5. Data analysis and visualisation</strong></a></li>
-                                <li class="item-wrap"><span style="font-size: 1.125rem;"><a href="wp6.html" class="text-white"><strong>WP6. Poultry trials</strong></a></span></li>
-                            </ul>
-                        </div>
-                        <div class="list-wrap">
-                            <ul class="list mbr-fonts-style display-7">
-                                <li class="item-wrap"><a href="wp7.html" class="text-white"><strong>WP7. Swine trials</strong></a></li><li class="item-wrap"><a href="wp8.html" class="text-white"><strong>WP8. Incorporation into models</strong></a></li><li class="item-wrap"><a href="wp9.html" class="text-white"><strong>WP9. Technology impact assessment</strong></a></li>
-                            </ul>
-                        </div>
+                </section>
+
+                <section class="workflow-section" aria-labelledby="technology-development-title">
+                    <p class="workflow-section__eyebrow">Section 2 · WP3–5</p>
+                    <h2 id="technology-development-title">Technology development</h2>
+                    <div class="workflow-packages">
+                        <article class="workflow-package">
+                            <h3>WP3: Sample Preparation</h3>
+                            <p class="workflow-package__lead">Lead: UCPH</p>
+                            <p class="workflow-package__description">Development of optimal procedures for sampling, fixating, slicing, and micro-dissecting intestinal sections containing epithelial tissue and microbial communities. Generation of biological samples for the in vitro work in WP6/7, and creation of preliminary evidence for improving designs of trials in WP6/7.</p>
+                            <a class="workflow-package__link" href="wp3.html">Explore WP3 <span aria-hidden="true">→</span></a>
+                        </article>
+                        <article class="workflow-package">
+                            <h3>WP4: Data Generation</h3>
+                            <p class="workflow-package__lead">Lead: MDC</p>
+                            <p class="workflow-package__description">Development of laboratory protocols and workflows to generate multi-omic data from intestinal microsections from different sample types.</p>
+                            <a class="workflow-package__link" href="wp4.html">Explore WP4 <span aria-hidden="true">→</span></a>
+                        </article>
+                        <article class="workflow-package">
+                            <h3>WP5: Data Analysis and Visualisation</h3>
+                            <p class="workflow-package__lead">Lead: CRG</p>
+                            <p class="workflow-package__description">Development of the analytical procedures required to generate and visualise the 3D reconstruction models from 3D’omic data, and develop mechanistic and deep learning approaches to understand omic interactions between microbes and animals and predict phenotypic/performance outcomes.</p>
+                            <a class="workflow-package__link" href="wp5.html">Explore WP5 <span aria-hidden="true">→</span></a>
+                        </article>
                     </div>
-                </div>
+                </section>
+
+                <section class="workflow-section" aria-labelledby="technology-showcasing-title">
+                    <p class="workflow-section__eyebrow">Section 3 · WP6–7</p>
+                    <h2 id="technology-showcasing-title">Technology showcasing</h2>
+                    <div class="workflow-packages">
+                        <article class="workflow-package">
+                            <h3>WP6: Poultry Health Challenges</h3>
+                            <p class="workflow-package__lead">Lead: UVM</p>
+                            <p class="workflow-package__description">Showcasing the 3D’omics technology in addressing production challenges associated with diverse types of pathogens in poultry.</p>
+                            <a class="workflow-package__link" href="wp6.html">Explore WP6 <span aria-hidden="true">→</span></a>
+                        </article>
+                        <article class="workflow-package">
+                            <h3>WP7: Swine Nutritional Challenges</h3>
+                            <p class="workflow-package__lead">Lead: NMBU</p>
+                            <p class="workflow-package__description">Showcasing the 3D’omics technology in addressing production challenges associated with nutrition in swine.</p>
+                            <a class="workflow-package__link" href="wp7.html">Explore WP7 <span aria-hidden="true">→</span></a>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="workflow-section" aria-labelledby="implementation-assessment-title">
+                    <p class="workflow-section__eyebrow">Section 4 · WP8–9</p>
+                    <h2 id="implementation-assessment-title">Implementation and assessment</h2>
+                    <div class="workflow-packages">
+                        <article class="workflow-package">
+                            <h3>WP8: Incorporation into Models</h3>
+                            <p class="workflow-package__lead">Lead: BGU</p>
+                            <p class="workflow-package__description">Providing guidelines and expectations to implement 3D’omics data in genetic evaluation and phenotypic assessment procedures in industrial breeding and feeding programmes.</p>
+                            <a class="workflow-package__link" href="wp8.html">Explore WP8 <span aria-hidden="true">→</span></a>
+                        </article>
+                        <article class="workflow-package">
+                            <h3>WP9: Technology Impact Assessment</h3>
+                            <p class="workflow-package__lead">Lead: NMBU</p>
+                            <p class="workflow-package__description">Assessment of the technical, social, and economic impact of the 3D’omics technology.</p>
+                            <a class="workflow-package__link" href="wp9.html">Explore WP9 <span aria-hidden="true">→</span></a>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="workflow-management" aria-labelledby="management-structure-title">
+                    <div class="portal-publications__intro workflow-management__intro">
+                        <p class="portal-publications__eyebrow workflow-management__eyebrow">Project governance</p>
+                        <h2 id="management-structure-title">Management structure</h2>
+                    </div>
+                    <p>The management structure for the 3D’omics project has been devised based on models successfully used in prior large-scale public-private collaborative projects funded by the European Commission. Overall, the management structure ensured that there were clear and frequent lines of communication between the Project Coordinator and all the 3D’omics partners, and between the 3D’omics consortium and the Research Executive Agency (REA).</p>
+                    <figure class="management-figure">
+                        <img src="assets/images/manage-1370x448.png" alt="Diagram of the 3D’omics project management structure and communication lines">
+                    </figure>
+                </section>
             </div>
         </div>
     </div>
-</section>
-
-<section class="header2 shopm5 cid-tIzz0kvP1I" id="aheader2-7i">
-
-    
-
-    
-    
-
-    <div class="container">
-        <div class="row justify-content-start">
-            <div class="col-12 col-lg-8 col-content">
-                <p class="label-text mbr-fonts-style display-7">
-                    <strong>ABOUT 3D'OMICS</strong></p>
-                <h1 class="mbr-section-title mbr-fonts-style mb-0 display-1"><strong>Management structure</strong></h1>
-                <h2 class="mbr-section-subtitle mbr-fonts-style mb-0 display-7">The management structure for the 3D’omics project has been devised based on models successfully used in prior large-scale public-private collaborative projects funded by the European Commission. Overall, the management structure ensured that there were clear and frequent lines of communication between the Project Coordinator and all the 3D’omics partners, and between the 3D’omics consortium and the Research Executive Agency (REA).</h2>
-                
-            </div>
-        </div>
-        <div class="text-container row justify-content-start">
-            <div class="col-lg-3 col-md-6 col-12">
-                <div class="text-item">
-                    
-                    
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-                <div class="text-item">
-                    
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="artistm5 image3 cid-tIzz5kp67F" id="image03-7j">
-    
-
-    
-    
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-9">
-                <div class="image-wrapper">
-                    <img src="assets/images/manage-1370x448.png" alt="">
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+</main>
 
 <section class="footer1 cid-tInzpkEJJU" once="footers" id="footer1-68">
 

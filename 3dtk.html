@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <meta name="description" content="3dtk is the 3D'omics ToolKit: a command-line and Python interface to the 3D'omics data catalogue.">
+  <title>3D'omics ToolKit (3dtk)</title>
+  <link rel="shortcut icon" href="assets/images/favicon-128x199.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
+  <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
+  <link rel="stylesheet" href="assets/tether/tether.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="assets/web/assets/gdpr-plugin/gdpr-styles.css">
+  <link rel="stylesheet" href="assets/dropdown/css/style.css">
+  <link rel="stylesheet" href="assets/socicon/css/styles.css">
+  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="preload" href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;display=swap"></noscript>
+  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+  <link id="portal-design-layer" rel="stylesheet" href="assets/theme/css/portal.css">
+  <style>
+    body.portal-site .tk-overview__layout { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(260px, .6fr); gap: 48px; align-items: start; }
+    body.portal-site .tk-overview__eyebrow { margin: 0 0 10px; color: var(--portal-muted-ink) !important; font: 700 12px/1.3 'Plus Jakarta Sans', Arial, sans-serif; letter-spacing: .09em; text-transform: uppercase; }
+    body.portal-site .tk-overview h2 { margin: 0; color: var(--portal-burgundy) !important; font-size: clamp(1.8rem, 4vw, 2.5rem) !important; }
+    body.portal-site .tk-overview__copy { max-width: 65ch; margin: 18px 0 0; }
+    body.portal-site .tk-command { margin: 0; padding: 18px 20px; overflow: auto; border: 1px solid var(--portal-line); border-radius: 10px; color: var(--portal-ink); background: var(--portal-muted); font: 500 13px/1.7 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; white-space: pre-wrap; }
+    body.portal-site .tk-links { display: grid; gap: 12px; }
+    body.portal-site .tk-links a { display: flex; align-items: center; justify-content: space-between; min-height: 58px; padding: 14px 16px; border: 1px solid var(--portal-line); border-radius: 8px; color: var(--portal-burgundy) !important; background: var(--portal-surface); font: 700 14px/1.25 'Plus Jakarta Sans', Arial, sans-serif; text-decoration: none; transition: background-color .2s ease, border-color .2s ease, transform .2s ease; }
+    body.portal-site .tk-links a:hover { border-color: var(--portal-mustard); background: var(--portal-muted); transform: translateY(-2px); }
+    body.portal-site .tk-links a:focus-visible { outline: 3px solid color-mix(in srgb, var(--portal-burgundy-ink) 45%, transparent); outline-offset: 3px; }
+    body.portal-site .tk-capabilities__intro { max-width: 760px; margin: 0 auto 30px; text-align: center; }
+    body.portal-site .tk-capabilities__intro h2 { margin: 0; color: var(--portal-burgundy) !important; font-size: clamp(1.65rem, 3vw, 2.25rem) !important; }
+    body.portal-site .tk-capabilities__intro p { margin: 12px 0 0; }
+    body.portal-site .tk-capability-card { height: 100%; padding: 26px 24px; border: 1px solid var(--portal-line); border-radius: 10px; background: var(--portal-surface); }
+    body.portal-site .tk-capability-card h3 { margin: 0; color: var(--portal-burgundy) !important; font-size: 1.12rem !important; }
+    body.portal-site .tk-capability-card p { margin: 12px 0 0; font-size: .95rem; line-height: 1.65; }
+    @media (max-width: 768px) {
+      body.portal-site .tk-overview__layout { grid-template-columns: 1fr; gap: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Retained legacy Mobirise shell; the shared portal layer replaces it at runtime. -->
+  <section class="menu1 medicalm4_menu1" once="menu" id="menu1-3dtk"></section>
+  <section class="footer1" once="footers" id="footer1-3dtk"></section>
+  <section class="footer2 medicalm4_footer2" id="footer2-3dtk"></section>
+
+  <section data-bs-version="5.1" class="content4 mbr-parallax-background" id="3dtk-introduction">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="title col-md-12 col-lg-8">
+          <h1 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2">3D'omics ToolKit</h1>
+          <p class="mbr-section-subtitle mbr-fonts-style align-center display-7">Find, summarise, export and download 3D'omics catalogue records from the command line or Python.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tk-overview" aria-labelledby="3dtk-overview-title">
+    <div class="container">
+      <div class="tk-overview__layout">
+        <div>
+          <p class="tk-overview__eyebrow">Open source research software</p>
+          <h2 id="3dtk-overview-title">A direct route to the 3D'omics catalogue</h2>
+          <p class="tk-overview__copy"><strong>3dtk</strong> is the 3D'omics ToolKit: a Python package and command-line interface for querying the published 3D'omics catalogue. It uses a citable, checksum-verified SQLite release from Zenodo, so researchers can work with the data without credentials or a running server.</p>
+          <p class="tk-overview__copy">Install the <code>3dtk</code> distribution, then use <code>py3dtk</code> in Python.</p>
+        </div>
+        <div>
+          <pre class="tk-command" aria-label="3dtk installation and example query"><code>pip install 3dtk
+3dtk database sync
+3dtk microsamples query --experiment-id G --sex female --columns context</code></pre>
+          <div class="tk-links" aria-label="3dtk resources">
+            <a href="https://github.com/3d-omics/3dtk" target="_blank" rel="noopener noreferrer">View the source on GitHub <span aria-hidden="true">↗</span></a>
+            <a href="https://3dtk.readthedocs.io/" target="_blank" rel="noopener noreferrer">Read the documentation <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tk-capabilities" aria-labelledby="3dtk-capabilities-title">
+    <div class="container">
+      <div class="tk-capabilities__intro">
+        <h2 id="3dtk-capabilities-title">Built for practical data access</h2>
+        <p>Use one consistent interface across the 3D'omics data hierarchy: experiments, specimens, macro- and microsamples, cryosections, genomes and count matrices.</p>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <article class="tk-capability-card">
+            <h3>Query and summarise</h3>
+            <p>Filter records, discover available fields and values, and produce quick statistics across the catalogue.</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-4 mb-4 mb-md-0">
+          <article class="tk-capability-card">
+            <h3>Export analysis-ready data</h3>
+            <p>Rebuild dense count matrices and pair them with aligned spatial coordinates for downstream analysis.</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="tk-capability-card">
+            <h3>Fetch sequencing files</h3>
+            <p>Resolve catalogue accessions and download sequencing data with integrity checks and an auditable manifest.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script type="text/plain" data-src="assets/web/assets/jquery/jquery.min.js"></script>
+  <script type="text/plain" data-src="assets/popper/popper.min.js"></script>
+  <script type="text/plain" data-src="assets/tether/tether.min.js"></script>
+  <script type="text/plain" data-src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-core.js"></script>
+  <script src="assets/web/assets/cookies-alert-plugin/cookies-alert-script.js"></script>
+  <script src="assets/theme/js/portal.js" defer></script>
+  <script type="text/plain" data-src="assets/smoothscroll/smooth-scroll.js"></script>
+  <script type="text/plain" data-src="assets/dropdown/js/nav-dropdown.js"></script>
+  <script type="text/plain" data-src="assets/dropdown/js/navbar-dropdown.js"></script>
+  <script type="text/plain" data-src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
+  <script type="text/plain" data-src="assets/theme/js/script.js"></script>
+  <input name="cookieData" type="hidden" data-cookie-cookiesAlertType="2" data-cookie-customDialogSelector="null" data-cookie-colorText="#424a4d" data-cookie-colorBg="rgb(255, 255, 255)" data-cookie-opacityOverlay="0" data-cookie-bgOpacity="100" data-cookie-textButton="ACCEPT" data-cookie-rejectText="REJECT" data-cookie-colorButton="#a74d79" data-cookie-rejectColor="#ffffff" data-cookie-colorLink="#424a4d" data-cookie-underlineLink="true" data-cookie-text="We use cookies as specified in the &lt;a href='privacy.html'&gt;cookie policy&lt;/a&gt;. Rejecting cookies may make some features unavailable.">
+</body>
+</html>

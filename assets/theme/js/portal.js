@@ -25,18 +25,17 @@
   };
 
   const navigation = [
-    `<li>${link('index.html', 'Home', page === 'index.html')}</li>`,
+    `<li>${link('concept.html', 'Concept', page === 'concept.html')}</li>`,
     group('Project', [
-      ['concept.html', 'Concept'],
       ['workflow.html', 'Workflow & management'],
       ['consortium.html', 'Consortium & board'],
       ['sneak_peek.html', 'Progress sneak-peek'],
     ]),
     group('Resources', [
       [portal, "3D'omics Data Portal"],
+      ['3dtk.html', "3D'omics ToolKit"],
       ['cooperations.html', 'Cooperations'],
       ['publications.html', 'Publications'],
-      ['press.html', 'Press coverage'],
       ['outreach.html', 'Outreach & videos'],
     ]),
     group('Activities', [
@@ -65,15 +64,17 @@
       <div class="portal-footer__content">
         <div class="portal-footer__funding">
           <img class="portal-footer__flag" src="assets/images/eu-flag.jpeg" alt="European Union flag">
-          <p>This project has received funding from the European Union's Horizon 2020 Research and Innovation programme under grant agreement No. 101000309.</p>
+          <p>The 3D'omics project ran from 2021 to 2025 and received funding from the European Union's Horizon 2020 Research and Innovation programme under grant agreement number No. 101000309.</p>
         </div>
-        <ul class="portal-footer__meta">
-          <li>Coordinator: <a href="https://www.alberdilab.dk/">Antton Alberdi (UCPH)</a></li>
-          <li class="portal-footer__meta-separator" aria-hidden="true">|</li>
-          <li>Contact: <a href="mailto:3d-omics@sund.ku.dk">3d-omics@sund.ku.dk</a></li>
-          <li class="portal-footer__meta-separator" aria-hidden="true">|</li>
-          <li><a href="privacy.html">Data and privacy policy</a></li>
-        </ul>
+        <div class="portal-footer__meta-panel">
+          <ul class="portal-footer__meta">
+            <li>Coordinator: <a href="https://www.alberdilab.dk/">Antton Alberdi (UCPH)</a></li>
+            <li class="portal-footer__meta-separator" aria-hidden="true">|</li>
+            <li>Contact: <a href="mailto:3d-omics@sund.ku.dk">3d-omics@sund.ku.dk</a></li>
+            <li class="portal-footer__meta-separator" aria-hidden="true">|</li>
+            <li><a href="privacy.html">Data and privacy policy</a></li>
+          </ul>
+        </div>
       </div>
       <ul class="portal-footer__social" aria-label="3D'omics social links">
         <li><a href="https://bsky.app/profile/3domics.bsky.social" aria-label="Bluesky"><span class="mbr-iconfont mbrib-cloud"></span></a></li>
@@ -130,8 +131,8 @@
       'consortium.html': 'Project',
       'sneak_peek.html': 'Project',
       'cooperations.html': 'Resources',
+      '3dtk.html': 'Resources',
       'publications.html': 'Resources',
-      'press.html': 'Resources',
       'outreach.html': 'Resources',
       'training.html': 'Activities',
       'TrainingEvent_MicrobiomeAtlas.html': 'Activities',

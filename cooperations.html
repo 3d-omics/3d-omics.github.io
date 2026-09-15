@@ -7,10 +7,10 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/favicon-128x199.png" type="image/x-icon">
-  <meta name="description" content="">
+  <meta name="description" content="3D'omics collaborations with complementary research initiatives and technology partners.">
   
   
-  <title>Cooperations</title>
+  <title>Project collaborations | 3D'omics</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
   <link rel="stylesheet" href="assets/tether/tether.min.css">
@@ -29,6 +29,161 @@
   
   
   <link id="portal-design-layer" rel="stylesheet" href="assets/theme/css/portal.css">
+  <style>
+    body.portal-site .cooperation-directory .contents {
+      max-width: 760px;
+      margin: 0 0 30px;
+    }
+
+    body.portal-site .cooperation-section-heading__eyebrow,
+    body.portal-site .cooperation-card__type {
+      margin: 0 0 8px;
+      color: var(--portal-muted-ink) !important;
+      font: 600 12px/1.3 'Plus Jakarta Sans', Arial, sans-serif;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    body.portal-site .cooperation-directory .contents .mbr-section-title {
+      margin: 0;
+      color: var(--portal-burgundy) !important;
+      font-size: clamp(1.75rem, 3.5vw, 2.35rem) !important;
+    }
+
+    body.portal-site .cooperation-section-heading__copy {
+      max-width: 64ch;
+      margin: 15px 0 0;
+      color: var(--portal-ink) !important;
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    body.portal-site .cooperation-directory .card-wrapper {
+      display: flex;
+      height: 100%;
+      min-width: 0;
+      flex-direction: column;
+      overflow: hidden;
+      border: 1px solid var(--portal-line);
+      border-radius: 12px;
+      background: var(--portal-surface);
+      box-shadow: 0 6px 20px rgb(64 25 48 / 6%);
+      transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+    }
+
+    body.portal-site .cooperation-directory .card-wrapper:hover {
+      border-color: color-mix(in srgb, var(--portal-burgundy-ink) 50%, var(--portal-line));
+      box-shadow: var(--portal-shadow);
+      transform: translateY(-2px);
+    }
+
+    body.portal-site .cooperation-directory .card-img {
+      position: relative;
+      display: grid;
+      aspect-ratio: 2.35 / 1;
+      place-items: center;
+      padding: 15px;
+      border-bottom: 1px solid var(--portal-line);
+      background: var(--portal-muted);
+    }
+
+    body.portal-site .cooperation-directory .card-img img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    body.portal-site .cooperation-directory .card-wrapper .card-box {
+      display: flex;
+      min-height: 0;
+      flex: 1 1 auto;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 24px;
+    }
+
+    body.portal-site .cooperation-card__type {
+      margin-bottom: 11px;
+      font-size: 10px;
+    }
+
+    body.portal-site .cooperation-directory .card-title {
+      margin: 0;
+      color: var(--portal-ink) !important;
+      font-size: 1.17rem !important;
+      line-height: 1.25 !important;
+    }
+
+    body.portal-site .cooperation-directory .card-box .mbr-text {
+      max-width: none !important;
+      margin: 13px 0 0;
+      color: var(--portal-muted-ink) !important;
+      font-size: .91rem !important;
+      line-height: 1.65 !important;
+    }
+
+    body.portal-site .cooperation-directory .card-box .mbr-text a {
+      color: var(--portal-burgundy) !important;
+    }
+
+    body.portal-site .cooperation-directory .card-box .mbr-text a:hover {
+      color: var(--portal-mustard) !important;
+    }
+
+    body.portal-site .cooperation-directory .card-wrapper .card-img .meta-category {
+      position: absolute;
+      top: auto !important;
+      right: 12px;
+      bottom: 12px;
+      left: 12px;
+      z-index: 1;
+      margin: 0 !important;
+      padding: 0 !important;
+      border-radius: 0;
+      background: transparent !important;
+    }
+
+    body.portal-site .cooperation-directory .meta-category .btn {
+      display: inline-flex;
+      min-height: 0;
+      padding: 8px 11px !important;
+      border: 1px solid color-mix(in srgb, #fff 45%, transparent) !important;
+      border-radius: 6px !important;
+      background: rgb(116 27 71 / 92%) !important;
+      font-size: .78rem !important;
+      text-decoration: none;
+    }
+
+    body.portal-site .cooperation-directory .meta-category .btn:hover {
+      background: var(--portal-mustard) !important;
+    }
+
+    body.portal-site section#features6-5x.cooperation-directory:not(.menu1):not(.footer1):not(.footer2):not(.header1):not(.header2):not(.portal-page-hero):not(.portal-page-header):not(.mbr-parallax-background):not(.portal-zenodo-callout),
+    body.portal-site section#features6-a6.cooperation-directory:not(.menu1):not(.footer1):not(.footer2):not(.header1):not(.header2):not(.portal-page-hero):not(.portal-page-header):not(.mbr-parallax-background):not(.portal-zenodo-callout),
+    body.portal-site section#features6-5y.cooperation-directory:not(.menu1):not(.footer1):not(.footer2):not(.header1):not(.header2):not(.portal-page-hero):not(.portal-page-header):not(.mbr-parallax-background):not(.portal-zenodo-callout),
+    body.portal-site section#features6-6a.cooperation-directory:not(.menu1):not(.footer1):not(.footer2):not(.header1):not(.header2):not(.portal-page-hero):not(.portal-page-header):not(.mbr-parallax-background):not(.portal-zenodo-callout) {
+      background: var(--portal-subtle) !important;
+    }
+
+    body.portal-site #features6-5x.cooperation-directory { padding-bottom: 20px !important; }
+    body.portal-site #features6-a6.cooperation-directory,
+    body.portal-site #features6-5y.cooperation-directory {
+      padding-top: 0 !important;
+      padding-bottom: 20px !important;
+    }
+    body.portal-site #features6-6a.cooperation-directory { padding-top: 0 !important; }
+
+    body.portal-site .cooperation-directory .meta-category .btn:focus-visible,
+    body.portal-site .cooperation-directory .card-box .mbr-text a:focus-visible {
+      outline: 3px solid color-mix(in srgb, var(--portal-burgundy-ink) 55%, transparent);
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 640px) {
+      body.portal-site .cooperation-directory .card-wrapper .card-box { padding: 20px !important; }
+    }
+  </style>
 </head>
 <body>
   
@@ -116,22 +271,21 @@
     </div>
 </section>
 
-<section data-bs-version="5.1" class="content4 cid-tOBoX5fJS2 mbr-parallax-background" id="content4-9u">
+<section data-bs-version="5.1" class="content4 cid-tOBoX5fJS2 mbr-parallax-background" id="content4-9u" aria-labelledby="cooperations-title">
     
     <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(233, 209, 210);">
     </div>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="title col-md-12 col-lg-6">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><strong>3D'omics</strong><br><strong><br></strong><div><strong>Project Cooperations</strong></div></h3>
-                
-                
+            <div class="title col-md-12 col-lg-7">
+                <h1 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2" id="cooperations-title">Project collaborations</h1>
+                <p class="mbr-section-subtitle mbr-fonts-style align-center display-7">Connecting complementary expertise to make microbial ecosystem research more coherent, useful and widely applicable.</p>
             </div>
         </div>
     </div>
 </section>
 
-<section class="features6 medicalm4_features6 cid-tIny0RPjD8" id="features6-5x">
+<section class="features6 medicalm4_features6 cid-tIny0RPjD8 cooperation-directory" id="features6-5x" aria-labelledby="research-collaborations-title">
 
     
 
@@ -141,14 +295,16 @@
         <div class="contents">
             
             
-            <h2 class="mbr-section-text mbr-fonts-style mbr-light display-7">The 3D'omics project reinforced collaborations with initiatives in related domains <br>to promote coherence and applicability of research on microbial ecosystems.&nbsp;</h2>
+            <p class="cooperation-section-heading__eyebrow">Shared research landscape</p>
+            <h2 class="mbr-section-title mbr-fonts-style mbr-bold display-2" id="research-collaborations-title">Research collaborations</h2>
+            <p class="cooperation-section-heading__copy">3D'omics reinforced collaboration with initiatives in related domains to promote coherence and applicability of research on microbial ecosystems.</p>
         </div>
         <div class="row justify-content-center">
             <div class="card col-12 col-md-6 col-lg-4">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <img src="assets/images/holofood-700x295.png" alt="">
-                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://www.holofood.eu/" target="_blank">HoloFood</a></div>
+                        <img src="assets/images/holofood-700x295.png" alt="HoloFood logo">
+                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://www.holofood.eu/" target="_blank" rel="noopener noreferrer" aria-label="Visit the HoloFood website">Visit website <span aria-hidden="true">↗</span></a></div>
                     </div>
                     <div class="card-box align-left">
                         <h4 class="card-title align-left pb-3 mbr-fonts-style mbr-bold display-5">HoloFood</h4>
@@ -161,8 +317,8 @@
             <div class="card col-12 col-md-6 col-lg-4">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <img src="assets/images/findingpheno-700x295.png" alt="">
-                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://www.findingpheno.eu/" target="_blank">findingpheno</a></div>
+                        <img src="assets/images/findingpheno-700x295.png" alt="FindingPheno logo">
+                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://www.findingpheno.eu/" target="_blank" rel="noopener noreferrer" aria-label="Visit the FindingPheno website">Visit website <span aria-hidden="true">↗</span></a></div>
                     </div>
                     <div class="card-box align-left">
                         <h4 class="card-title pb-3 align-left mbr-fonts-style mbr-bold display-5">FindingPheno</h4>
@@ -175,8 +331,8 @@
             <div class="card col-12 col-md-6 col-lg-4">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <img src="assets/images/simba-700x295.png" alt="">
-                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://simbaproject.eu/" target="_blank">SIMBA</a></div>
+                        <img src="assets/images/simba-700x295.png" alt="SIMBA logo">
+                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://simbaproject.eu/" target="_blank" rel="noopener noreferrer" aria-label="Visit the SIMBA website">Visit website <span aria-hidden="true">↗</span></a></div>
                     </div>
                     <div class="card-box align-left">
                         <h4 class="card-title align-left pb-3 mbr-fonts-style mbr-bold display-5">
@@ -192,7 +348,7 @@
     </div>
 </section>
 
-<section class="features6 medicalm4_features6 cid-uowDbTWz0A" id="features6-a6">
+<section class="features6 medicalm4_features6 cid-uowDbTWz0A cooperation-directory" id="features6-a6">
 
     
 
@@ -208,12 +364,12 @@
             <div class="card col-12 col-md-6 col-lg-4">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <img src="assets/images/sfsn-web-700x295.png" alt="">
-                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://sustainable-food-systems-network.mobilize.io/" target="_blank">SFSN</a></div>
+                        <img src="assets/images/sfsn-web-700x295.png" alt="Sustainable Food Systems Network logo">
+                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://sustainable-food-systems-network.mobilize.io/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Sustainable Food Systems Network website">Visit website <span aria-hidden="true">↗</span></a></div>
                     </div>
                     <div class="card-box align-left">
                         <h4 class="card-title align-left pb-3 mbr-fonts-style mbr-bold display-5">Sustainable Food Systems Network</h4>
-                        <p class="mbr-text align-left mbr-fonts-style mbr-regular display-4">The Sustainable Food Systems Network (SFSN) is a virtual platform where actors interested in the transformation of European food systems can connect, interact and inspire each other. SFSN has been initiated in 2020 by the EU funded project FIT4FOOD2030, which advocates for food system transformation through responsible research and innovation. SFSN is for anyone who wants to be up-to-date with activities aimed at creating resilient and sustainable food systems with well-integrated responsible research and innovation practices.<br>The 3D'omics Project Manager is an SFSN Ambassador - bridging the projects and facilitating information flow.&nbsp;</p>
+                        <p class="mbr-text align-left mbr-fonts-style mbr-regular display-4">The Sustainable Food Systems Network (SFSN) is a virtual platform where actors interested in the transformation of European food systems can connect, interact and inspire each other. SFSN was initiated in 2020 by the EU-funded project FIT4FOOD2030, which advocates for food-system transformation through responsible research and innovation. SFSN is for anyone who wants to stay up to date with activities aimed at creating resilient and sustainable food systems with well-integrated responsible research and innovation practices.<br>The 3D'omics Project Manager was an SFSN Ambassador, bridging the projects and facilitating information flow.&nbsp;</p>
                     </div>
                     
                 </div>
@@ -222,8 +378,8 @@
             <div class="card col-12 col-md-6 col-lg-4">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <img src="assets/images/ehi-700x295.png" alt="">
-                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://www.earthhologenome.org/" target="_blank">EHI</a></div>
+                        <img src="assets/images/ehi-700x295.png" alt="Earth HoloGenome Initiative logo">
+                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://www.earthhologenome.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Earth HoloGenome Initiative website">Visit website <span aria-hidden="true">↗</span></a></div>
                     </div>
                     <div class="card-box align-left">
                         <h4 class="card-title pb-3 align-left mbr-fonts-style mbr-bold display-5">Earth HoloGenome Initiative</h4>
@@ -236,8 +392,8 @@
             <div class="card col-12 col-md-6 col-lg-4">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <img src="assets/images/ms-700x295.png" alt="">
-                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://www.microbiomesupport.eu/" target="_blank">Microbiome Support</a></div>
+                        <img src="assets/images/ms-700x295.png" alt="MicrobiomeSupport logo">
+                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://www.microbiomesupport.eu/" target="_blank" rel="noopener noreferrer" aria-label="Visit the MicrobiomeSupport website">Visit website <span aria-hidden="true">↗</span></a></div>
                     </div>
                     <div class="card-box align-left">
                         <h4 class="card-title align-left pb-3 mbr-fonts-style mbr-bold display-5">
@@ -253,7 +409,7 @@
     </div>
 </section>
 
-<section class="features6 medicalm4_features6 cid-tIny0Slmon" id="features6-5y">
+<section class="features6 medicalm4_features6 cid-tIny0Slmon cooperation-directory" id="features6-5y">
 
     
 
@@ -269,11 +425,11 @@
             <div class="card col-12 col-md-6 col-lg-4">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <img src="assets/images/relivestock-logo.svg" alt="">
-                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://re-livestock.eu/" target="_blank">re-lifestock</a></div>
+                        <img src="assets/images/relivestock-logo.svg" alt="Re-Livestock logo">
+                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://re-livestock.eu/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Re-Livestock website">Visit website <span aria-hidden="true">↗</span></a></div>
                     </div>
                     <div class="card-box align-left">
-                        <h4 class="card-title align-left pb-3 mbr-fonts-style mbr-bold display-5"><br>Re-lifestock</h4>
+                        <h4 class="card-title align-left pb-3 mbr-fonts-style mbr-bold display-5">Re-Livestock</h4>
                         <p class="mbr-text align-left mbr-fonts-style mbr-regular display-4">The overall objective of Re-Livestock is to understand and mobilize adoption of innovative practices, applied cross-scale, to reduce the greenhouse gas emissions of livestock farming and to increase the capacity for dealing with climate change impacts, in order to ultimately increase the overall resilience of the livestock sector.<br></p>
                     </div>
                     
@@ -283,8 +439,8 @@
             <div class="card col-12 col-md-6 col-lg-4">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <img src="assets/images/id-ef-logo-geronimo-notxt-transp-s-700x242.png" alt="">
-                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://www.geronimo-h2020.eu/" target="_blank">Geronimo</a></div>
+                        <img src="assets/images/id-ef-logo-geronimo-notxt-transp-s-700x242.png" alt="GEroNIMO logo">
+                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://www.geronimo-h2020.eu/" target="_blank" rel="noopener noreferrer" aria-label="Visit the GEroNIMO website">Visit website <span aria-hidden="true">↗</span></a></div>
                     </div>
                     <div class="card-box align-left">
                         <h4 class="card-title pb-3 align-left mbr-fonts-style mbr-bold display-5">GEroNIMO</h4>
@@ -297,8 +453,8 @@
             <div class="card col-12 col-md-6 col-lg-4">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <img src="assets/images/b1-600x165.png" alt="">
-                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://rumigen.eu/" target="_blank">RUMIGEN</a></div>
+                        <img src="assets/images/b1-600x165.png" alt="RUMIGEN logo">
+                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://rumigen.eu/" target="_blank" rel="noopener noreferrer" aria-label="Visit the RUMIGEN website">Visit website <span aria-hidden="true">↗</span></a></div>
                     </div>
                     <div class="card-box align-left">
                         <h4 class="card-title align-left pb-3 mbr-fonts-style mbr-bold display-5">
@@ -314,7 +470,7 @@
     </div>
 </section>
 
-<section class="features6 medicalm4_features6 cid-tInLEfK78H" id="features6-6a">
+<section class="features6 medicalm4_features6 cid-tInLEfK78H cooperation-directory" id="features6-6a">
 
     
 
@@ -330,8 +486,8 @@
             <div class="card col-12 col-md-6">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <img src="assets/images/avant-1080x455.png" alt="">
-                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://avant-project.eu/" target="_blank">AVANT</a></div>
+                        <img src="assets/images/avant-1080x455.png" alt="AVANT logo">
+                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://avant-project.eu/" target="_blank" rel="noopener noreferrer" aria-label="Visit the AVANT website">Visit website <span aria-hidden="true">↗</span></a></div>
                     </div>
                     <div class="card-box align-left">
                         <h4 class="card-title align-left pb-3 mbr-fonts-style mbr-bold display-5">Alternatives to Veterinary ANTimicrobials</h4>
@@ -344,12 +500,12 @@
             <div class="card col-12 col-md-6">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <img src="assets/images/holoruminant-1080x455.png" alt="">
-                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://holoruminant.eu/" target="_blank">HoloRuminant</a></div>
+                        <img src="assets/images/holoruminant-1080x455.png" alt="HoloRuminant logo">
+                        <div class="mbr-link-btn meta-category"><a class="btn btn-md btn-white-outline display-4" href="https://holoruminant.eu/" target="_blank" rel="noopener noreferrer" aria-label="Visit the HoloRuminant website">Visit website <span aria-hidden="true">↗</span></a></div>
                     </div>
                     <div class="card-box align-left">
                         <h4 class="card-title pb-3 align-left mbr-fonts-style mbr-bold display-5">HoloRuminant</h4>
-                        <p class="mbr-text align-left mbr-fonts-style mbr-regular display-4"><br>HoloRuminant is a multi-actor project aiming to elucidate the role of ruminant-associated microbiomes and their interplay with the host animal in early life and throughout fundamental life events (e.g. weaning, feed transitions and lactation) that are known to affect health, welfare and environmental efficiency in ruminant production systems. HoloRuminant will use a holistic multi-omics approach to characterize the establishment and dynamics of microbiomes. The 3D'omics consortium joined the HoloRuminant joint dissemination network and co-created the <a href="https://holoruminant.eu/ecogen-cluster/" class="text-primary" target="_blank">EcoGen Cluster</a>.&nbsp;<br></p>
+                        <p class="mbr-text align-left mbr-fonts-style mbr-regular display-4">HoloRuminant is a multi-actor project aiming to elucidate the role of ruminant-associated microbiomes and their interplay with the host animal in early life and throughout fundamental life events (e.g. weaning, feed transitions and lactation) that are known to affect health, welfare and environmental efficiency in ruminant production systems. HoloRuminant will use a holistic multi-omics approach to characterize the establishment and dynamics of microbiomes. The 3D'omics consortium joined the HoloRuminant joint dissemination network and co-created the <a href="https://holoruminant.eu/ecogen-cluster/" class="text-primary" target="_blank" rel="noopener noreferrer">EcoGen Cluster</a>.</p>
                     </div>
                     
                 </div>
@@ -362,7 +518,7 @@
     </div>
 </section>
 
-<section class="features6 medicalm4_features6 cid-tInM1znyG0" id="features6-6b">
+<section class="features6 medicalm4_features6 cid-tInM1znyG0 cooperation-directory cooperation-directory--companies" id="features6-6b" aria-labelledby="technology-partners-title">
 
     
 
@@ -371,19 +527,21 @@
     <div class="container">
         <div class="contents">
             
-            <h1 class="mbr-section-title mbr-fonts-style mbr-bold display-2">Cooperations with companies</h1>
+            <p class="cooperation-section-heading__eyebrow">Industry engagement</p>
+            <h2 class="mbr-section-title mbr-fonts-style mbr-bold display-2" id="technology-partners-title">Technology partners</h2>
+            <p class="cooperation-section-heading__copy">3D'omics also collaborated with companies developing the tools and models that support translational research.</p>
             
         </div>
         <div class="row justify-content-center">
             <div class="card col-12 col-md-6 col-lg-4">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <img src="assets/images/leica-700x295.png" alt="">
+                        <img src="assets/images/leica-700x295.png" alt="Leica Microsystems logo">
                         
                     </div>
                     <div class="card-box align-left">
-                        <h4 class="card-title align-left pb-3 mbr-fonts-style mbr-bold display-5">LEICA</h4>
-                        <p class="mbr-text align-left mbr-fonts-style mbr-regular display-4"></p>
+                        <p class="cooperation-card__type">Technology partner</p>
+                        <h4 class="card-title align-left pb-3 mbr-fonts-style mbr-bold display-5">Leica Microsystems</h4>
                     </div>
                     
                 </div>
@@ -392,12 +550,12 @@
             <div class="card col-12 col-md-6 col-lg-4">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <img src="assets/images/emulate-700x295.png" alt="">
+                        <img src="assets/images/emulate-700x295.png" alt="Emulate Bio logo">
                         
                     </div>
                     <div class="card-box align-left">
+                        <p class="cooperation-card__type">Technology partner</p>
                         <h4 class="card-title pb-3 align-left mbr-fonts-style mbr-bold display-5">Emulate Bio</h4>
-                        <p class="mbr-text align-left mbr-fonts-style mbr-regular display-4"></p>
                     </div>
                     
                 </div>
@@ -406,13 +564,12 @@
             <div class="card col-12 col-md-6 col-lg-4">
                 <div class="card-wrapper">
                     <div class="card-img">
-                        <img src="assets/images/tecan-700x295.png" alt="">
+                        <img src="assets/images/tecan-700x295.png" alt="Tecan logo">
                         
                     </div>
                     <div class="card-box align-left">
-                        <h4 class="card-title align-left pb-3 mbr-fonts-style mbr-bold display-5">
-                            Tecan</h4>
-                        <p class="mbr-text align-left mbr-fonts-style mbr-regular display-4"></p>
+                        <p class="cooperation-card__type">Technology partner</p>
+                        <h4 class="card-title align-left pb-3 mbr-fonts-style mbr-bold display-5">Tecan</h4>
                     </div>
                     
                 </div>

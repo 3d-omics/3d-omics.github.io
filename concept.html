@@ -25,6 +25,179 @@
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"></noscript>
   <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=S9bea3"><link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=S9bea3" type="text/css">
 
+  <style>
+    .concept-content {
+      padding: 4.5rem 0 5.5rem;
+      background: var(--portal-surface, #ffffff);
+    }
+    .concept-content .concept-figure {
+      margin: 0 0 4rem;
+    }
+    .concept-content .concept-figure img {
+      display: block;
+      width: 100%;
+      border-radius: 0.75rem;
+    }
+    .concept-content .concept-section {
+      max-width: 56rem;
+      margin: 0 auto;
+      padding: 2.75rem 0;
+      border-top: 1px solid var(--portal-line, #e4e1ec);
+    }
+    .concept-content h2 {
+      margin: 0 0 1.25rem;
+      color: #130947;
+      font-size: clamp(1.75rem, 3vw, 2.5rem);
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    .concept-content h3 {
+      margin: 2rem 0 0.75rem;
+      color: #741b47;
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+    .concept-content p,
+    .concept-content li,
+    .concept-content dt,
+    .concept-content dd {
+      color: var(--portal-ink, #24262b);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+    .concept-content p + p {
+      margin-top: 1rem;
+    }
+    .concept-content .concept-list {
+      padding-left: 1.3rem;
+    }
+    .concept-content .concept-list li + li {
+      margin-top: 0.85rem;
+    }
+    .concept-content .concept-facts {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.25rem 2.5rem;
+      margin: 1.75rem 0 0;
+    }
+    .concept-content .concept-facts div {
+      padding-top: 0.85rem;
+      border-top: 1px solid #e4e1ec;
+    }
+    .concept-content .concept-facts dt {
+      color: var(--portal-burgundy-ink, #741b47);
+      font-size: 0.85rem;
+      font-weight: 800;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+    .concept-content .concept-facts dd {
+      margin: 0.2rem 0 0;
+    }
+    .concept-content .partner-list {
+      columns: 2 20rem;
+      column-gap: 2.5rem;
+      padding-left: 1.3rem;
+    }
+    .concept-content .partner-list li {
+      break-inside: avoid;
+      margin-bottom: 0.75rem;
+    }
+    .concept-content .concept-section--context {
+      padding-top: 0;
+      border-top: 0;
+    }
+    .concept-content .concept-figure {
+      margin: 2.5rem 0 0;
+    }
+    .concept-content .concept-figure figcaption {
+      margin-top: 0.85rem;
+      color: var(--portal-muted-ink, #6b6474);
+      font-size: 0.9rem;
+      line-height: 1.5;
+    }
+    .concept-content .solution-layout,
+    .concept-content .objectives-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+    .concept-content .solution-summary,
+    .concept-content .objective-card {
+      padding: 1.75rem;
+      border-radius: 0.75rem;
+      background: var(--portal-surface, #ffffff);
+    }
+    .concept-content .solution-summary {
+      border-top: 0.3rem solid var(--portal-burgundy, #741b47);
+    }
+    .concept-content .solution-method {
+      padding: 0.5rem 0 0.5rem 1.5rem;
+      border-left: 1px solid var(--portal-line, #d8d1df);
+    }
+    .concept-content .solution-method h3,
+    .concept-content .objective-card h3 {
+      margin-top: 0;
+    }
+    .concept-content .overview-layout {
+      padding-left: 1.75rem;
+      border-left: 0.3rem solid var(--portal-mustard, #d3a119);
+    }
+    .concept-content .overview-label {
+      margin-bottom: 1.5rem;
+      color: var(--portal-burgundy-ink, #741b47);
+      font-size: 0.9rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .concept-content .objective-card--impact {
+      background: color-mix(in srgb, var(--portal-burgundy-ink, #741b47) 9%, var(--portal-surface, #ffffff));
+    }
+    .concept-content .funding-callout {
+      padding: 1.75rem 2rem;
+      border-radius: 0.75rem;
+      background: #130947;
+      color: #ffffff;
+    }
+    .concept-content .funding-callout p,
+    .concept-content .funding-callout strong,
+    .concept-content .funding-callout a {
+      color: #ffffff;
+    }
+    .concept-content .funding-callout a {
+      text-decoration-color: #d3a119;
+    }
+    @media (max-width: 575px) {
+      .concept-content {
+        padding: 3rem 0 4rem;
+      }
+      .concept-content .concept-figure {
+        margin-bottom: 2.75rem;
+      }
+      .concept-content .concept-section {
+        padding: 2.25rem 0;
+      }
+      .concept-content .concept-facts {
+        grid-template-columns: 1fr;
+      }
+      .concept-content .solution-layout,
+      .concept-content .objectives-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .concept-content .solution-summary,
+      .concept-content .objective-card,
+      .concept-content .funding-callout {
+        padding: 1.35rem;
+      }
+      .concept-content .solution-method,
+      .concept-content .overview-layout {
+        padding-left: 1.15rem;
+      }
+    }
+  </style>
+
   
   
   
@@ -129,174 +302,129 @@
                 <p class="label-text mbr-fonts-style display-4">
                     <strong>ABOUT US</strong></p>
                 <h1 class="mbr-section-title mbr-fonts-style mb-0 display-1"><strong>The 3D'omics Concept</strong></h1>
-                <h2 class="mbr-section-subtitle mbr-fonts-style mb-0 display-7"><br>Understanding the interplay between animals and microorganisms associated with them has been recognised as an essential topic by the European Commission for improving and optimising animal health, welfare, and production worldwide. To understand the truly relevant biomolecular interactions that impact food production processes, researchers are implementing novel strategies based on the analysis of animal genomes, the metagenomes of the associated microorganisms, and the different omic layers interconnecting them — the so-called holo’omic framework.<div><br></div><div>However, current methods provide us information analogous to what would be learned from studying the functioning of the Amazon rainforest through mixing all living organisms in the jungle in a big pot and quantifying their relative abundances without acknowledging, for instance, which bird nests or which fungi are associated with which tree.</div><div><br></div><div>Now, we are finally capable of breaking these barriers and boosting animal-microbiota research: The 3D-omics project developed<span style="font-size: 1.125rem;">&nbsp;a framework to generate and analyse 3D’omic data that aims at unveiling microbe-microbe and animal-microbe interactions that have so far remained undetected due to technical limitations.</span></div></h2>
+                <p class="mbr-section-subtitle mbr-fonts-style mb-0 display-7">3D’omics created three-dimensional maps of intestinal ecosystems to reveal host–microbiota interactions that influenced animal health, welfare and production.</p>
                 
-            </div>
-        </div>
-        <div class="text-container row justify-content-start">
-            <div class="col-lg-3 col-md-6 col-12">
-                <div class="text-item">
-                    
-                    
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-12">
-                <div class="text-item">
-                    
-                    
-                </div>
             </div>
         </div>
     </div>
 </section>
 
-<section data-bs-version="5.1" class="artistm5 image3 cid-tIsUIEHQyB" id="image03-6x">
-    
-
-    
-    
-
+<main class="concept-content" id="concept-overview">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10">
-                <div class="image-wrapper">
-                    <img src="assets/images/general-2220x1204.png" alt="">
-                    
-                </div>
+                <section class="concept-section concept-section--context" aria-labelledby="spatial-context-title">
+                    <h2 id="spatial-context-title">Why spatial context matters</h2>
+                    <p>Understanding the interplay between animals and the microorganisms associated with them was essential for improving animal health, welfare and production. To identify the biomolecular interactions that shaped food production processes, researchers examined animal genomes, microbial metagenomes and the omic layers that interconnected them: the holo’omic framework.</p>
+                    <p>Conventional methods, however, provided information analogous to studying the Amazon rainforest by mixing every organism in the jungle in one pot and measuring their relative abundances—without showing which birds nested in which trees, or which fungi lived alongside them.</p>
+                    <p>3D’omics overcame this barrier by generating and analysing 3D’omic data, making previously hidden microbe–microbe and animal–microbe interactions visible.</p>
+                    <figure class="concept-figure">
+                        <img src="assets/images/general-2220x1204.png" alt="Illustration showing why spatial context was needed to understand an intestinal microbial ecosystem">
+                        <figcaption>Spatial context helped reveal the relationships that conventional bulk methods could not distinguish.</figcaption>
+                    </figure>
+                </section>
+
+                <section class="concept-section" aria-labelledby="solution-title">
+                    <h2 id="solution-title">The 3D’omics solution</h2>
+                    <div class="solution-layout">
+                        <div class="solution-summary">
+                            <p>Reconstructing intestinal microbial landscapes in 3D was a strategic response to the limits of conventional microbiome methods, which could not capture essential information about biological interactions between microbes and animals. The work supported the development of microbiota-modulation solutions and microbiota-aware animal breeds to improve the sustainability, health and welfare of livestock.</p>
+                        </div>
+                        <div class="solution-method">
+                            <h3>Development of a novel methodological framework</h3>
+                            <p>3D’omics developed an integrated framework to generate and analyse 3D’omic data alongside fluorescence-based imaging of bacteria and labelled feed compounds, plus complementary health, nutrition and performance analyses. The technology built on advances in multi-omics, structural genomics, spatial transcriptomics and metabolomics, coupled with cutting-edge animal phenotyping techniques.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="concept-section" aria-labelledby="project-title">
+                    <h2 id="project-title">Project overview</h2>
+                    <div class="overview-layout">
+                        <p class="overview-label">Acronym: 3D’omics</p>
+                        <p><strong>3D omics analysis of host–microbiota interactions to advance animal production.</strong></p>
+                        <p>Elucidating the three-dimensional conformation of biomolecules in cells and tissues was essential for understanding biomolecular interactions. The EU-funded 3D’omics project developed, optimised and implemented this knowledge for animal production, generating 3D omics landscapes and reconstructing intestinal host–microbiota ecosystems.</p>
+                        <p>Using poultry and swine production systems, the project analysed how animal development, diet, pathogen exposure and management practices shaped these landscapes. The resulting framework opened new research avenues for animal breeding, tailored feeds, animal-health treatments and management practices that increased production efficiency and welfare while decreasing environmental impact.</p>
+                    </div>
+                </section>
+
+                <section class="concept-section" aria-labelledby="objectives-title">
+                    <h2 id="objectives-title">Objectives and impact</h2>
+                    <p>The overall objective was to develop, implement and assess the technological, economic and societal impact of a framework for generating and analysing 3D’omic landscapes. This framework helped decipher the characteristics and functions of livestock microbial ecosystems, and how they influenced production, health and welfare.</p>
+                    <div class="objectives-grid">
+                        <div class="objective-card">
+                            <h3>Operational objectives</h3>
+                            <ol class="concept-list">
+                                <li>Developed the 3D’omics technology to reconstruct 3D multi-omic intestinal landscapes from micro-scale genomic, transcriptomic, metabolomic and imaging data.</li>
+                                <li>Demonstrated the technology in two monogastric animal systems: poultry and swine.</li>
+                                <li>Incorporated 3D’omics data into breeding and feeding models used to analyse phenotypic variability, perform genetic evaluations and modulate microbial ecosystems.</li>
+                                <li>Assessed the technical, economic and societal impact of 3D’omics technology, and outlined a roadmap for industrial implementation.</li>
+                                <li>Established strong collaborations and knowledge-transfer activities with related microbiome initiatives.</li>
+                            </ol>
+                        </div>
+                        <div class="objective-card objective-card--impact">
+                            <h3>Project impact</h3>
+                            <ol class="concept-list">
+                                <li>Enabled microbial-ecosystem data to be included in models for phenotypic variability and genetic evaluation.</li>
+                                <li>Improved resource use and reduced the environmental impact of terrestrial livestock production.</li>
+                                <li>Improved the robustness and health of terrestrial livestock in relation to productive functions.</li>
+                                <li>Reinforced collaborations with related initiatives to promote coherent, applicable microbial-ecosystem research.</li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="concept-section" aria-labelledby="facts-title">
+                    <h2 id="facts-title">3D’omics in numbers</h2>
+                    <dl class="concept-facts">
+                        <div><dt>Project period</dt><dd>1 September 2021 – 31 December 2025</dd></div>
+                        <div><dt>Work packages</dt><dd>9</dd></div>
+                        <div><dt>Partner institutions</dt><dd>13 institutions from 11 countries</dd></div>
+                        <div><dt>Coordinator</dt><dd>Københavns Universitet (UCPH), Denmark</dd></div>
+                        <div><dt>Project coordination</dt><dd>Antton Alberdi</dd></div>
+                        <div><dt>Overall budget</dt><dd>€10,073,540.00</dd></div>
+                        <div><dt>EU contribution</dt><dd>€9,994,415.00</dd></div>
+                    </dl>
+                </section>
+
+                <section class="concept-section" aria-labelledby="partners-title">
+                    <h2 id="partners-title">Project partners</h2>
+                    <ol class="partner-list">
+                        <li>Københavns Universitet (UCPH), Denmark</li>
+                        <li>Fundació Centre de Regulació Genòmica (CRG), Spain — ended in 2024; taken over by CNAG</li>
+                        <li>Veterinärmedizinische Universität Wien (UVM), Austria</li>
+                        <li>Max Delbrück Centrum für Molekulare Medizin (MDC), Germany</li>
+                        <li>Katholieke Universiteit Leuven (KUL), Belgium</li>
+                        <li>Eidgenössische Technische Hochschule Zürich (ETH), Switzerland</li>
+                        <li>Ben-Gurion University of the Negev (BGU), Israel</li>
+                        <li>Norges Miljø- og Biovitenskaplige Universitet (NMBU), Norway</li>
+                        <li>Afekta Technologies Ltd (ATL), Finland</li>
+                        <li>Aviagen Limited (AVI), United Kingdom</li>
+                        <li>Novogene Netherlands BV (NGE), Netherlands</li>
+                        <li>Biomin Holding GmbH (BIO), Austria</li>
+                        <li>Norsvin SA (NORSVIN), Norway</li>
+                        <li>Center for Genomic Analysis (CNAG), Spain — joined in 2024, taking over from CRG</li>
+                    </ol>
+                    <p>Read more about the organisations on the <a href="consortium.html" class="text-primary">consortium page</a>.</p>
+                    <h3>Advisory Board</h3>
+                    <ul class="concept-list">
+                        <li>Angela Sessitsch — Austrian Institute of Technology (AIT), Austria</li>
+                        <li>Geoff Simm — University of Edinburgh, United Kingdom</li>
+                        <li>Thomas Bosch — University of Kiel (CAU), Germany</li>
+                        <li>Yolanda Sanz — Spanish National Research Council at the Institute of Agrochemistry and Food Technology (CSIC-IATA), Spain</li>
+                    </ul>
+                </section>
+
+                <section class="concept-section" aria-labelledby="funding-title">
+                    <h2 id="funding-title">Funding</h2>
+                    <div class="funding-callout">
+                        <p>3D’omics received funding from the European Commission through the European Union’s Horizon 2020 Research and Innovation Action (RIA) programme, under <a href="https://cordis.europa.eu/project/id/101000309" target="_blank" rel="noopener noreferrer">grant agreement No. 101000309</a>.</p>
+                        <p>The project was funded under the topic <strong>Societal Challenges</strong>: food security, sustainable agriculture and forestry, marine, maritime and inland water research, and the bioeconomy.</p>
+                    </div>
+                </section>
             </div>
         </div>
     </div>
-</section>
-
-<section data-bs-version="5.1" class="artistm5 image3 cid-tJ2uFejv0F" id="image03-91">
-    
-
-    
-    
-
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-lg-9">
-                <div class="image-wrapper">
-                
-                    <p class="mbr-description mbr-fonts-style mt-2 align-center display-7"><strong>The need for the 3D’omics solution<br></strong>Reconstructing intestinal microbial landscapes in 3D is not a whim or a personal defiance of restless researchers, but a well-meditated strategic decision resulting from the realisation that current methods to analyse the microbiome are not enabling us to capture essential information to understand biological interactions between microbes and animals. Acknowledging such interactions is essential to develop microbiota-modulation solutions and microbiota-aware animal breeds that will enable us to increase sustainability of livestock production, improving animal health and welfare.&nbsp;<br><br><strong>Development of a novel methodological framework<br></strong>In 3D’omics, we developed an integrated methodological framework to generate and analyse 3D’omic data along with information derived from fluorescence-based imaging of bacteria and labelled feed compounds, and complementary health, nutrition, and performance analyses. The 3D’omics technology builds on the recent advancements in the fields of multi-omics, structural genomics as well as spatial transcriptomics and metabolomics. We coherently implemented multiple state-of-the-art molecular techniques coupled with cutting edge animal phenotyping techniques, advancing animal-microbiota research to a new frontier.<br></p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="accordion2 medicalm4_accordion2 cid-tIWzJlUoAY" id="accordion2-80">
-
-	
-
-	
-	<div class="container">
-		<div class="col-12 col-md-12 title-text">
-			
-
-			<h2 class="mbr-fonts-style mbr-section-title align-center mbr-bold display-2">3D'omics in a nutshell</h2>
-			
-		</div>
-		<div class="row justify-content-center pt-4">
-			<div class="col-md-12 content-block">
-				<div class="accordion-content">
-					<div id="bootstrap-accordion_72" class="panel-group accordionStyles accordion " role="tablist" aria-multiselectable="true">
-						<div class="card">
-							<div class="card-header" role="tab" id="headingOne">
-								<a role="button" class="collapsed panel-title" data-toggle="collapse" data-core="" href="#collapse1_72" aria-expanded="false" aria-controls="collapse1">
-									<h4 class="mbr-fonts-style header-text display-7">Project summary<span class="toggle-icon inactive sign mbr-iconfont"></span>
-									</h4>
-								</a>
-							</div>
-							<div id="collapse1_72" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_72">
-								<div class="panel-body p-4">
-									<p class="mbr-fonts-style panel-text mbr-text display-4">
-										Elucidation of the three-dimensional (3D) conformation of biomolecules in cells and tissues is an essential element for understanding biomolecular interactions. The EU-funded "3D'omics" project aimed to develop, optimise and implement knowledge of biomolecular interactions in application to animal production. The goal was to generate 3D omics landscapes, achieving reconstructions of intestinal host microbiota ecosystems. Using poultry and swine production systems, the project analysed the effects of different factors, including animal development, diet, exposure to pathogens, and management practices on the 3D omics landscapes.&nbsp;</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="card">
-							<div class="card-header" role="tab" id="headingTwo">
-								<a role="button" class="collapsed panel-title" data-toggle="collapse" data-core="" href="#collapse2_72" aria-expanded="false" aria-controls="collapse2">
-									<h4 class="mbr-fonts-style header-text display-7">Project description<span class="toggle-icon inactive sign mbr-iconfont"></span>
-									</h4>
-								</a>
-
-							</div>
-							<div id="collapse2_72" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingTwo" data-parent="#bootstrap-accordion_72">
-								<div class="panel-body p-4">
-									<p class="mbr-fonts-style panel-text mbr-text display-4"><strong>3D omics analysis of host-microbiota interactions to advance animal production.</strong><br>Acronym: 3D'omics<br><br>Understanding the interplay between animals and microorganisms associated with them has been recognised as an essential step for improving animal health, welfare and production. To understand the biomolecular interactions that impact production processes, researchers are implementing novel analytical strategies based on studying host genomes, their microbial metagenomes as well as the different ‘omic layers interconnecting them. However, such information, derived from conventional DNA/RNA sequencing and mass spectrometry, does not provide any information about how the different biological elements are spatially distributed in the ecosystem. In consequence, many microbe-microbe and animal-microbe interactions remain hidden due to the lack of resolution of the employed techniques. Acknowledging the three-dimensional (3D) conformation of biomolecules, cells and tissues is now considered a key element for advancing the understanding of biomolecular interactions. In 3D’omics we developed, optimised and, for the first time, implemented this technology in animal production. Using two terrestrial production systems, namely poultry and swine, we analysed the effect of a myriad of factors, including animal development, diet, exposure to pathogens and management practices, in the shaping of 3D’omic landscapes. We foresee our solution will open new research avenues to improve animal breeding practices, develop microbiota- and host-tailored feeds and animal health treatments, as well as to design new management practices that will enable increasing production efficiency and animal welfare while decreasing the environmental impact.</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="card">
-							<div class="card-header" role="tab" id="headingThree">
-								<a role="button" class="collapsed panel-title" data-toggle="collapse" data-core="" href="#collapse3_72" aria-expanded="false" aria-controls="collapse3">
-									<h4 class="mbr-fonts-style header-text display-7">Objectives and impact<span class="toggle-icon inactive sign mbr-iconfont"></span>
-									</h4>
-
-								</a>
-							</div>
-							<div id="collapse3_72" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingThree" data-parent="#bootstrap-accordion_72">
-								<div class="panel-body p-4">
-									<p class="mbr-fonts-style panel-text mbr-text display-4">The overall objective of 3D’omics was to develop, implement and assess the impact (technological, economical, and societal) of a new innovative framework to generate and analyse 3D’omic landscapes, with which to decipher the characteristics and functions of the livestock microbial ecosystems and understand how they influence production, health and welfare of animals.<br><br><strong>Measurable operational objectives of the project:</strong><br><br>O1) Developed the 3D’omics technology to reconstruct 3D multi-omic intestinal landscapes from micro-scale genomic, transcriptomic, metabolomic, and imaging data.<br><br>O2) Showcaseed the 3D’omics technology in two monogastric animal systems: poultry and swine.<br><br>O3) Incorporateed 3D’omics data in the models used by the breeding and feeding industries to analyse phenotypic variability, to perform genetic evaluations and to modulate microbial ecosystems.<br><br>O4) Acknowledged the technical, economic and societal impact of 3D’omics technology and outline a roadmap for its industrial implementation.<br><br>O5) Established strong collaborations and knowledge transfer activities with related microbiome initiatives.<br><br><strong>Impacts of the project:</strong><br><br>I1. Enabled inclusion of data on microbial ecosystems in the models used to analyse<br>phenotypic variability and to perform genetic evaluations<br><br>I2. Improved resource use and environmental impact of terrestrial livestock production<br><br>I3. Improved robustness and health of terrestrial livestock, in relation to productive functions<br><br>I4. Reinforced collaborations with initiatives in related domains to promote coherence and<br>applicability of research on microbial ecosystems<br><br>Ultimately, we foresee that our framework will open new research avenues to improve the generation of animal breeds with enhanced microbiota-related genetic features, probiotics, microbiota - and host-tailored feeds, animal health treatments, and management practices that will enable increasing production efficiency while decreasing environmental impact and improving animal welfare.&nbsp;</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="card">
-							<div class="card-header" role="tab" id="headingFour">
-								<a role="button" class="collapsed panel-title" data-toggle="collapse" data-core="" href="#collapse4_72" aria-expanded="false" aria-controls="collapse4">
-									<h4 class="mbr-fonts-style header-text display-7">Project partners<span class="toggle-icon inactive sign mbr-iconfont"></span>
-									</h4>
-
-								</a>
-							</div>
-							<div id="collapse4_72" class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingFour" data-parent="#bootstrap-accordion_72">
-								<div class="panel-body p-4">
-									<p class="mbr-fonts-style panel-text mbr-text display-4"><strong>Project Partners</strong><br><br>1 KOBENHAVNS UNIVERSITET (UCPH) - Denmark<br>2 FUNDACIO CENTRE DE REGULACIO GENOMICA (CRG) - Spain - ended in 2024&nbsp;(taken over by CNAG)<br>3 VETERINAERMEDIZINISCHE UNIVERSITAET WIEN (UVM) - Austria<br>4 MAX DELBRUECK CENTRUM FUER MOLEKULARE MEDIZIN (MDC) -  Germany<br>5 KATHOLIEKE UNIVERSITEIT LEUVEN (KUL) - Belgium<br>6 EIDGENOESSISCHE TECHNISCHE HOCHSCHULE ZUERICH (ETH) - Switzerland<br>7 BEN-GURION UNIVERSITY OF THE NEGEV (BGU) - Israel<br>8 NORGES MILJO-OG BIOVITENSKAPLIGE UNIVERSITET (NMBU) - Norway<br>9 AFEKTA TECHNOLOGIES LTD (ATL) - Finland<br>10 AVIAGEN LIMITED (AVI) - United Kingdom<br>11 NOVOGENE NETHERLANDS BV (NGE) - Netherlands<br>12 BIOMIN HOLDING GMBH (BIO) - Austria<br>13 NORSVIN SA (NORSVIN) - Norway<br>14 CENTER FOR GENOMIC ANALYSIS (CNAG) - Spain - started in 2024 (take-over of CRG)<br><br>For more details about the partners, have a look at our <a href="consortium.html" class="text-primary">consortium page.</a><br><br><strong>Advisory</strong> <strong>Board Members</strong><br><br>Angela Sessitsch - Austrian Institute of Technology (AIT), Austria<br>Geoff Simm - University of Edinburgh, UK<br>Thomas Bosch - University of Kiel (CAU), Germany<br>Yolanda Sanz - Spanish National Research Council at the Institute of Agrochemistry and Food Technology (CSIC-IATA), Spain<br></p>
-								</div>
-							</div>
-						</div>
-
-						<div class="card">
-							<div class="card-header" role="tab" id="headingFive">
-								<a role="button" class="collapsed panel-title" data-toggle="collapse" data-core="" href="#collapse5_72" aria-expanded="false" aria-controls="collapse5">
-									<h4 class="mbr-fonts-style header-text display-7">3D'omics in numbers<span class="toggle-icon inactive sign mbr-iconfont"></span>
-									</h4>
-
-								</a>
-							</div>
-							<div id="collapse5_72" class="panel-collapse noScroll collapse" data-parent="#bootstrap-accordion_72" role="tabpanel" aria-labelledby="headingFive">
-								<div class="panel-body p-4">
-									<p class="mbr-fonts-style panel-text mbr-text display-4">Start date:    1 September 2021<br>End date:     31 December 2025<br><br>9 work packages<br><br>13 partner institutions from 11 countries <br><br>Coordinated by Kobenhavns Universitet (UCPH) Denmark<br>Project coordination: Antton Alberdi<br><br>Overall budget € 10 073 540,00<br>EU contribution € 9 994 415,00</p>
-								</div>
-							</div>
-						</div>
-
-						<div class="card">
-							<div class="card-header" role="tab" id="headingSix">
-								<a role="button" class="collapsed panel-title" data-toggle="collapse" data-core="" href="#collapse6_72" aria-expanded="false" aria-controls="collapse6">
-									<h4 class="mbr-fonts-style header-text display-7">Funding<span class="toggle-icon inactive sign mbr-iconfont"></span>
-									</h4>
-
-								</a>
-							</div>
-							<div id="collapse6_72" class="panel-collapse noScroll collapse" data-parent="#bootstrap-accordion_72" role="tabpanel" aria-labelledby="headingSix">
-								<div class="panel-body p-4">
-									<p class="mbr-fonts-style panel-text mbr-text display-4">3D'omics receives funding from the European Commission.<br><br>The project has received funding from the European Union’s Horizon 2020 Research<br>and Innovation Action (RIA) programme under <a href="https://cordis.europa.eu/project/id/101000309" class="text-primary" target="_blank">grant agreement number No. 101000309</a>.<br><br>Overall budget € 10 073 540,00<br>EU contribution € 9 994 415,00<br><br>Funded under the topic: SOCIETAL CHALLENGES<br>Food security, sustainable agriculture and forestry, marine, maritime and inland water research, and the bioeconomy.</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+</main>
 
 <section class="footer1 cid-tIn0DpYqeA" once="footers" id="footer1-5j">
 

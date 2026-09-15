@@ -7,10 +7,10 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/favicon-128x199.png" type="image/x-icon">
-  <meta name="description" content="Short introductions to the project partners and their work in progress.">
+  <meta name="description" content="Short introductions to 3D'omics project partners and their completed work.">
   
   
-  <title>Sneak_peek</title>
+  <title>Sneak-peak series</title>
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
   <link rel="stylesheet" href="assets/web/assets/mobirise-icons-bold/mobirise-icons-bold.css">
   <link rel="stylesheet" href="assets/tether/tether.min.css">
@@ -29,6 +29,150 @@
   
   
   <link id="portal-design-layer" rel="stylesheet" href="assets/theme/css/portal.css">
+  <style>
+    body.portal-site .sneak-peek-videos {
+      background: var(--portal-subtle) !important;
+    }
+
+    body.portal-site .sneak-peek-videos__heading {
+      max-width: 760px;
+      margin: 0 auto 32px;
+      text-align: center;
+    }
+
+    body.portal-site .sneak-peek-videos__heading h2 {
+      margin: 0;
+      color: var(--portal-burgundy) !important;
+      font-size: clamp(1.65rem, 3vw, 2.25rem) !important;
+    }
+
+    body.portal-site .sneak-peek-videos__heading p {
+      margin: 12px auto 0;
+      color: var(--portal-muted-ink) !important;
+      font-size: .95rem;
+      line-height: 1.65;
+    }
+
+    body.portal-site .sneak-peek-videos__grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    body.portal-site .sneak-peek-video-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      min-height: 100%;
+      border: 1px solid var(--portal-line);
+      border-radius: 12px;
+      background: var(--portal-surface);
+      box-shadow: 0 6px 20px rgb(64 25 48 / 6%);
+      transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+    }
+
+    body.portal-site .sneak-peek-video-card:hover {
+      border-color: color-mix(in srgb, var(--portal-burgundy-ink) 50%, var(--portal-line));
+      box-shadow: var(--portal-shadow);
+      transform: translateY(-3px);
+    }
+
+    body.portal-site .sneak-peek-video-card__image {
+      position: relative;
+      display: block;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-bottom: 1px solid var(--portal-line);
+      background: var(--portal-muted);
+    }
+
+    body.portal-site .sneak-peek-video-card__image::after {
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      display: grid;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--portal-burgundy);
+      box-shadow: 0 4px 12px rgb(64 25 48 / 28%);
+      content: '\25B6';
+      font-size: 13px;
+      line-height: 1;
+      place-items: center;
+      transition: background-color .2s ease, transform .2s ease;
+    }
+
+    body.portal-site .sneak-peek-video-card__image:hover::after {
+      background: var(--portal-mustard);
+      transform: scale(1.08);
+    }
+
+    body.portal-site .sneak-peek-video-card__image:focus-visible,
+    body.portal-site .sneak-peek-video-card__link:focus-visible {
+      outline: 3px solid color-mix(in srgb, var(--portal-burgundy-ink) 60%, transparent);
+      outline-offset: -3px;
+    }
+
+    body.portal-site .sneak-peek-video-card__image img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .35s ease;
+    }
+
+    body.portal-site .sneak-peek-video-card:hover .sneak-peek-video-card__image img {
+      transform: scale(1.03);
+    }
+
+    body.portal-site .sneak-peek-video-card__content {
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 22px 22px 20px;
+    }
+
+    body.portal-site .sneak-peek-video-card__content h3 {
+      margin: 0;
+      color: var(--portal-ink) !important;
+      font-size: 1.1rem !important;
+    }
+
+    body.portal-site .sneak-peek-video-card__role {
+      margin: 9px 0 0;
+      color: var(--portal-muted-ink) !important;
+      font-size: .9rem;
+      line-height: 1.55;
+    }
+
+    body.portal-site .sneak-peek-video-card__link {
+      display: inline-flex;
+      gap: 7px;
+      align-items: center;
+      margin-top: auto;
+      padding-top: 20px;
+      color: var(--portal-burgundy) !important;
+      font-size: .88rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    body.portal-site .sneak-peek-video-card__link:hover {
+      color: var(--portal-mustard) !important;
+    }
+
+    @media (max-width: 900px) {
+      body.portal-site .sneak-peek-videos__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 640px) {
+      body.portal-site .sneak-peek-videos__grid { grid-template-columns: 1fr; gap: 18px; }
+      body.portal-site .sneak-peek-videos__heading { margin-bottom: 24px; }
+    }
+  </style>
 </head>
 <body>
   
@@ -125,114 +269,82 @@
     </div>
     <div class="container">
         <div class="row justify-content-center">
-            <div class="title col-md-12 col-lg-6">
-                <h3 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2"><strong>3D'omics<br></strong><br><strong>SNEAK-PEEK SERIES</strong></h3>
-                
-                
+            <div class="title col-md-12 col-lg-9">
+                <h1 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2">Sneak-peak series</h1>
+                <p class="mbr-section-subtitle mbr-fonts-style align-center display-7">Meet the people and discover the work behind 3D'omics. These short introductions share our partners’ roles in the project and the work they completed.</p>
             </div>
         </div>
     </div>
 </section>
 
-<section data-bs-version="5.1" class="features2 cid-tJdcJVrAnf" id="features2-93">
-    
-    
+<section data-bs-version="5.1" class="sneak-peek-videos" aria-labelledby="sneak-peek-videos-title">
     <div class="container">
-        <div class="wrapper">
-            <div class="mbr-section-head">
-                
-                <p class="mbr-section-subtitle mbr-fonts-style mb-5 display-7">Do you want to know more about <strong>the people and the work </strong>behind 3D'omics?<br><br>In our SNEAK PEEK Series, you can find short introductory videos of our partners, their role in the 3D'omics project, and their work in progress.<br><br>Click on the image to be directed to the video.<br><br></p>
-            </div>
-            <div class="row mt-4 justify-content-center">
-                <div class="item features-image col-12 col-md-6 col-lg-4 active">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <a href="https://www.youtube.com/watch?v=tXm1zpCp19g" target="_blank"><img src="assets/images/screenshot-2021-11-12-at-13.01.03-1080x596.png" data-slide-to="0" data-bs-slide-to="0" alt=""></a>
-                        </div>
-                        <div class="item-content mt-3">
-                            <h5 class="item-title mbr-fonts-style text-uppercase display-7"><strong>3D'omics partners</strong></h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">
-                                <em>A brief overview</em></h6>
-                            
-                        </div>
-                    </div>
-                </div>
-                <div class="item features-image col-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <a href="https://www.youtube.com/watch?v=pQYlbcmOr54" target="_blank"><img src="assets/images/bryan-571x571.png" data-slide-to="1" data-bs-slide-to="1" alt=""></a>
-                        </div>
-                        <div class="item-content mt-3">
-                            <h5 class="item-title mbr-fonts-style text-uppercase display-7"><strong>Bryan wang</strong></h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><em>Postdoctoral Research Fellow at UCPH</em></h6>
-                            
-                        </div>
-                    </div>
-                </div><div class="item features-image col-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <a href="https://www.youtube.com/watch?v=XQKEd7Wd6Gc" target="_blank"><img src="assets/images/1656591115581-2-700x700.png" data-slide-to="2" data-bs-slide-to="2" alt=""></a>
-                        </div>
-                        <div class="item-content mt-3">
-                            <h5 class="item-title mbr-fonts-style text-uppercase display-7"><strong>Marta contreras serrano</strong></h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><em>Research Assistant at UCPH</em></h6>
-                            
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
+        <div class="sneak-peek-videos__heading">
+            <h2 id="sneak-peek-videos-title">Watch the series</h2>
+            <p>Select a video to hear directly from the 3D'omics partners and researchers.</p>
         </div>
-
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="features2 cid-tJdfAKkHdi" id="features2-94">
-    
-    
-    <div class="container">
-        <div class="wrapper">
-            
-            <div class="row mt-4 justify-content-center">
-                
-                <div class="item features-image col-12 col-md-6 col-lg-4 active">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <a href="https://www.youtube.com/watch?v=7fco1lfFwYk" target="_blank"><img src="assets/images/vici-571x685.png" data-slide-to="0" data-bs-slide-to="0" alt=""></a>
-                        </div>
-                        <div class="item-content mt-3">
-                            <h5 class="item-title mbr-fonts-style text-uppercase display-7"><strong>Victoria Drauch</strong></h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><em>Postdoctoral Researcher at UVM</em></h6>
-                            
-                        </div>
-                    </div>
-                </div><div class="item features-image col-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <a href="https://www.youtube.com/watch?v=H4_CnNZpQns" target="_blank"><img src="assets/images/picture-1-400x600.png" data-slide-to="1" data-bs-slide-to="1" alt=""></a>
-                        </div>
-                        <div class="item-content mt-3">
-                            <h5 class="item-title mbr-fonts-style text-uppercase display-7"><strong>Michael HeSs</strong><br></h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><em>Professor at UVM</em></h6>
-                            
-                        </div>
-                    </div>
-                </div><div class="item features-image col-12 col-md-6 col-lg-4">
-                    <div class="item-wrapper">
-                        <div class="item-img">
-                            <a href="https://www.youtube.com/watch?v=HytqrxRK0N8&list=PL6VLMuOKWOclVOERKfGTZGXmCNI0-y0hm&index=5"><img src="assets/images/jenny-571x759.png" data-slide-to="2" data-bs-slide-to="2" alt=""></a>
-                        </div>
-                        <div class="item-content mt-3">
-                            <h5 class="item-title mbr-fonts-style text-uppercase display-7"><strong>Jenny MERKESVIK</strong></h5>
-                            <h6 class="item-subtitle mbr-fonts-style mt-1 display-7"><em>PhD candidate at NMBU</em></h6>
-                            
-                        </div>
-                    </div>
+        <div class="sneak-peek-videos__grid">
+            <article class="sneak-peek-video-card">
+                <a class="sneak-peek-video-card__image" href="https://www.youtube.com/watch?v=tXm1zpCp19g" target="_blank" rel="noopener noreferrer" aria-label="Watch 3D'omics partners: A brief overview on YouTube">
+                    <img src="assets/images/screenshot-2021-11-12-at-13.01.03-1080x596.png" alt="3D'omics partners video thumbnail">
+                </a>
+                <div class="sneak-peek-video-card__content">
+                    <h3>3D'omics partners</h3>
+                    <p class="sneak-peek-video-card__role">A brief overview</p>
+                    <a class="sneak-peek-video-card__link" href="https://www.youtube.com/watch?v=tXm1zpCp19g" target="_blank" rel="noopener noreferrer">Watch video <span aria-hidden="true">↗</span></a>
                 </div>
-                
-            </div>
+            </article>
+            <article class="sneak-peek-video-card">
+                <a class="sneak-peek-video-card__image" href="https://www.youtube.com/watch?v=pQYlbcmOr54" target="_blank" rel="noopener noreferrer" aria-label="Watch Bryan Wang's video on YouTube">
+                    <img src="assets/images/bryan-571x571.png" alt="Bryan Wang video thumbnail">
+                </a>
+                <div class="sneak-peek-video-card__content">
+                    <h3>Bryan Wang</h3>
+                    <p class="sneak-peek-video-card__role">Postdoctoral Research Fellow at UCPH</p>
+                    <a class="sneak-peek-video-card__link" href="https://www.youtube.com/watch?v=pQYlbcmOr54" target="_blank" rel="noopener noreferrer">Watch video <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+            <article class="sneak-peek-video-card">
+                <a class="sneak-peek-video-card__image" href="https://www.youtube.com/watch?v=XQKEd7Wd6Gc" target="_blank" rel="noopener noreferrer" aria-label="Watch Marta Contreras Serrano's video on YouTube">
+                    <img src="assets/images/1656591115581-2-700x700.png" alt="Marta Contreras Serrano video thumbnail">
+                </a>
+                <div class="sneak-peek-video-card__content">
+                    <h3>Marta Contreras Serrano</h3>
+                    <p class="sneak-peek-video-card__role">Research Assistant at UCPH</p>
+                    <a class="sneak-peek-video-card__link" href="https://www.youtube.com/watch?v=XQKEd7Wd6Gc" target="_blank" rel="noopener noreferrer">Watch video <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+            <article class="sneak-peek-video-card">
+                <a class="sneak-peek-video-card__image" href="https://www.youtube.com/watch?v=7fco1lfFwYk" target="_blank" rel="noopener noreferrer" aria-label="Watch Victoria Drauch's video on YouTube">
+                    <img src="assets/images/vici-571x685.png" alt="Victoria Drauch video thumbnail">
+                </a>
+                <div class="sneak-peek-video-card__content">
+                    <h3>Victoria Drauch</h3>
+                    <p class="sneak-peek-video-card__role">Postdoctoral Researcher at UVM</p>
+                    <a class="sneak-peek-video-card__link" href="https://www.youtube.com/watch?v=7fco1lfFwYk" target="_blank" rel="noopener noreferrer">Watch video <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+            <article class="sneak-peek-video-card">
+                <a class="sneak-peek-video-card__image" href="https://www.youtube.com/watch?v=H4_CnNZpQns" target="_blank" rel="noopener noreferrer" aria-label="Watch Michael Hess's video on YouTube">
+                    <img src="assets/images/picture-1-400x600.png" alt="Michael Hess video thumbnail">
+                </a>
+                <div class="sneak-peek-video-card__content">
+                    <h3>Michael Hess</h3>
+                    <p class="sneak-peek-video-card__role">Professor at UVM</p>
+                    <a class="sneak-peek-video-card__link" href="https://www.youtube.com/watch?v=H4_CnNZpQns" target="_blank" rel="noopener noreferrer">Watch video <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+            <article class="sneak-peek-video-card">
+                <a class="sneak-peek-video-card__image" href="https://www.youtube.com/watch?v=HytqrxRK0N8&amp;list=PL6VLMuOKWOclVOERKfGTZGXmCNI0-y0hm&amp;index=5" target="_blank" rel="noopener noreferrer" aria-label="Watch Jenny Merkesvik's video on YouTube">
+                    <img src="assets/images/jenny-571x759.png" alt="Jenny Merkesvik video thumbnail">
+                </a>
+                <div class="sneak-peek-video-card__content">
+                    <h3>Jenny Merkesvik</h3>
+                    <p class="sneak-peek-video-card__role">PhD candidate at NMBU</p>
+                    <a class="sneak-peek-video-card__link" href="https://www.youtube.com/watch?v=HytqrxRK0N8&amp;list=PL6VLMuOKWOclVOERKfGTZGXmCNI0-y0hm&amp;index=5" target="_blank" rel="noopener noreferrer">Watch video <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
         </div>
-
     </div>
 </section>
 

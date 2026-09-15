@@ -7,7 +7,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
   <link rel="shortcut icon" href="assets/images/favicon-128x199.png" type="image/x-icon">
-  <meta name="description" content="">
+  <meta name="description" content="3D'omics outreach activities and project videos.">
   
   
   <title>Outreach</title>
@@ -29,6 +29,271 @@
   
   
   <link id="portal-design-layer" rel="stylesheet" href="assets/theme/css/portal.css">
+  <style>
+    body.portal-site .outreach-introduction {
+      background: var(--portal-surface) !important;
+    }
+
+    body.portal-site .outreach-introduction__layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, 330px);
+      gap: 48px;
+      align-items: start;
+    }
+
+    body.portal-site .outreach-introduction__eyebrow,
+    body.portal-site .outreach-videos__eyebrow {
+      margin: 0 0 8px;
+      color: var(--portal-muted-ink) !important;
+      font: 700 .75rem/1.3 'Plus Jakarta Sans', Arial, sans-serif;
+      letter-spacing: .09em;
+      text-transform: uppercase;
+    }
+
+    body.portal-site .outreach-introduction h2,
+    body.portal-site .outreach-videos__heading h2 {
+      margin: 0;
+      color: var(--portal-burgundy) !important;
+      font-size: clamp(1.75rem, 3.5vw, 2.35rem) !important;
+    }
+
+    body.portal-site .outreach-introduction__copy {
+      max-width: 68ch;
+      margin: 18px 0 0;
+      color: var(--portal-ink) !important;
+      font-size: 1rem;
+      line-height: 1.75;
+    }
+
+    body.portal-site .outreach-introduction__copy + .outreach-introduction__copy {
+      margin-top: 14px;
+    }
+
+    body.portal-site .outreach-action-card {
+      padding: 25px 24px;
+      border: 1px solid var(--portal-line);
+      border-top: .3rem solid var(--portal-mustard);
+      border-radius: 10px;
+      background: var(--portal-subtle);
+      box-shadow: 0 6px 20px rgb(64 25 48 / 6%);
+    }
+
+    body.portal-site .outreach-action-card__label {
+      margin: 0;
+      color: var(--portal-muted-ink) !important;
+      font: 700 .72rem/1.35 'Plus Jakarta Sans', Arial, sans-serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    body.portal-site .outreach-action-card h3 {
+      margin: 10px 0 0;
+      color: var(--portal-ink) !important;
+      font-size: 1.2rem !important;
+    }
+
+    body.portal-site .outreach-action-card p:not(.outreach-action-card__label) {
+      margin: 10px 0 0;
+      color: var(--portal-muted-ink) !important;
+      font-size: .9rem;
+      line-height: 1.6;
+    }
+
+    body.portal-site .outreach-action-card__link,
+    body.portal-site .outreach-videos__related-link,
+    body.portal-site .outreach-video-card__link {
+      display: inline-flex;
+      gap: 7px;
+      align-items: center;
+      color: var(--portal-burgundy) !important;
+      font-size: .9rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    body.portal-site .outreach-action-card__link {
+      margin-top: 20px;
+      padding: 9px 13px;
+      border: 1px solid var(--portal-line);
+      border-radius: 6px;
+      background: var(--portal-surface);
+    }
+
+    body.portal-site .outreach-action-card__link:hover {
+      border-color: var(--portal-burgundy-ink);
+      color: var(--portal-burgundy-ink) !important;
+      background: color-mix(in srgb, var(--portal-burgundy-ink) 8%, var(--portal-surface));
+    }
+
+    body.portal-site .outreach-action-card__link:focus-visible,
+    body.portal-site .outreach-videos__related-link:focus-visible,
+    body.portal-site .outreach-video-card__image:focus-visible,
+    body.portal-site .outreach-video-card__link:focus-visible {
+      outline: 3px solid color-mix(in srgb, var(--portal-burgundy-ink) 55%, transparent);
+      outline-offset: 3px;
+    }
+
+    body.portal-site .outreach-videos {
+      background: var(--portal-subtle) !important;
+    }
+
+    body.portal-site .outreach-videos__heading {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px 32px;
+      margin-bottom: 30px;
+    }
+
+    body.portal-site .outreach-videos__heading-copy {
+      max-width: 730px;
+    }
+
+    body.portal-site .outreach-videos__heading-copy > p:last-child {
+      margin: 12px 0 0;
+      color: var(--portal-muted-ink) !important;
+      font-size: .95rem;
+      line-height: 1.65;
+    }
+
+    body.portal-site .outreach-videos__related-link:hover,
+    body.portal-site .outreach-video-card__link:hover {
+      color: var(--portal-mustard) !important;
+    }
+
+    body.portal-site .outreach-videos__grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+    }
+
+    body.portal-site .outreach-video-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      min-height: 100%;
+      border: 1px solid var(--portal-line);
+      border-radius: 12px;
+      background: var(--portal-surface);
+      box-shadow: 0 6px 20px rgb(64 25 48 / 6%);
+      transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+    }
+
+    body.portal-site .outreach-video-card:hover {
+      border-color: color-mix(in srgb, var(--portal-burgundy-ink) 50%, var(--portal-line));
+      box-shadow: var(--portal-shadow);
+      transform: translateY(-3px);
+    }
+
+    body.portal-site .outreach-video-card__image {
+      position: relative;
+      display: block;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      border-bottom: 1px solid var(--portal-line);
+      background: var(--portal-muted);
+    }
+
+    body.portal-site .outreach-video-card__image::after {
+      position: absolute;
+      right: 14px;
+      bottom: 14px;
+      display: grid;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      color: #fff;
+      background: var(--portal-burgundy);
+      box-shadow: 0 4px 12px rgb(64 25 48 / 28%);
+      content: '\25B6';
+      font-size: 13px;
+      line-height: 1;
+      place-items: center;
+      transition: background-color .2s ease, transform .2s ease;
+    }
+
+    body.portal-site .outreach-video-card__image:hover::after {
+      background: var(--portal-mustard);
+      transform: scale(1.08);
+    }
+
+    body.portal-site .outreach-video-card__image img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .35s ease;
+    }
+
+    body.portal-site .outreach-video-card:hover .outreach-video-card__image img {
+      transform: scale(1.03);
+    }
+
+    body.portal-site .outreach-video-card__content {
+      display: flex;
+      flex: 1 1 auto;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 23px 24px 21px;
+    }
+
+    body.portal-site .outreach-video-card__type {
+      margin: 0 0 10px;
+      color: var(--portal-muted-ink) !important;
+      font: 700 .68rem/1.3 'Plus Jakarta Sans', Arial, sans-serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    body.portal-site .outreach-video-card h3 {
+      margin: 0;
+      color: var(--portal-ink) !important;
+      font-size: 1.15rem !important;
+    }
+
+    body.portal-site .outreach-video-card__summary {
+      margin: 11px 0 0;
+      color: var(--portal-muted-ink) !important;
+      font-size: .92rem;
+      line-height: 1.6;
+    }
+
+    body.portal-site .outreach-video-card__link {
+      margin-top: auto;
+      padding-top: 20px;
+    }
+
+    /* Retained for Mobirise editing; the semantic collection below is the
+       presentation shown by the shared portal design layer. */
+    body.portal-site #content4-9q,
+    body.portal-site #content5-9r,
+    body.portal-site #content11-9p,
+    body.portal-site #content4-dt,
+    body.portal-site #content11-9w,
+    body.portal-site #avideo1-7u,
+    body.portal-site #avideo1-dr,
+    body.portal-site #avideo1-7t,
+    body.portal-site #avideo1-7v,
+    body.portal-site #avideo1-7w {
+      display: none !important;
+    }
+
+    @media (max-width: 800px) {
+      body.portal-site .outreach-introduction__layout,
+      body.portal-site .outreach-videos__grid {
+        grid-template-columns: 1fr;
+      }
+
+      body.portal-site .outreach-introduction__layout { gap: 28px; }
+    }
+
+    @media (max-width: 640px) {
+      body.portal-site .outreach-videos__heading { margin-bottom: 24px; }
+      body.portal-site .outreach-videos__grid { gap: 18px; }
+      body.portal-site .outreach-video-card__content { padding: 20px; }
+    }
+  </style>
 </head>
 <body>
   
@@ -116,6 +381,111 @@
     </div>
 </section>
 
+<section data-bs-version="5.1" class="content4 mbr-parallax-background" id="outreach-hero">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="title col-md-12 col-lg-9">
+                <h1 class="mbr-section-title mbr-fonts-style align-center mb-4 display-2">Outreach &amp; videos</h1>
+                <p class="mbr-section-subtitle mbr-fonts-style align-center display-7">Connecting microbiome research with the public through scientific outreach, events, and accessible project stories.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="outreach-introduction" aria-labelledby="outreach-introduction-title">
+    <div class="container">
+        <div class="outreach-introduction__layout">
+            <div>
+                <p class="outreach-introduction__eyebrow">Engagement and knowledge sharing</p>
+                <h2 id="outreach-introduction-title">Making microbiome research accessible</h2>
+                <p class="outreach-introduction__copy">The 3D'omics partners participated in and actively supported local, national, and international scientific outreach initiatives, explaining the importance of microorganisms in scientific and applied contexts to the wider public.</p>
+                <p class="outreach-introduction__copy">3D'omics took part in annual European Commission outreach activities, including World Microbiome Day and Research &amp; Innovation Days. Academic beneficiaries also contributed through their active public-outreach platforms. We shared 3D'omics participation and presence through our <a href="contact.html">social media channels</a>.</p>
+            </div>
+            <aside class="outreach-action-card" aria-label="3D'omics events">
+                <p class="outreach-action-card__label">Explore the project</p>
+                <h3>3D'omics events</h3>
+                <p>Browse the project's training activities, scientific meetings, and outreach events.</p>
+                <a class="outreach-action-card__link" href="events.html">View all events <span aria-hidden="true">→</span></a>
+            </aside>
+        </div>
+    </div>
+</section>
+
+<section class="outreach-videos" aria-labelledby="outreach-videos-title">
+    <div class="container">
+        <div class="outreach-videos__heading">
+            <div class="outreach-videos__heading-copy">
+                <p class="outreach-videos__eyebrow">Watch 3D'omics</p>
+                <h2 id="outreach-videos-title">Project videos</h2>
+                <p>Explore the ideas, collaborators, and scientific challenges behind the 3D'omics project.</p>
+            </div>
+            <a class="outreach-videos__related-link" href="sneak_peek.html">Browse the sneak-peek series <span aria-hidden="true">→</span></a>
+        </div>
+
+        <div class="outreach-videos__grid">
+            <article class="outreach-video-card">
+                <a class="outreach-video-card__image" href="https://www.youtube.com/watch?v=Lo75rhOcLkk" target="_blank" rel="noopener noreferrer" aria-label="Watch What is the 3D'omics project? on YouTube">
+                    <img src="assets/images/screenshot-2023-06-30-at-13.54.47-1260x788.png" alt="Still from the 3D'omics project explainer video.">
+                </a>
+                <div class="outreach-video-card__content">
+                    <p class="outreach-video-card__type">Project explainer</p>
+                    <h3>What is the 3D'omics project?</h3>
+                    <p class="outreach-video-card__summary">An introduction to the 3D'omics H2020 project and its aims.</p>
+                    <a class="outreach-video-card__link" href="https://www.youtube.com/watch?v=Lo75rhOcLkk" target="_blank" rel="noopener noreferrer">Watch on YouTube <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+            <article class="outreach-video-card">
+                <a class="outreach-video-card__image" href="https://www.youtube.com/watch?v=RWeq0SPEJAM" target="_blank" rel="noopener noreferrer" aria-label="Watch Challenges and Solutions on YouTube">
+                    <img src="assets/images/ceh-3domics-results-gfx-team-thumbnail-1920x1080.jpg" alt="Illustration from the 3D'omics Challenges and Solutions video.">
+                </a>
+                <div class="outreach-video-card__content">
+                    <p class="outreach-video-card__type">Behind the scenes</p>
+                    <h3>Challenges and solutions</h3>
+                    <p class="outreach-video-card__summary">Follow the journey to develop new methods for exploring the microbiome in ways once thought impossible.</p>
+                    <a class="outreach-video-card__link" href="https://www.youtube.com/watch?v=RWeq0SPEJAM" target="_blank" rel="noopener noreferrer">Watch on YouTube <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+            <article class="outreach-video-card">
+                <a class="outreach-video-card__image" href="https://www.youtube.com/watch?v=Q4PsUCPkIRM" target="_blank" rel="noopener noreferrer" aria-label="Watch How the H2020 3D'omics project came about on YouTube">
+                    <img src="assets/images/screenshot-2023-06-30-at-13.57.11-1260x788.png" alt="Still from the video about the origins of 3D'omics and its partners.">
+                </a>
+                <div class="outreach-video-card__content">
+                    <p class="outreach-video-card__type">Project story</p>
+                    <h3>How 3D'omics came about</h3>
+                    <p class="outreach-video-card__summary">Meet the partners and learn how the H2020 3D'omics project began.</p>
+                    <a class="outreach-video-card__link" href="https://www.youtube.com/watch?v=Q4PsUCPkIRM" target="_blank" rel="noopener noreferrer">Watch on YouTube <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+            <article class="outreach-video-card">
+                <a class="outreach-video-card__image" href="https://www.youtube.com/watch?v=v3y2XvnGLJI" target="_blank" rel="noopener noreferrer" aria-label="Watch the 3D'omics project online presentation on YouTube">
+                    <img src="assets/images/screenshot-2023-06-30-at-14.00.20-1260x788.png" alt="Still from the 3D'omics online project presentation.">
+                </a>
+                <div class="outreach-video-card__content">
+                    <p class="outreach-video-card__type">Project presentation</p>
+                    <h3>3D'omics project online presentation</h3>
+                    <p class="outreach-video-card__summary">A guided presentation of the 3D'omics project.</p>
+                    <a class="outreach-video-card__link" href="https://www.youtube.com/watch?v=v3y2XvnGLJI" target="_blank" rel="noopener noreferrer">Watch on YouTube <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+
+            <article class="outreach-video-card">
+                <a class="outreach-video-card__image" href="https://www.youtube.com/watch?v=a32_Lur8Fns" target="_blank" rel="noopener noreferrer" aria-label="Watch Introduction to 3D'omics on the CEH podcast on YouTube">
+                    <img src="assets/images/screenshot-2023-06-30-at-14.03.11-1260x788.png" alt="Still from the Center for Evolutionary Hologenomics podcast introduction to 3D'omics.">
+                </a>
+                <div class="outreach-video-card__content">
+                    <p class="outreach-video-card__type">Podcast episode</p>
+                    <h3>Introduction to 3D'omics on the CEH podcast</h3>
+                    <p class="outreach-video-card__summary">Associate Professor Antton Alberdi discusses the project application, its scope, and the science behind 3D'omics.</p>
+                    <a class="outreach-video-card__link" href="https://www.youtube.com/watch?v=a32_Lur8Fns" target="_blank" rel="noopener noreferrer">Watch on YouTube <span aria-hidden="true">↗</span></a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
 <section data-bs-version="5.1" class="content4 cid-tOB6M7A2NO mbr-parallax-background" id="content4-9q">
     
     <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(233, 209, 210);">
@@ -191,16 +561,16 @@
             <div class="mbr-section-head col-12 col-lg">
                 <div class="text-container">
                     <h4 class="mbr-section-title mbr-fonts-style mb-0 display-5"><div><strong>What is the 3D'omics project?</strong></div></h4>
-                    <h5 class="mbr-section-subtitle mbr-fonts-style display-4">In this first official explainer video, in which we introduce the 3D'omics H2020 project and its aims.</h5>
+                    <h5 class="mbr-section-subtitle mbr-fonts-style display-4">This first official explainer video introduced the 3D'omics H2020 project and its aims.</h5>
                     
                 </div>
             </div>
             <div class="col-12 col-lg-7 col-video">
                 <div class="box">
                     <div class="mbr-media show-modal align-center" data-modal=".modalWindow">
-                        <a href="https://www.youtube.com/watch?v=Lo75rhOcLkk" target="_blank"><img src="assets/images/screenshot-2023-06-30-at-13.54.47-1260x788.png" alt=""></a>
+                        <a href="https://www.youtube.com/watch?v=Lo75rhOcLkk" target="_blank" rel="noopener noreferrer"><img src="assets/images/screenshot-2023-06-30-at-13.54.47-1260x788.png" alt=""></a>
                         <div class="icon-wrap">
-                            <a href="https://www.youtube.com/watch?v=Lo75rhOcLkk" target="_blank"><span class="mbr-iconfont socicon-youtube socicon" style="color: rgb(116, 27, 71); fill: rgb(116, 27, 71);"></span></a>
+                            <a href="https://www.youtube.com/watch?v=Lo75rhOcLkk" target="_blank" rel="noopener noreferrer"><span class="mbr-iconfont socicon-youtube socicon" style="color: rgb(116, 27, 71); fill: rgb(116, 27, 71);"></span></a>
                         </div>
                     </div>
                 </div>
@@ -241,9 +611,9 @@
             <div class="col-12 col-lg-7 col-video">
                 <div class="box">
                     <div class="mbr-media show-modal align-center" data-modal=".modalWindow">
-                        <a href="https://www.youtube.com/watch?v=RWeq0SPEJAM" target="_blank"><img src="assets/images/ceh-3domics-results-gfx-team-thumbnail-1920x1080.jpg" alt=""></a>
+                        <a href="https://www.youtube.com/watch?v=RWeq0SPEJAM" target="_blank" rel="noopener noreferrer"><img src="assets/images/ceh-3domics-results-gfx-team-thumbnail-1920x1080.jpg" alt=""></a>
                         <div class="icon-wrap">
-                            <a href="https://www.youtube.com/watch?v=RWeq0SPEJAM" target="_blank"><span class="mbr-iconfont socicon-youtube socicon" style="color: rgb(116, 27, 71); fill: rgb(116, 27, 71);"></span></a>
+                            <a href="https://www.youtube.com/watch?v=RWeq0SPEJAM" target="_blank" rel="noopener noreferrer"><span class="mbr-iconfont socicon-youtube socicon" style="color: rgb(116, 27, 71); fill: rgb(116, 27, 71);"></span></a>
                         </div>
                     </div>
                 </div>
@@ -284,9 +654,9 @@
             <div class="col-12 col-lg-7 col-video">
                 <div class="box">
                     <div class="mbr-media show-modal align-center" data-modal=".modalWindow">
-                        <a href="https://www.youtube.com/watch?v=Q4PsUCPkIRM" target="_blank"><img src="assets/images/screenshot-2023-06-30-at-13.57.11-1260x788.png" alt=""></a>
+                        <a href="https://www.youtube.com/watch?v=Q4PsUCPkIRM" target="_blank" rel="noopener noreferrer"><img src="assets/images/screenshot-2023-06-30-at-13.57.11-1260x788.png" alt=""></a>
                         <div class="icon-wrap">
-                            <a href="https://www.youtube.com/watch?v=Q4PsUCPkIRM" target="_blank"><span class="mbr-iconfont socicon-youtube socicon" style="color: rgb(116, 27, 71); fill: rgb(116, 27, 71);"></span></a>
+                            <a href="https://www.youtube.com/watch?v=Q4PsUCPkIRM" target="_blank" rel="noopener noreferrer"><span class="mbr-iconfont socicon-youtube socicon" style="color: rgb(116, 27, 71); fill: rgb(116, 27, 71);"></span></a>
                         </div>
                     </div>
                 </div>
@@ -327,9 +697,9 @@
             <div class="col-12 col-lg-7 col-video">
                 <div class="box">
                     <div class="mbr-media show-modal align-center" data-modal=".modalWindow">
-                        <a href="https://www.youtube.com/watch?v=v3y2XvnGLJI" target="_blank"><img src="assets/images/screenshot-2023-06-30-at-14.00.20-1260x788.png" alt=""></a>
+                        <a href="https://www.youtube.com/watch?v=v3y2XvnGLJI" target="_blank" rel="noopener noreferrer"><img src="assets/images/screenshot-2023-06-30-at-14.00.20-1260x788.png" alt=""></a>
                         <div class="icon-wrap">
-                            <a href="https://www.youtube.com/watch?v=v3y2XvnGLJI" target="_blank"><span class="mbr-iconfont socicon-youtube socicon" style="color: rgb(116, 27, 71); fill: rgb(116, 27, 71);"></span></a>
+                            <a href="https://www.youtube.com/watch?v=v3y2XvnGLJI" target="_blank" rel="noopener noreferrer"><span class="mbr-iconfont socicon-youtube socicon" style="color: rgb(116, 27, 71); fill: rgb(116, 27, 71);"></span></a>
                         </div>
                     </div>
                 </div>
@@ -363,16 +733,16 @@
             <div class="mbr-section-head col-12 col-lg">
                 <div class="text-container">
                     <h4 class="mbr-section-title mbr-fonts-style mb-0 display-5"><div><strong>Introduction to 3D'omics on the CEH podcast&nbsp;</strong></div></h4>
-                    <h5 class="mbr-section-subtitle mbr-fonts-style display-4">In this podcast episode of the Center for Evolutionary Hologenomics (UCPH), Associate Professor Antton Alberdi gives an overview about what it takes to write such a monumental project application, as well as what the project is actually about.</h5>
+                    <h5 class="mbr-section-subtitle mbr-fonts-style display-4">In this podcast episode of the Center for Evolutionary Hologenomics (UCPH), Associate Professor Antton Alberdi gives an overview of what it took to write such a monumental project application, as well as what the project was about.</h5>
                     
                 </div>
             </div>
             <div class="col-12 col-lg-7 col-video">
                 <div class="box">
                     <div class="mbr-media show-modal align-center" data-modal=".modalWindow">
-                        <a href="https://www.youtube.com/watch?v=a32_Lur8Fns" target="_blank"><img src="assets/images/screenshot-2023-06-30-at-14.03.11-1260x788.png" alt=""></a>
+                        <a href="https://www.youtube.com/watch?v=a32_Lur8Fns" target="_blank" rel="noopener noreferrer"><img src="assets/images/screenshot-2023-06-30-at-14.03.11-1260x788.png" alt=""></a>
                         <div class="icon-wrap">
-                            <a href="https://www.youtube.com/watch?v=a32_Lur8Fns" target="_blank"><span class="mbr-iconfont socicon-youtube socicon" style="color: rgb(116, 27, 71); fill: rgb(116, 27, 71);"></span></a>
+                            <a href="https://www.youtube.com/watch?v=a32_Lur8Fns" target="_blank" rel="noopener noreferrer"><span class="mbr-iconfont socicon-youtube socicon" style="color: rgb(116, 27, 71); fill: rgb(116, 27, 71);"></span></a>
                         </div>
                     </div>
                 </div>
@@ -415,27 +785,27 @@
                 </div>
             </div>
             <div class="col-12 col-sm-10 col-md-7">
-                <p class="mbr-text links mbr-fonts-style d-flex flex-wrap display-4">This project has received funding from the European Union’s Horizon 2020 Research <br>and Innovation programme under grant agreement number No. 101000309.<br>-<br><a href="https://www.alberdilab.dk/" class="text-success text-primary" target="_blank">Coordinator: Antton Alberdi (UCPH)</a><br><a href="privacy.html" class="text-success text-primary" target="_blank">&nbsp; &nbsp; &nbsp;</a><a href="privacy.html" class="text-success text-primary" target="_blank">Data and privacy policy</a><a href="mailto:3d-omics@sund.ku.dk" class="text-success text-primary">&nbsp; &nbsp; Contact: 3d-omics@sund.ku.dk</a></p>
+                <p class="mbr-text links mbr-fonts-style d-flex flex-wrap display-4">This project has received funding from the European Union’s Horizon 2020 Research <br>and Innovation programme under grant agreement number No. 101000309.<br>-<br><a href="https://www.alberdilab.dk/" class="text-success text-primary" target="_blank" rel="noopener noreferrer">Coordinator: Antton Alberdi (UCPH)</a><br><a href="privacy.html" class="text-success text-primary" target="_blank">&nbsp; &nbsp; &nbsp;</a><a href="privacy.html" class="text-success text-primary" target="_blank">Data and privacy policy</a><a href="mailto:3d-omics@sund.ku.dk" class="text-success text-primary">&nbsp; &nbsp; Contact: 3d-omics@sund.ku.dk</a></p>
             </div>
             <div class="col-12 col-sm-12 col-md-3">
                 <div class="social-list align-left">
                     <div class="soc-item">
-                        <a href="https://bsky.app/profile/3domics.bsky.social" target="_blank">
+                        <a href="https://bsky.app/profile/3domics.bsky.social" target="_blank" rel="noopener noreferrer">
                             <span class="mbr-iconfont mbr-iconfont-social mbrib-cloud" style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);"></span>
                         </a>
                     </div>
                     <div class="soc-item">
-                        <a href="https://github.com/3d-omics" target="_blank">
+                        <a href="https://github.com/3d-omics" target="_blank" rel="noopener noreferrer">
                             <span class="mbr-iconfont mbr-iconfont-social mbrib-github" style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);"></span>
                         </a>
                     </div>
                     <div class="soc-item">
-                        <a href="https://www.youtube.com/channel/UCELmDxgD1-AV0ObFl9UZNyQ" target="_blank">
+                        <a href="https://www.youtube.com/channel/UCELmDxgD1-AV0ObFl9UZNyQ" target="_blank" rel="noopener noreferrer">
                             <span class="mbr-iconfont mbr-iconfont-social socicon-youtube socicon" style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);"></span>
                         </a>
                     </div>
                     <div class="soc-item">
-                        <a href="https://www.linkedin.com/company/79361799/admin/dashboard/" target="_blank">
+                        <a href="https://www.linkedin.com/company/79361799/admin/dashboard/" target="_blank" rel="noopener noreferrer">
                             <span class="mbr-iconfont mbr-iconfont-social socicon-linkedin socicon" style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255);"></span>
                         </a>
                     </div>
