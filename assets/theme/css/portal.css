@@ -516,6 +516,10 @@ body.portal-site .portal-poster-card__image {
   padding: 9px;
   background: var(--portal-subtle);
 }
+body.portal-site .portal-poster-card__image:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--portal-burgundy-ink) 55%, transparent);
+  outline-offset: -3px;
+}
 body.portal-site .portal-poster-card__image img {
   display: block;
   width: 100%;
@@ -554,6 +558,17 @@ body.portal-site .portal-poster-card h3 {
   color: var(--portal-ink) !important;
   font-size: 1.05rem !important;
   line-height: 1.25 !important;
+}
+body.portal-site .portal-poster-card__title-link {
+  color: inherit !important;
+  text-decoration: none;
+  text-underline-offset: 3px;
+}
+body.portal-site .portal-poster-card__title-link:hover { text-decoration: underline; }
+body.portal-site .portal-poster-card__title-link:focus-visible {
+  border-radius: 2px;
+  outline: 3px solid color-mix(in srgb, var(--portal-burgundy-ink) 55%, transparent);
+  outline-offset: 3px;
 }
 body.portal-site .portal-poster-card__authors {
   margin: 11px 0 0;
