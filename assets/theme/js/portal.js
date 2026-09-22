@@ -27,7 +27,8 @@
   const navigation = [
     `<li>${link('concept.html', 'Concept', page === 'concept.html')}</li>`,
     group('Project', [
-      ['workflow.html', 'Workflow & management'],
+      ['workflow.html', 'Workflow'],
+      ['management.html', 'Management'],
       ['consortium.html', 'Consortium & board'],
       ['sneak_peek.html', 'Progress sneak-peek'],
     ]),
@@ -128,6 +129,7 @@
     const breadcrumbGroups = {
       'concept.html': 'Project',
       'workflow.html': 'Project',
+      'management.html': 'Project',
       'consortium.html': 'Project',
       'sneak_peek.html': 'Project',
       'cooperations.html': 'Resources',
